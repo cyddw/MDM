@@ -1,5 +1,9 @@
 6.13
 1.安装FFmpeg
 
-6.14
+6.18
 1.完成报错Can't pickle local object 'get_collate_fn.<locals>.<lambda>
+
+6.19
+1.完成MDM模型采样输出获取
+2.正在对本文涉及的数据集进行分析
