@@ -24,3 +24,5 @@
 2.原文代码是否有误(--cond_mask_prob 0)(已完成，没问题)
 3.损失函数中各类lamda的设置(已完成)
 4.能否直接使用Humanml3d数据集进行无条件扩散？(先弄清楚HumanACT12输入数据的组成)
+5.pose和joint3d分别代表什么？
+6.uncond下的cond全为True，其是如何传递至model，使其不编码text？
