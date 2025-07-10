@@ -93,3 +93,4 @@
 
 7.10
 1.查看代码中cond['y']['lengths']和cond['y']['mask']参数的作用(已完成，其中'mask'并不代表cond和uncond的比例，而是表示补齐帧和实际帧的比例)
+2.看论文DiffMesh
