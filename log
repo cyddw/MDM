@@ -97,3 +97,4 @@
 
 7.14
 1.弄清楚DiffMesh的模型(已完成)
+2.ARMDM(0.1 trendloss substitute rotmse with previous 1 frames)：将60帧60帧的生成改成1帧1帧生成，同时给定的输入也由60帧改为1帧(1帧为训练集的前1帧)
