@@ -106,3 +106,4 @@
 3.为什么trend_mse这么小，应该是那里有问题，建议检查一下(已完成，确实有问题，需要进行一定的修改，不过在similar to DiffMesh中不用考虑trend_loss，可以注释掉)
 4.generate生成的是前59帧还是后59帧
 5.感觉给的数据集有问题，生成的GT有一半都是不动的(以将Data_loader的shuffle改为False)
+6.生成的GT和实际动作有出入(有较大延迟)
