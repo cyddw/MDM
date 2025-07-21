@@ -120,4 +120,4 @@
 
 7.21
 1.弄清楚MDM的condition情形在代码中是如何实现的(已完成)
-2.看MUSIC算法和SPOTFI算法
+2.当前阶段任务：如何处理CSI从而得到condition
