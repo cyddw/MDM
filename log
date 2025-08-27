@@ -178,3 +178,6 @@
 
 8.26
 1.是否unwrap对结果是否有影响？(已完成，是否unwrap对结果没有影响)
+
+8.27
+1.接下来的工作：一是看RF-diffusion和video-diffusion两篇论文；二是对生成的AoA-ToF进行静态路径的去除，重点还是对diffusion部分的改进
