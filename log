@@ -181,3 +181,11 @@
 
 8.27
 1.接下来的工作：一是看RF-diffusion和video-diffusion两篇论文；二是对生成的AoA-ToF进行静态路径的去除，重点还是对diffusion部分的改进
+
+8.28
+论文阅读进展：
+1.video-diffusion(50%)
+2.RF-diffusion
+3.UW-wifi sensing
+4.Pose estimation with wifi csi
+5.tutorial of diffusion(50%)
