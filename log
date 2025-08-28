@@ -186,6 +186,7 @@
 论文阅读进展：
 1.video-diffusion(50%)
 2.RF-diffusion
-3.UW-wifi sensing
+3.UW-wifi sensing(完成，没有过滤操作)
 4.Pose estimation with wifi csi
 5.tutorial of diffusion(50%)
+6.widar 2.0
