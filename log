@@ -187,6 +187,9 @@
 1.video-diffusion(50%)
 2.RF-diffusion
 3.UW-wifi sensing(完成，没有过滤操作)
-4.widar 2.0
+4.widar 2.0(完成，没有过滤操作)
 5.tutorial of diffusion(50%)
 
+8.29
+1.尝试构建2D-AOA，利用两个接收端的一维AoA进行构建，效果不理想(已完成)
+2.尝试用AoA-Doppler代替AoA-ToF，效果还行，且能够过滤掉静态路径分量，但是部分参数设置没弄懂
