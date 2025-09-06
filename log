@@ -204,4 +204,4 @@
 4.对于reconstruction guidance，转为text_condition模式(已完成)
 5.将自身的数据转为Humanml3d格式
 6.wifi不完整，mesh数据也不完整，先在小规模数据集上训练:
-流程：1.本地data_process/Humanml3d_prc 2.本地data_process/motion_representation 3.将生成的数据转移至dataset/HumanML3D中
+流程：1.本地data_process/Humanml3d_prc 2.本地data_process/motion_representation 3.将生成的数据转移至dataset/HumanML3D中 4.通过HumanML3D/motion_representation生成绝对值数据 5.通过HumanML3D/cal_mean_variance生成绝对值数据的均值和方差
