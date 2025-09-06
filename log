@@ -199,4 +199,5 @@
 
 9.6
 1.跑通mdm_between代码(已完成)
-2.跑通reconstruction guidance的代码
+2.跑通reconstruction guidance的代码(已完成)
+3.对于reconstruction guidance，修改使其给定初始第一帧
