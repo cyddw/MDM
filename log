@@ -213,3 +213,4 @@
 9.8
 1.设置epoch为24000，等待训练结果
 2.寻找对比学习的模型(主体架构还是选择Clip，其中clip的图像编码器用来对输入的AoA-Dfs进行编码，clip的文本编码器替换为其他的可以用来编码输入的human motion)
+  备选方案：Tri-Modal Motion Retrieval by Learning a Joint Embedding Space(代码是java版的，且不一定完整)
