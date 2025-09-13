@@ -242,4 +242,4 @@
 
 9.13
 1.粗看论文diffusion forcing(已完成)
-2.跑通diffusion forcing validate代码
+2.跑通diffusion forcing validate代码(建议:直接重新创建虚拟环境，很容易出现版本不兼容问题)
