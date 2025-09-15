@@ -247,4 +247,7 @@
 9.14
 1.跑通diffusion-forcing video和maze代码(已完成)
 2.下载visio(已完成)
-3.细看diffusio-forcing并总结疑问(1.什么是贝叶斯滤波，以及贝叶斯滤波在该论文中的具体用法 2.classifier free guidance是如何推导得到的)(已完成至section3 Method)
+3.细看diffusio-forcing并总结疑问(1.什么是贝叶斯滤波，以及贝叶斯滤波在该论文中的具体用法(已完成) 2.classifier free guidance是如何推导得到的)(已完成至section3 Method)
+
+9.15
+1.细看代码sampling部分
