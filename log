@@ -259,4 +259,5 @@
 9.16
 1.跑通diffusion forcing代码training部分(已完成)
 2.细看diffusion forcing代码training部分(已完成)
-3.跑通motion clip代码
+3.跑通motion clip代码(已完成)
+4.细看motion clip代码并重点关注motion部分的编码方法
