@@ -273,5 +273,6 @@
 
 2.细看motion clip代码并重点关注motion部分的编码方法(调了半天，发现args应该在configure里面)(已完成)
 3.修改CLIP部分的text encoder(初步完成)
-4.完成motion_CLIP代码编写(现在小规模数据集上进行代码仿真，)
+4.完成motion_CLIP代码编写(先在小规模数据集(90个)上进行代码仿真，其中motion数据集地址：/home/newdisk/hch/diffusion motion inbetween/dataset/HumanML3D/new_joints_abs_3d/
+                                                          AoA_Dfs数据集地址：/home/data_save_2/hch/AoA_Dfs/)
 
