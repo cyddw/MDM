@@ -264,3 +264,5 @@
 
 9.17
 1.再看diffusion forcing论文
+问题汇总：
+1.Abstract提到“ability to guide sampling to desirable trajectories”，在sampling部分是如何实现的？
