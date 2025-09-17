@@ -266,3 +266,5 @@
 1.再看diffusion forcing论文
 问题汇总：
 1.Abstract提到“ability to guide sampling to desirable trajectories”，在sampling部分是如何实现的？
+2.在训练过程中，是10帧10帧进行训练吗，这样训练不会导致生成不连贯的问题吗，还是划动着进行训练
+3.论文中的ELBO是如何证明得到的，从而说明其训练的有效性
