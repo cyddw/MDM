@@ -206,6 +206,8 @@
 6.wifi不完整，mesh数据也不完整，先在小规模数据集上训练:
 流程：1.本地data_process/Humanml3d_prc 2.本地data_process/motion_representation 3.将生成的数据转移至dataset/HumanML3D中 4.通过HumanML3D/motion_representation生成绝对值数据 5.通过HumanML3D/cal_mean_variance生成绝对值数据的均值和方差 6.通过others/cal_train_val_test生成txt文件 7.添加text文件夹至HumanML3D文件夹下
      8.添加000021.npy至dataset文件夹下
+     new_joints_vecs:维度为263
+     new_joints:维度为(22,3)
 7.对数据集进行y轴反转(完成)
 8.尝试用自身数据集对其进行训练(完成)
 9.待完成的工作：1.对比学习模型的确认 2.AoA-DFS数据和Mesh数据的对齐 3.对比学习模型跑通 4.将对比学习模型整合进模型中
@@ -271,5 +273,5 @@
 
 2.细看motion clip代码并重点关注motion部分的编码方法(调了半天，发现args应该在configure里面)(已完成)
 3.修改CLIP部分的text encoder(初步完成)
-4.完成motion_CLIP代码编写
+4.完成motion_CLIP代码编写(现在小规模数据集上进行代码仿真，)
 
