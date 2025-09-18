@@ -276,5 +276,5 @@
 4.完成motion_CLIP代码编写(先在小规模数据集(90个)上进行代码仿真，其中motion数据集地址：/home/newdisk/hch/diffusion motion inbetween/dataset/HumanML3D/new_joints_abs_3d/
                                                           AoA_Dfs数据集地址：/home/data_save_2/hch/AoA_Dfs/)
 9.18
-1.motion_CLIP代码问题比较多，其中主要问题是无法处理单通道图像，决定自己写代码比较好
+1.motion_CLIP代码问题比较多，其中主要问题是无法处理单通道图像，决定自己写代码比较好(已完成整体框架编写，接下来完成模型部分的重点搭建)
 
