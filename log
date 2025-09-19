@@ -270,6 +270,7 @@
 1.Abstract提到“ability to guide sampling to desirable trajectories”，在sampling部分是如何实现的？
 2.在训练过程中，是10帧10帧进行训练吗，这样训练不会导致生成不连贯的问题吗，还是划动着进行训练
 3.论文中的ELBO是如何证明得到的，从而说明其训练的有效性
+4.论文中的Compositionality和Causal Uncertainty是什么意思
 
 2.细看motion clip代码并重点关注motion部分的编码方法(调了半天，发现args应该在configure里面)(已完成)
 3.修改CLIP部分的text encoder(初步完成)
