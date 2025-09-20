@@ -286,4 +286,5 @@
 9.20
 1.完成motion clip代码编写(已完成)
 2.完成epoch=250次的motion clip代码，问题：根本收敛不了(已完成)
-3.Motion_CLIP收敛不了的可能原因：ViT-Transformer的模型过于复杂，建议换成简单的模型进行尝试
+3.Motion_CLIP收敛不了的可能原因：ViT-Transformer的模型过于复杂，建议换成简单的模型进行尝试(已完成，仍未收敛)
+                               text_encoder权重没有更新(已完成，在实时更新)
