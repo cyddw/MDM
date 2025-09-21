@@ -289,3 +289,6 @@
 3.Motion_CLIP收敛不了的可能原因：ViT-Transformer的模型过于复杂，建议换成简单的模型进行尝试(已完成，仍未收敛)
                                text_encoder权重没有更新(已完成，在实时更新)
                                motion数据需要进行标准化处理(已完成，仍然未收敛)
+
+9.21
+1.完成diffusion forcing论文的阅读和初步整理
