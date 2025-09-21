@@ -273,6 +273,7 @@
 4.论文中的Compositionality和Causal Uncertainty是什么意思
 5.论文中提到的guidance是什么意思(已完成，详见论文中算法伪代码第10行)
 6.Samping部分的代码部分为什么要设置Km+1和Km两个不同的行数
+7.图片Full Traj.Guidance为什么未来的序列可以指导过去的序列
 
 2.细看motion clip代码并重点关注motion部分的编码方法(调了半天，发现args应该在configure里面)(已完成)
 3.修改CLIP部分的text encoder(初步完成)
