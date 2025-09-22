@@ -267,9 +267,9 @@
 9.17
 1.再看diffusion forcing论文
 问题汇总：
-1.Abstract提到“ability to guide sampling to desirable trajectories”，在sampling部分是如何实现的？
+1.Abstract提到“ability to guide sampling to desirable trajectories”，在sampling部分是如何实现的？(已完成，通过guidance完成)
 2.在训练过程中，是10帧10帧进行训练吗，这样训练不会导致生成不连贯的问题吗，还是划动着进行训练
-3.论文中的ELBO是如何证明得到的，从而说明其训练的有效性
+3.论文中的ELBO是如何证明得到的，从而说明其训练的有效性(已完成)
 4.论文中的Compositionality和Causal Uncertainty是什么意思
 5.论文中提到的guidance是什么意思(已完成，详见论文中算法伪代码第10行)
 6.Samping部分的代码部分为什么要设置Km+1和Km两个不同的行数
@@ -283,7 +283,7 @@
 1.motion_CLIP代码问题比较多，其中主要问题是无法处理单通道图像，决定自己写代码比较好(已完成整体框架编写，接下来完成模型部分的重点搭建)
 
 9.19
-1.看DDPM理论推导部分
+1.看DDPM理论推导部分(已完成)
 
 9.20
 1.完成motion clip代码编写(已完成)
