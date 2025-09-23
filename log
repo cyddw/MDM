@@ -312,3 +312,4 @@
                       将AoA_Dfs数据集的Motion换成文本编码(Action x Position y)，batch_size设置为6，lr设置为5e-5，模型不收敛
                       将AoA_Dfs数据集的Motion换成文本编码(Action x Position y)，batch_size设置为6，lr设置为1e-4，模型不收敛
                       将AoA_Dfs数据集的Motion换成文本编码(Action x Position y)，batch_size设置为6，lr设置为5e-6，模型收敛
+                      在AoA_Dfs数据集下，batch_size设置为6，改变lr
