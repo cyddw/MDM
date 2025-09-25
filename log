@@ -307,9 +307,15 @@
                       在Mnist数据集下，batch_size设置为10，模型没有收敛，而且test结果全部平均，相当于模型什么都没有学到；
                       在Mnist数据集下，batch_size设置为3，模型没有收敛，而且test结果全部平均，相当于模型什么都没有学到；
                       在Mnist数据集下，batch_size设置为3，将lr由1e-3改为5e-5，模型收敛
-                      在AoA_Dfs数据集下，batch_size设置为100，10，lr设置为1e-3至1e-6，模型均为收敛，而且test结果全部平均，相当于模型什么都没有学到
+                      在AoA_Dfs数据集下，batch_size设置为100，10，lr设置为1e-3至1e-6，模型均未收敛，而且test结果全部平均，相当于模型什么都没有学到
                       将AoA_Dfs数据集的Motion换成文本编码(Action x Position y)，batch_size设置为6，lr设置为1e-6，模型开始收敛，收敛速度较慢
                       将AoA_Dfs数据集的Motion换成文本编码(Action x Position y)，batch_size设置为6，lr设置为5e-5，模型不收敛
                       将AoA_Dfs数据集的Motion换成文本编码(Action x Position y)，batch_size设置为6，lr设置为1e-4，模型不收敛
                       将AoA_Dfs数据集的Motion换成文本编码(Action x Position y)，batch_size设置为6，lr设置为5e-6，模型收敛
                       在AoA_Dfs数据集下，batch_size设置为6，改变lr: 1e-8(不收敛)，5e-8(不收敛)，1e-7(不收敛)，5e-7(不收敛)，1e-6(不收敛)，从1e-8搜索至8e-1均不收敛，可能是Motion编码模型太简单
+
+9.24
+1.在AoA_Dfs数据集下，将Motion编码模型更换为GCN(没有收敛)
+  在AoA_Dfs数据集下，将Motion编码模型更换为GCN，同时不对Motion进行归一化(没有收敛)
+  在AoA_Dfs数据集下，将Motion编码模型更换为GCN，同时将Motion转为相对坐标(没有收敛)
+  在AoA_Dfs数据集下，将Motion编码模型更换为Transformer，同时将Motion转为相对坐标(没有收敛)
