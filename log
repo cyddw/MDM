@@ -319,3 +319,4 @@
   在AoA_Dfs数据集下，将Motion编码模型更换为GCN，同时不对Motion进行归一化(没有收敛)
   在AoA_Dfs数据集下，将Motion编码模型更换为GCN，同时将Motion转为相对坐标(没有收敛)
   在AoA_Dfs数据集下，将Motion编码模型更换为Transformer，同时将Motion转为相对坐标(没有收敛)
+  在AoA_Dfs数据集下，将Motion编码模型更换为text_encoder(这一方面仍然需要修改)，同时将Motion转为相对坐标(有收敛的趋势)
