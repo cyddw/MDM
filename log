@@ -323,3 +323,6 @@
 
 9.26
 1.nn.init.normal_(self.joint_positional_embedding, std=0.01)，当设置位置编码初始值非常小时，在lr=1e-5下，模型不收敛，当设置std=0.1时，模型收敛
+  Motion_CLIP问题汇总：1.在AoA_Dfs数据集下，对Text_encoder进行修改以适应Motion，能够收敛，但是收敛速度非常慢，且在test数据集下的准确率并不高
+                      2.在AoA_Dfs数据集下，对Text_encoder进行修改以适应Motion，扩大batch_size至12，基本不怎么收敛
+                      3.
