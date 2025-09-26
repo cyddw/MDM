@@ -327,3 +327,4 @@
                       2.在AoA_Dfs数据集下，对Text_encoder进行修改以适应Motion，扩大batch_size至12，基本不怎么收敛
                       3.
 2.完成MDM_between部分的代码修改部分:MDM_between突然无法运行，后经排查主要原因为：在运行CLIP代码的时候使用了mdm_between的环境导致clip版本不一致
+3.MDM_between部分需要修改的代码：1.更换预训练得到的模型 2.forward_backward(self, batch, cond)的cond部分增加AoA_Dfs数据 3.将MDM_Unet中的encode_text更换为AoA_Dfs编码器
