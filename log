@@ -326,3 +326,4 @@
   Motion_CLIP问题汇总：1.在AoA_Dfs数据集下，对Text_encoder进行修改以适应Motion，能够收敛，但是收敛速度非常慢，且在test数据集下的准确率并不高
                       2.在AoA_Dfs数据集下，对Text_encoder进行修改以适应Motion，扩大batch_size至12，基本不怎么收敛
                       3.
+2.完成MDM_between部分的代码修改部分
