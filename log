@@ -322,4 +322,4 @@
   在AoA_Dfs数据集下，将Motion编码模型更换为text_encoder(这一方面仍然需要修改)，同时将Motion转为相对坐标(有收敛的趋势)
 
 9.26
-1.
+1.nn.init.normal_(self.joint_positional_embedding, std=0.01)，当设置词嵌入初始值非常小时，在lr=1e-5下，模型不收敛，当设置std=0.1时，模型收敛
