@@ -325,6 +325,9 @@
 1.nn.init.normal_(self.joint_positional_embedding, std=0.01)，当设置位置编码初始值非常小时，在lr=1e-5下，模型不收敛，当设置std=0.1时，模型收敛
   Motion_CLIP问题汇总：1.在AoA_Dfs数据集下，对Text_encoder进行修改以适应Motion，能够收敛，但是收敛速度非常慢，且在test数据集下的准确率并不高
                       2.在AoA_Dfs数据集下，对Text_encoder进行修改以适应Motion，扩大batch_size至12，基本不怎么收敛
-                      3.
 2.完成MDM_between部分的代码修改部分:MDM_between突然无法运行，后经排查主要原因为：在运行CLIP代码的时候使用了mdm_between的环境导致clip版本不一致
 3.MDM_between部分需要修改的代码：1.更换预训练得到的模型 2.forward_backward(self, batch, cond)的cond部分增加AoA_Dfs数据 3.将MDM_Unet中的encode_text更换为AoA_Dfs编码器
+
+9.28
+1.将AoA_Dfs数据集的Motion换成文本编码(filename + "Frame" +str(i+1)),batchsize设置为12，训练120epoch，最终test结果大部分能够达到70%左右的识别率
+2.感觉还是得对Motion编码器进行调整，尝试使用Motion_CLIP的编码器
