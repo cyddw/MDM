@@ -345,4 +345,8 @@
 2.感觉还是得对Motion编码器进行调整，尝试使用Motion_CLIP的编码器
 
 9.29
-
+1.在9.28.1的基础上增大了Position_Embedding的std至0.1，同时修改了Adam优化器，删除了预设的beta、eps和weight_decay，lr设置为1e-5(1e-4不收敛)，模型收敛，且速度较快(epoch 120, loss降至0.8031)
+  为什么之前没有收敛：模型错误、Adam优化器设置问题(主要原因，weight_decay = 0.2, 防止过拟合，也就使得loss降不下来)
+  在上述的基础上修改lr至5e-6(收敛，虽然下降速度变慢，但是能稳定下降，loss不波动)
+  在上述的基础上修改Position_Embedding的std至0.01，模型loss波动很大，loss很难下降
+  在上述的基础上将Position_Embedding改为Motion_CLIP的正余弦编码(能收敛，但是收敛速度不如之前的)
