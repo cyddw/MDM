@@ -350,3 +350,4 @@
   在上述的基础上修改lr至5e-6(收敛，虽然下降速度变慢，但是能稳定下降，loss不波动)
   在上述的基础上修改Position_Embedding的std至0.01，模型loss波动很大，loss很难下降
   在上述的基础上将Position_Embedding改为Motion_CLIP的正余弦编码(能收敛，但是收敛速度不如之前的)
+2.在上述的基础上将位置编码器改为Position_Embedding，同时batch_size设置为12，epoch设置为2000，lr设置为5e-6，最终loss为0.022292，test测试效果非常好，基本为对角矩阵
