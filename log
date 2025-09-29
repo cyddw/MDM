@@ -340,5 +340,9 @@
   在AoA_Dfs数据集下，将Motion编码模型更换为text_encoder，batch_size设置为4，mask改为full-mask，在22的关节维度上增加一行mu，其中mu增加在最前面，选择mu作为输出向量，lr=5e-6、lr=1e-5(没有收敛)
   造成上述的可能原因，包括为什么只有-1位置：CLIP的text_encoder并不是TransformerEncoder，而是ResidualAttentionBlock
   在AoA_Dfs数据集下，将Motion编码模型更换为TransformerEncoder，batch_size设置为4，mask改为full-mask，在22的关节维度上增加一行mu，其中mu增加在最前面，选择mu作为输出向量(不收敛)
-  在上述基础上增加self.sigmaQuery,
+  在上述基础上增加self.sigmaQuery(不收敛) 
+  
 2.感觉还是得对Motion编码器进行调整，尝试使用Motion_CLIP的编码器
+
+9.29
+
