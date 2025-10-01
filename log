@@ -360,3 +360,4 @@
 2.修改MDM_between部分的代码
 疑问：MDM_between读入后的Motion经过了转换，由xyz转为了rotation形式，在对比学习时是否也要对其进行转换？
 流程：1.在dataset/HumanML3D/AoADfs数据集下添加AoA_DFS数据
+3.完成AoADfs和Motion_CLIP的工作汇总
