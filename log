@@ -354,3 +354,9 @@
 
 9.30
 1.在9.29.2的基础上只对batch_size进行修改，batch_size设置为120，也就是全部，epoch设置为3000(已完成，loss降至1.1693，还未收敛，可以继续训练，当设置batch_size为12，基本为对角矩阵，当设置batch_size为120，仍有部分为0.5左右的概率)
+
+10.1
+1.在上述基础上，修改batch_size为30，epoch设置为3000
+2.修改MDM_between部分的代码
+疑问：MDM_between读入后的Motion经过了转换，由xyz转为了rotation形式，在对比学习时是否也要对其进行转换？
+流程：1.在dataset/HumanML3D/AoADfs数据集下添加AoA_DFS数据
