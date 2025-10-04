@@ -367,3 +367,4 @@
 2.由于MDM_between的去噪网络是3DUNet,其需要进行下采样操作，在下采样过程中，时间维度会减小一半，导致其无法和cond进行对齐
 3.目前的思路是将3DUnet进行更换，使用MDM的去噪网络(已完成，直接将cond和motion进行相加，已经跑通训练部分代码，loss收敛)
 4.注意事项：MDM_between部分需要修改Classifier free Guidance，包括对应的系数
+5.修改采样部分代码，并可视化结果
