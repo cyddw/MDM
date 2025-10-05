@@ -368,3 +368,7 @@
 3.目前的思路是将3DUnet进行更换，使用MDM的去噪网络(已完成，直接将cond和motion进行相加，已经跑通训练部分代码，loss收敛)
 4.注意事项：MDM_between部分需要修改Classifier free Guidance，包括对应的系数
 5.修改采样部分代码，并可视化结果
+
+10.5
+1.采样时间特别久，优化采样时间：取消Classifier free Guidance(已完成，采样时间缩短一半)；优化Motion_CLIP的导入过程(已完成，采样速度明显加快，由最开始的18min优化为30s)
+2.为什么可视化结果显示视频有12s(已解决)
