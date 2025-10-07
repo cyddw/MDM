@@ -377,3 +377,4 @@
 
 10.7
 1.增大数据集规模至2700：
+1.在"E:\Mesh\Mesh数据\mesh_parts"数据集下剔除csi_missing和bug异常数据 2.本地data_process/Humanml3d_prc.py 3.本地data_process/motion_representation.py 4.将生成的数据转移至dataset/HumanML3D中
