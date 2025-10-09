@@ -382,4 +382,5 @@
      10.在"/home/data_save_2/hch/AoA_Dfs(original)/"剔除bug和csi_missing数据 11.在/home/newdisk/hch/diffusion motion inbetween/AoADfs_process.py运行代码 12.在Motion_CLIP_modified运行reference代码
 
 10.9
-1.运行Motion_CLIP代码时遇到问题：运行时间太久了，一个eopch要5分钟，还是得对代码进行修改，增加batch_size维度
+1.运行Motion_CLIP代码时遇到问题：运行时间太久了，一个eopch要5分钟，还是得对代码进行修改，增加batch_size维度(增加batch_size维度好像不太行)
+2.尝试打乱输入数据的顺序，然后将batch_size拉大
