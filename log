@@ -395,3 +395,4 @@
 4.对Motion_CLIP的数据处理进行修改:改为随机采样30个点(这块代码不太好写，添加data_prc.py文件，用于处理数据，也就是将120帧数据拆分为独立的120帧)：1.通过Motion_CLIP_modified/data_prc.py将数据进行分割并保存在“/home/data_save_2/hch/train_dataset/”文件夹下(注意限制CPU进程数
 5.Motion_CLIP(epoch = 300，使用2700个数据集)这里代码写错了，难怪感觉出来的结果很奇怪
 6.对修改后的代码重新进行训练,epoch=300,预计20h(感觉loss很难降下去，除非epoch非常大)
+7.不能将数据进行拆分，因为拆分后的数据数量过多，导致读取要很久
