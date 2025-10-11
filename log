@@ -392,4 +392,5 @@
 1.Motion_CLIP(epoch = 300, 使用2700个数据集)：测试集效果为0，训练集在batch_size=120的情况下效果勉强能接受
 2.实际上，对于小数据集，也就是90个数据集的情况下，在batch_size=120的情况下效果也只属于勉强能接受
 3.使用Motion_CLIP(epoch = 300, 数据集 = 2700)应用于MDM_inbetween，其中epoch=800，测试效果
-4.对Motion_CLIP的数据处理进行修改:改为随机采样30个点(这块代码不太好写，添加data_prc.py文件，用于处理数据，也就是将120帧数据拆分为独立的120帧)：1.通过Motion_CLIP_modified/data_prc.py将数据进行分割并保存在“/home/data_save_2/hch/train_dataset/”文件夹下(注意限制CPU进程数)
+4.对Motion_CLIP的数据处理进行修改:改为随机采样30个点(这块代码不太好写，添加data_prc.py文件，用于处理数据，也就是将120帧数据拆分为独立的120帧)：1.通过Motion_CLIP_modified/data_prc.py将数据进行分割并保存在“/home/data_save_2/hch/train_dataset/”文件夹下(注意限制CPU进程数
+5.Motion_CLIP(epoch = 300，使用2700个数据集)这里代码写错了，难怪感觉出来的结果很奇怪
