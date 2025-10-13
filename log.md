@@ -25,6 +25,7 @@ https://github.com/user-attachments/assets/7f6b9492-f734-4807-aab8-9a270d3c0018
 与sample001相比，两者好像基本没有区别，但是Motioin_CLIP差别很大，说明Motion_CLIP在模型中没起到作用，有没有可能是因为encoder输出值过小(好像也还好，Motion和emb基本在一个数量级上)  
 **10.13**  
 - [x] 电磁大作业：paper阅读
+- [x] 电磁大作业：报告撰写
 
 1.Motion_CLIP(batch_size = 64，随机采样，epoch = 400，训练时间 = 12h)测试效果：从loss曲线可知，仍未收敛还可以继续训练
 
