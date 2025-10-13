@@ -24,6 +24,8 @@ https://github.com/user-attachments/assets/7f6b9492-f734-4807-aab8-9a270d3c0018
 
 与sample001相比，两者好像基本没有区别，但是Motioin_CLIP差别很大，说明Motion_CLIP在模型中没起到作用，有没有可能是因为encoder输出值过小(好像也还好，Motion和emb基本在一个数量级上)  
 **10.13**  
+- [x] 电磁大作业：paper阅读
+
 1.Motion_CLIP(batch_size = 64，随机采样，epoch = 400，训练时间 = 12h)测试效果：从loss曲线可知，仍未收敛还可以继续训练
 
 <img width="846" height="547" alt="2bc941ee-f9e9-4d99-ae42-fb182e58aa31" src="https://github.com/user-attachments/assets/e0e26161-e1f6-4157-8d8d-49f606f83fde" />
@@ -32,4 +34,5 @@ https://github.com/user-attachments/assets/7f6b9492-f734-4807-aab8-9a270d3c0018
 测试集batch_size = 64效果：没有丝毫效果  
 
 2.将上述Motion_CLIP作为Motion_inbetween的encoder，epoch = 800，其测试集的效果：  
-3.Motion_CLIP随机采样，其中batch_size设置为128，epoch = 10000，每间隔200个epoch保存一次模型
+3.Motion_CLIP随机采样，其中batch_size设置为128，epoch = 10000，每间隔200个epoch保存一次模型  
+
