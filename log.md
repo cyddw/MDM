@@ -31,4 +31,5 @@ https://github.com/user-attachments/assets/7f6b9492-f734-4807-aab8-9a270d3c0018
 训练集batch_size = 64效果：虽然loss还可以继续收敛，但是已经比较小了，结果没有丝毫效果  
 测试集batch_size = 64效果：没有丝毫效果  
 
-2.将上述Motion_CLIP作为Motion_inbetween的encoder，epoch = 800，其测试集的效果：
+2.将上述Motion_CLIP作为Motion_inbetween的encoder，epoch = 800，其测试集的效果：  
+3.Motion_CLIP随机采样，其中batch_size设置为128，epoch = 10000，每间隔500个epoch保存一次模型
