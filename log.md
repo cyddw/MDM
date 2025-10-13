@@ -26,6 +26,7 @@ https://github.com/user-attachments/assets/7f6b9492-f734-4807-aab8-9a270d3c0018
 **10.13**  
 - [x] 电磁大作业：paper阅读
 - [x] 电磁大作业：报告撰写
+- [x] 电磁大作业：报告撰写
 
 1.Motion_CLIP(batch_size = 64，随机采样，epoch = 400，训练时间 = 12h)测试效果：从loss曲线可知，仍未收敛还可以继续训练
 
@@ -35,5 +36,11 @@ https://github.com/user-attachments/assets/7f6b9492-f734-4807-aab8-9a270d3c0018
 测试集batch_size = 64效果：没有丝毫效果  
 
 2.将上述Motion_CLIP作为Motion_inbetween的encoder，epoch = 800，其测试集的效果：  
-3.Motion_CLIP随机采样，其中batch_size设置为128，epoch = 10000，每间隔200个epoch保存一次模型  
+
+https://github.com/user-attachments/assets/dd4d4c13-cb22-4a9e-bb10-d520fae17ffd
+
+结果在预料之中，和之前的两个结果完全一致  
+3.Motion_CLIP随机采样，其中batch_size设置为128，epoch = 10000，每间隔200个epoch保存一次模型
+
+
 
