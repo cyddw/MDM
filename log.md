@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/dd4d4c13-cb22-4a9e-bb10-d520fae17ffd
 3.Motion_CLIP随机采样，其中batch_size设置为128，epoch = 10000，每间隔200个epoch保存一次模型  
 
 **10.14**  
-- [ ] 电磁大作业：代码仿真
+- [x] 电磁大作业：代码仿真
 
 
 
