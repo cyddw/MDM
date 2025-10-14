@@ -44,6 +44,7 @@ https://github.com/user-attachments/assets/dd4d4c13-cb22-4a9e-bb10-d520fae17ffd
 
 **10.14**  
 - [x] 电磁大作业：代码仿真
+- [ ] 电磁大作业：代码仿真
 
 
 
