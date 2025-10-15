@@ -51,7 +51,7 @@ $${\color{red}2.MotionCLIP还是得进行微调}$$
 
 **10.15**  
 1.对Motion_inbetween模型进行微调，使得Encoder_image在模型训练过程中可以被更新  
-2.对Motion_inbetween模型中的emb和x的结合方式进行修改，改为concatenate或者交叉注意力
+2.对Motion_inbetween模型中的emb和x的结合方式进行修改，改为concatenate或者交叉注意力(将其更改为concatenate，在dim=0的维度上进行cat)
 
 
 
