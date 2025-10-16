@@ -61,6 +61,26 @@ $${\color{red}2.MotionCLIP还是得进行微调}$$
 训练集batch_size = 128效果：大部分都能达到0.9以上  
 测试集batch_size = 128效果：没有效果，但是极少数能达到0.9
 
+**10.16**  
+1.Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)，其测试集的效果和之间一致，即Ground_truth和Out_Motion不匹配  
+2.Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新，emb和x在dim=0采用concatenate)，其测试集的效果和之前一致，即Ground_truth和Out_Motion不匹配  
+3.思考1：依据上述结果，怀疑是否是input_motion和AoA_Dfs是不匹配的，后续经过代码检查，已确认两者是匹配的  
+&nbsp;&nbsp;思考2：依据上述结果，怀疑是否是learning_rate太小，导致Motion_CLIP无法被更新，于是将lr由1e-4修改为1e-3，结果发现刚开始训练时Motion_CLIP参数变化很快，但是迭代几步之后就不动了；而1e-4虽然更新慢，但在足够多的步数后还是与初始参数相差较大  
+4.由于没有得到理想的结果，于是将num_sample设置为20，观察每个模型总体的识别成功率，结果发现Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)的识别率在60%左右；Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新，emb和x在dim=0采用concatenate)的识别率在50%左右；Motion_CLIP(顺序采样，数据集 = 90，batch_size = 30)的识别率在50%左右：上述实验结果显然说明一个问题：Motion_CLIP并没有起到任何的作用，而且emb和x如何结合对结果也没有影响  
+5.最后推测最可能的原因是AoA_Dfs数据的量级太小，于是将Motion_CLIP(随机采样，betch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)采样部分AoA_Dfs乘以3，训练部分不改变，发现识别率上升至80%；接下来将针对这一部分，进行以下实验，并记录结果：  
+Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新，emb和x在dim=0采用concatenate)采样部分AoA_Dfs乘以3，训练部分不改变：识别率上升至60%(相较于之前的50%，变化不大)  
+Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)采样部分AoA_Dfs乘以10，训练部分不改变：输出结果直接失效  
+Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)采样部分AoA_Dfs乘以5，训练部分不改变：部分输出结果失效  
+Motion_CLIP(顺序采样，数据集 = 90，batch_size = 30)采样部分AoA_Dfs乘以3，训练部分不改变：识别率基本不变  
+Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)采样部分AoA_Dfs乘以3，训练部分不改变，重复采样5次：结果明显改善，不会出现出现不同的动作
+
+https://github.com/user-attachments/assets/ae102335-1d23-47d9-bc3e-b9e7d15479db
+
+6.增加后续实验：  
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以3，epoch = 300：  
+Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以3，epoch = 300： 
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以7，epoch = 300：  
+
 
 
 
