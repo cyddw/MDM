@@ -85,8 +85,8 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **10.17**  
 1.如何继续提升模型的识别率？上述实验其实已经从侧面证明了不管Motion_CLIP预训练效果如何，其最终都会收敛至同一结果；将模型改为concatenate，dim=2是否能提升其识别率？  
 2.增加后续实验：  
-Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数不可更新)训练和采样部分AoA_Dfs乘以5，epoch = 1000：
-
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数不可更新)训练和采样部分AoA_Dfs乘以5，epoch = 1000：  
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000：
 
 
 
