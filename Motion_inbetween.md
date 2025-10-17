@@ -77,9 +77,10 @@ Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数
 https://github.com/user-attachments/assets/ae102335-1d23-47d9-bc3e-b9e7d15479db
 
 6.增加后续实验：  
-Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以3，epoch = 1000：  
-Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以3，epoch = 1000： 
-Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以7，epoch = 1000：  
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以3，epoch = 1000：识别率在85%左右，和下面的实验结果一致
+Motion_CLIP(随机采样，batch_size = 64) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以3，epoch = 1000：识别率在85%左右，和下面的实验结果一致
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新)训练和采样部分AoA_Dfs乘以7，epoch = 1000：识别率在85%左右  
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新)训练部分AoA_Dfs乘以7，采样部分AoA_Dfs乘以9，epoch = 1000：识别率在85%左右 
 
 
 
