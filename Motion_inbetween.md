@@ -1,5 +1,5 @@
 - [x] 1.完成Motion_inbetween整体实验，并得到实验结果(ddl🕥 25.10.19)
-- [ ] 2.完成(Mobisys abstract ddl🕥 25.11.29)
+- [ ] 2.完成实验部分的剩余内容和初稿撰写(Mobisys abstract ddl🕥 25.11.29)
 
 **10.11**  
 1.MDM_inbetween训练800个epoch，使用的Motion_CLIP为2700个数据集，间隔4个点采样(实际上只对前90个数据进行了训练，因为代码写错了)，其测试集的效果：  
