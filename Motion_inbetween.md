@@ -85,8 +85,21 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **10.17**  
 1.如何继续提升模型的识别率？上述实验其实已经从侧面证明了不管Motion_CLIP预训练效果如何，其最终都会收敛至同一结果；将模型改为concatenate，dim=2是否能提升其识别率？  
 2.增加后续实验：  
-Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数不可更新)训练和采样部分AoA_Dfs乘以5，epoch = 1000：  
-Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000：
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(不做CLIP，也就是做ablate，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000： 
+模型识别率相较于下面部分识别率有所下降，85%左右
+Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数可更新，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000：  
+结果证明使用concatenate之后的识别率上升至95%左右  
+
+**10.21**  
+工作进展2总结：  
+1.为什么直射路径在AoA_DFS频谱上会产生这么大的频谱偏移，不应该是在0频附近吗(可能原因：1.对CSI进行线性插值导致的；2.对CSI进行共轭相乘导致的)  
+2.为什么对CSI进行unwrapped的时候，在第5个CSI部分会产生跳跃  
+**3.如何对8个receiver进行整合？**  
+**4.考虑一个比较好的场景**  
+**5.Diffusion部分能否再优化一下，比如t直接加是不是有点不太好**  
+**6.创新点落在优化z的生成那一块**  
+**7.数据集是否可以优化一下，只有6个动作显然是偏少的(参考文献：https://aiotgroup.github.io/Person-in-WiFi-3D/ 和 https://ntu-aiot-lab.github.io/mm-fi?utm_source=chatgpt.com)**  
+**8.参考Mobisys的相关论文(12月份左右，侧重实验)**
 
 
 
