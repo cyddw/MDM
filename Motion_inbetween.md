@@ -99,7 +99,8 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **5.Diffusion部分能否再优化一下，比如t直接加是不是有点不太好**  
 **6.创新点落在优化z的生成那一块**  
 **7.数据集是否可以优化一下，只有6个动作显然是偏少的(参考文献：https://aiotgroup.github.io/Person-in-WiFi-3D/ 和 https://ntu-aiot-lab.github.io/mm-fi?utm_source=chatgpt.com)**  
-**8.参考Mobisys的相关论文(12月份左右，侧重实验)**
+**8.参考Mobisys的相关论文(12月份左右，侧重实验)**  
+**9.实验结果可视化得用blender美化一下**
 
 
 
