@@ -104,7 +104,8 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **9.实验结果可视化得用blender美化一下**  
 
 **10.22**  
-1.Person-in-wifi-3d: metric：**Mean Per Joint Dimension Location Error (MPJDLE)** 和 **Mean Per Joint Position Error (MPJPE)**
+1.Person-in-wifi-3d: metric：**Mean Per Joint Dimension Location Error (MPJDLE)** 和 **Mean Per Joint Position Error (MPJPE)**  
+2.MDM and Motion inbetween: **FID、R-precision、Diversity、Multimodality**
 
 
 
