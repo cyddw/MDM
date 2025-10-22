@@ -109,7 +109,7 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 3.Wi-Mesh: **Per Vertex Error(PVE)和MPJPE**  
 4.mmMesh: **Average Joint Rotation Error**
 4.WiFi sensing of Human Activity Recognition using Continuous AoA-ToF Maps  
-
+**5.得到val数据集的metric，流程：将lauch.json文件中的num_sample更改为对应的val数据集中的总数据；运行eval/evaluation.py的文件**
 
 
 
