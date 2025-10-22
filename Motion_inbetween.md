@@ -106,8 +106,9 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **10.22**  
 1.Person-in-wifi-3d: metric：**Mean Per Joint Dimension Location Error (MPJDLE)** 和 **Mean Per Joint Position Error (MPJPE)**  
 2.MDM and Motion inbetween: **FID、R-precision、Diversity、Multimodality**  
-3.Wi-Mesh: **Per Vertex Error(PVE)和MPJPE**
-3.WiFi sensing of Human Activity Recognition using Continuous AoA-ToF Maps
+3.Wi-Mesh: **Per Vertex Error(PVE)和MPJPE**  
+4.mmMesh: **Average Joint Rotation Error**
+4.WiFi sensing of Human Activity Recognition using Continuous AoA-ToF Maps  
 
 
 
