@@ -113,7 +113,8 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 
 **10.23**  
 1.WiFi sensing of Human Activity Recognition using Continuous AoA-ToF Maps：先通过**共轭相乘代替线性相位去噪**，然后通过**PDP识别LOS并滤除**  
-2.Person-in-wifi数据集没有出现**csi相位突变**的情况，但是通过AoA_DFS算法得到的结果也没有能做到精确识别(例如多人场景的识别)
+2.Person-in-wifi数据集没有出现**csi相位突变**的情况，但是通过AoA_DFS算法得到的结果也没有能做到精确识别(例如多人场景的识别)  
+3.对于Person-in-wifi数据集，我们假设线性相位去噪操作是没有问题的(因为相位没有发生突变)，先不可视化其AoA_DFS联合估计谱，而只对其MUSIC算法进行探究，可视化其AoA
 
 
 
