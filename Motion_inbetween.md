@@ -153,10 +153,33 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 
 Person-in-wifi-3d的数据集已经经过线性相位去噪
 
+场景(human = 2，线性相位去噪+无滤波) MUSIC 和 Capon  
 
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/2851f03d-97c6-4aeb-b7d3-df6df40f2645" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/e9cabc1e-e9bb-4930-91de-8a1a70ffc3e8" />
 
+场景(human = 2，线性相位去噪+静态滤波(无共轭相乘)) MUSIC 和 Capon  
 
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/28d1d2a6-d456-43de-9acd-c57e18e503a4" /> <img width="500" height="416" alt="image" src="https://github.com/user-attachments/assets/992ead00-acc5-429f-98fa-b5e27d480987" />
 
+场景(human = 2，线性相位去噪+静态滤波(有共轭相乘, ref=0)) MUSIC 和 Capon
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/e1e117a8-49b0-4880-96df-71df714ab8f6" /> <img width="500" height="414" alt="image" src="https://github.com/user-attachments/assets/58f6d12b-34e3-44aa-95b9-c7a4e464d212" />
+
+场景(human = 2，线性相位去噪+静态滤波(有共轭相乘, ref=1)) MUSIC 和 Capon
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/972e6da3-e2fb-4bbe-aad2-abc65aa02340" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/21dd29aa-b34f-458d-bce2-7549a1bb7ad0" />
+
+场景(human = 2，线性相位去噪+高通滤波(无共轭相乘，Hz = 2)) MUSIC 和 Capon
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/ef520a7e-0c7a-4786-a7b5-9f726f4bf2b9" /> <img width="500" height="415" alt="image" src="https://github.com/user-attachments/assets/567af455-04fe-40e1-8466-7c8c5ef07be6" />
+
+场景(human = 2，线性相位去噪+高通滤波(无共轭相乘，Hz = 20)) MUSIC 和 Capon 
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/c0d30ea6-f96b-4cf1-ab2d-2c9bb3acbe95" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/a0432001-b430-4891-bec2-4c6e76078c11" />
+
+场景(human = 2，线性相位去噪+高通滤波(共轭相乘，Hz = 2)) MUSIC 和 Capon 
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/18c9cbea-61f6-4039-9cc0-03f32d3c0f7a" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/33461a4a-2fac-4f54-a40d-e30f9885cb36" />
 
 
 
