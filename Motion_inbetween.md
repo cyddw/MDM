@@ -121,7 +121,46 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 
 场景(human = 1，线性相位去噪+静态滤波(无共轭相乘)) MUSIC 和 Capon  
 
-<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/b4257fbc-9a50-4dec-a7ca-0d229e37318c" />
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/b4257fbc-9a50-4dec-a7ca-0d229e37318c" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/f1115b0d-06d3-4c07-8567-804a553e0262" />  
+
+场景(human = 1，线性相位去噪+静态滤波(有共轭相乘, ref=0)) MUSIC 和 Capon
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/341493cc-93bf-4637-8de3-dcb51d2c504c" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/07900202-ed65-4473-8af1-c745e97727af" />
+
+场景(human = 1，线性相位去噪+静态滤波(有共轭相乘, ref=1)) MUSIC 和 Capon 
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/103c7a11-3434-40a3-9557-73f69b49c839" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/dc0f8c46-fecd-4ce8-b19f-c092b9eec0a4" />
+
+场景(human = 1，线性相位去噪+高通滤波(无共轭相乘，Hz = 2)) MUSIC 和 Capon 
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/6bcf4f94-3572-4b79-8487-5ae1150d1010" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/f5ed0435-d49f-46f3-bdb5-e9c6b00cb63d" />
+
+场景(human = 1，线性相位去噪+高通滤波(无共轭相乘，Hz = 20)) MUSIC 和 Capon 
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/cb1aaf05-5e84-46f5-9a01-ec9c8119b475" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/dd1bc6a1-344d-4b9c-9edd-f61997e59368" />
+
+场景(human = 1，线性相位去噪+高通滤波(共轭相乘，Hz = 2)) MUSIC 和 Capon  
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/c5a91dfb-93e2-4ea1-bc60-aab604b7ff01" /> <img width="500" height="417" alt="image" src="https://github.com/user-attachments/assets/1266fe53-126f-400c-812a-658228a9f0c0" />
+
+场景(human = 1，无线性相位去噪+无滤波) MUSIC 和 Capon
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/e614d05c-b17c-40d1-8aee-d5abf53c6702" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/a59f1abd-4852-4375-a0ff-1b9fcadaaa0d" />
+
+场景(human = 1，无线性相位去噪+无滤波(共轭相乘)) MUSIC 和 Capon
+
+<img width="500" height="416" alt="image" src="https://github.com/user-attachments/assets/c1ee9cc5-339d-4362-ab15-6f583a1fcec9" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/9bc39ab2-791a-4fef-b8f5-7bac9ca06b0e" />
+
+Person-in-wifi-3d的数据集已经经过线性相位去噪
+
+
+
+
+
+
+
+
+
 
 
 
