@@ -111,6 +111,10 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 4.WiFi sensing of Human Activity Recognition using Continuous AoA-ToF Maps  
 **5.得到val数据集的metric，流程：将lauch.json文件中的num_sample更改为对应的val数据集中的总数据；运行eval/evaluation.py的文件**(对于135个数据，总的eval时间为20min左右)  
 
+**10.23**  
+1.WiFi sensing of Human Activity Recognition using Continuous AoA-ToF Maps：先通过**共轭相乘代替线性相位去噪**，然后通过**PDP识别LOS并滤除**  
+2.Person-in-wifi数据集没有出现**csi相位突变**的情况，但是通过AoA_DFS算法得到的结果也没有能做到精确识别(例如多人场景的识别)
+
 
 
 
