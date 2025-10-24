@@ -181,6 +181,12 @@ Person-in-wifi-3d的数据集已经经过线性相位去噪
 
 <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/18c9cbea-61f6-4039-9cc0-03f32d3c0f7a" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/33461a4a-2fac-4f54-a40d-e30f9885cb36" />
 
+**10.24**  
+1.重新看了一遍MUSIC和Capon算法的代码，发现一个问题：原来的算法将子载波视为快拍数，从而得到多条时间维度的MUSIC和Capon；对上述算法进行改变，改为将时间视为快排数，从而得到多条子载波维度的MUSIC和Capon(AoA_my) 结果显示，得到的结果基本还是一致的，可能有些许偏差  
+2.基于10.23的几个实验，可以得到以下结论：person-in-wifi-3d数据集是经过**线性相位去噪**的；无论是高通滤波还是静态滤波，好像都**没有去除掉直射路径分量**  
+3.基于上述问题，尝试使用新的滤波算法：**特征空间滤波**(发现如果只是对最大特征值进行滤除，效果不好，于是将其阈值设置为2，即对前两个特征值进行滤除)  
+
+
 
 
 
