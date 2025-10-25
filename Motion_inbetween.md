@@ -222,7 +222,7 @@ Person-in-wifi-3d的数据集已经经过线性相位去噪
 
 <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/1b275e72-8b69-4075-8996-bdfc3ff3bc4e" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/0da3354e-ad4b-4d27-a5ee-31a503f0ba29" />
 
-3.最后选择线性相位去噪+特征空间滤波(阈值设置为1)+基于Capon的AoA_DFS联合谱估计
+3.最后选择线性相位去噪+特征空间滤波(阈值设置为1)+基于MUSIC的AoA_DFS联合谱估计
 
 
 
