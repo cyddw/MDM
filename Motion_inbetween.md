@@ -192,7 +192,7 @@ Person-in-wifi-3d的数据集已经经过线性相位去噪
 
 场景(场景1，human = 1，线性相位去噪+无特征空间滤波) MUSIC 和 Capon  
 
-<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/a748a521-6b09-42ac-b57d-efa0c0e890ed" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/bb8fbf58-04bf-418c-9d97-0c999f0a5a53  4" />
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/a748a521-6b09-42ac-b57d-efa0c0e890ed" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/bb8fbf58-04bf-418c-9d97-0c999f0a5a534" />
 
 场景(场景1，human = 1，线性相位去噪+特征空间滤波) MUSIC 和 Capon  
 
@@ -205,6 +205,23 @@ Person-in-wifi-3d的数据集已经经过线性相位去噪
 场景(场景2，human = 1，线性相位去噪+特征空间滤波) MUSIC 和 Capon  
 
 <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/917f4888-d187-487f-a20a-0e764d2ac48f" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/eabb4959-8370-4504-90bc-a5abf336e06d" />
+
+场景(场景1，human = 2，线性相位去噪+无特征空间滤波) MUSIC 和 Capon  
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/f03d8bf3-d902-4ae9-bd0a-298bfeb33ba4" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/584459ae-d6f7-4128-9958-9c58bddcd25b" />
+
+场景(场景1，human = 2，线性相位去噪+特征空间滤波) MUSIC 和 Capon  
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/bbee3f4c-5641-41fc-9410-e2589a22a65b" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/30ffb98d-c905-45c9-b9d4-1d8fb912b97b" />
+
+场景(场景2，human = 2，线性相位去噪+无特征空间滤波) MUSIC 和 Capon
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/57ba1867-ed1a-40df-abf4-351532f5d4cb" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/b8744af4-0b4d-4bee-8bed-84a43ef569aa" />
+
+场景(场景2，human = 2，线性相位去噪+特征空间滤波) MUSIC 和 Capon
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/1b275e72-8b69-4075-8996-bdfc3ff3bc4e" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/0da3354e-ad4b-4d27-a5ee-31a503f0ba29" />
+
 
 
 
