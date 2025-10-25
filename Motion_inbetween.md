@@ -182,9 +182,30 @@ Person-in-wifi-3d的数据集已经经过线性相位去噪
 <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/18c9cbea-61f6-4039-9cc0-03f32d3c0f7a" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/33461a4a-2fac-4f54-a40d-e30f9885cb36" />
 
 **10.24**  
-1.重新看了一遍MUSIC和Capon算法的代码，发现一个问题：原来的算法将子载波视为快拍数，从而得到多条时间维度的MUSIC和Capon；对上述算法进行改变，改为将时间视为快排数，从而得到多条子载波维度的MUSIC和Capon(AoA_my) 结果显示，得到的结果基本还是一致的，可能有些许偏差  
+1.重新看了一遍MUSIC和Capon算法的代码，发现一个问题：原来的算法将子载波视为快拍数，从而得到多条时间维度的MUSIC和Capon；对上述算法进行改变，改为将时间视为快拍数，从而得到多条子载波维度的MUSIC和Capon(AoA_my) 结果显示，得到的结果基本还是一致的，可能有些许偏差  
 2.基于10.23的几个实验，可以得到以下结论：person-in-wifi-3d数据集是经过**线性相位去噪**的；无论是高通滤波还是静态滤波，好像都**没有去除掉直射路径分量**  
 3.基于上述问题，尝试使用新的滤波算法：**特征空间滤波**(发现如果只是对最大特征值进行滤除，效果不好，于是将其阈值设置为2，即对前两个特征值进行滤除)  
+
+**10.25**  
+1.对于之前提到的将时间视为快拍数，那怎么针对每一帧都得到对应的AoA_DFS联合谱估计？所以还是得将子载波数视为快拍数  
+2.对于**特征空间滤波的有效性进行验证(阈值设置为1)**  
+
+场景(场景1，human = 1，线性相位去噪+无特征空间滤波) MUSIC 和 Capon  
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/a748a521-6b09-42ac-b57d-efa0c0e890ed" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/bb8fbf58-04bf-418c-9d97-0c999f0a5a53  4" />
+
+场景(场景1，human = 1，线性相位去噪+特征空间滤波) MUSIC 和 Capon  
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/f0dfe988-1ff6-4491-b456-5d40f65ae88d" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/df9af048-1071-4bc7-a501-88497d7dc296" />
+
+场景(场景2，human = 1，线性相位去噪+无特征空间滤波) MUSIC 和 Capon  
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/94e6ff9b-e759-4d58-871a-a32b19ff22d7" /> <img width="500" height="414" alt="image" src="https://github.com/user-attachments/assets/5f70571b-ac69-4c62-9fc3-91f9c48122c9" />
+
+场景(场景2，human = 1，线性相位去噪+特征空间滤波) MUSIC 和 Capon  
+
+<img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/917f4888-d187-487f-a20a-0e764d2ac48f" /> <img width="500" height="413" alt="image" src="https://github.com/user-attachments/assets/eabb4959-8370-4504-90bc-a5abf336e06d" />
+
 
 
 
