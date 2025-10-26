@@ -93,8 +93,8 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 
 **10.21**  
 工作进展2总结：  
-1.为什么直射路径在AoA_DFS频谱上会产生这么大的频谱偏移，不应该是在0频附近吗(可能原因：1.对CSI进行线性插值导致的)  
-2.为什么对CSI进行unwrapped的时候，在第5个CSI部分会产生跳跃  
+~~1.为什么直射路径在AoA_DFS频谱上会产生这么大的频谱偏移，不应该是在0频附近吗(可能原因：1.对CSI进行线性插值导致的)~~  
+~~2.为什么对CSI进行unwrapped的时候，在第5个CSI部分会产生跳跃~~  
 **3.如何对8个receiver进行整合？**  
 **4.考虑一个比较好的场景**  
 **5.Diffusion部分能否再优化一下，比如t直接加是不是有点不太好**  
@@ -102,6 +102,7 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **7.数据集是否可以优化一下，只有6个动作显然是偏少的(参考文献：https://aiotgroup.github.io/Person-in-WiFi-3D/ 和 https://ntu-aiot-lab.github.io/mm-fi?utm_source=chatgpt.com)**  
 **8.参考Mobisys的相关论文(12月份左右，侧重实验)**  
 **9.实验结果可视化得用blender美化一下**  
+**10.对Encoder进行消融实验，结果表明对比学习那块并没有提升，思考一下为什么**
 
 **10.22**  
 1.Person-in-wifi-3d: metric：**Mean Per Joint Dimension Location Error (MPJDLE)** 和 **Mean Per Joint Position Error (MPJPE)**  
