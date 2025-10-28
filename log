@@ -379,7 +379,7 @@
 1.增大数据集规模至2700：
 1.在"E:\Mesh\Mesh数据\mesh_parts"数据集下剔除csi_missing和bug异常数据 2.本地data_process/Humanml3d_prc.py 3.本地data_process/motion_representation.py 4.将生成的数据转移至dataset/HumanML3D中 5.通过HumanML3D/motion_representation生成绝对值数据 6.通过HumanML3D/cal_mean_variance生成绝对值数据的均值和方差 7.通过others/cal_train_val_test生成txt文件 8.添加text文件夹至HumanML3D文件夹下
      9.添加000021.npy至dataset文件夹下
-     10.在"/home/data_save_2/hch/AoA_Dfs(original)/"剔除bug和csi_missing数据 11.在/home/newdisk/hch/diffusion motion inbetween/AoADfs_process.py运行代码 12.在Motion_CLIP_modified运行reference代码(注意将代码中的90改为对应的数据集大小)
+     10.在csi_process/AoA-Dfs.py中运行得到AoA_Dfs原始数据(注意对补偿窗口长度进行设置) 11.在"/home/data_save_2/hch/AoA_Dfs(original)/"剔除bug和csi_missing数据 12.在/home/newdisk/hch/diffusion motion inbetween/AoADfs_process.py运行代码 13.在Motion_CLIP_modified运行reference代码(注意将代码中的90改为对应的数据集大小)
 
 10.9
 1.运行Motion_CLIP代码时遇到问题：运行时间太久了，一个eopch要5分钟，还是得对代码进行修改，增加batch_size维度(增加batch_size维度好像不太行)
