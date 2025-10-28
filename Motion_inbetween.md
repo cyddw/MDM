@@ -240,7 +240,8 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **背景透明问题：图片保存格式改为PNG，颜色RGBA，胶片选择透明**  
 **物体中心设置问题：物体->设置原点->(原点->几何中心)**  
 **物体对齐问题：shift选中对齐的物体->条目->Align tools->align location**  
-2.
+2.对于AoA_DFS的处理方面，需要考虑DFS生成的延迟问题，因此接下来对DFS的补偿窗口的选择进行探究：  
+
 
 
 
