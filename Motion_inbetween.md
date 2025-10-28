@@ -231,6 +231,10 @@ Person-in-wifi-3d的数据集已经经过线性相位去噪
 3.针对上述不进行微调的假设进行探究：  
 Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(Motion_CLIP参数不可更新，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000:  
 
+<img width="382" height="110" alt="image" src="https://github.com/user-attachments/assets/717888fc-f6a2-4c52-96f4-3ad538bfdbd0" />
+
+对20个样本进行识别，识别率在90%
+
 **10.28**  
 1.对于blender中的mesh设置流程总结：  
 **背景透明问题：图片保存格式改为PNG，颜色RGBA，胶片选择透明**  
