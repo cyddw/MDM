@@ -268,6 +268,8 @@ $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py�
 
 **在上述的基础上，将AoA Encoder部分的AoA embedding改为cnn，发现当cnn比较复杂时，模型收敛速度慢，于是将cnn简化处理，增大感受野和池化跨度**  
 
+后续可优化部分：分段时间的划分、bs设置
+
 
 
 
