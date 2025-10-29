@@ -103,7 +103,7 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 **8.参考Mobisys的相关论文(12月份左右，侧重实验)**  
 ~~**9.实验结果可视化得用blender美化一下**~~  
 **10.对Encoder进行消融实验，结果表明对比学习那块并没有提升，思考一下为什么**  
-**11.对于子载波的处理，能否直接截取没有跳变部分的子载波？**
+~~**11.对于子载波的处理，能否直接截取没有跳变部分的子载波？**~~
 
 **10.22**  
 1.Person-in-wifi-3d: metric：**Mean Per Joint Dimension Location Error (MPJDLE)** 和 **Mean Per Joint Position Error (MPJPE)**  
@@ -268,7 +268,12 @@ $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py�
 
 **在上述的基础上，将AoA Encoder部分的AoA embedding改为cnn，发现当cnn比较复杂时，模型收敛速度慢，于是将cnn简化处理，增大感受野和池化跨度**  
 
-后续可优化部分：分段时间的划分、bs设置
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/faace4ca-c42f-40de-93a4-287a8f9cee0e" />  
+
+**增大learning rate至5e-5：**
+
+
+
 
 
 
