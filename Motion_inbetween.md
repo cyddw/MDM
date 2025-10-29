@@ -255,8 +255,7 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 
 **10.29**  
 1.使用更新后的AoA_Dfs数据集重新进行对比学习预训练：  
-2.使用更新后的AoA_Dfs数据集重新进行消融实验，Motion_inbetween(不做CLIP，也就是做ablate，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000： 
-
+2.使用更新后的AoA_Dfs数据集重新进行消融实验，Motion_inbetween(不做CLIP，也就是做ablate，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000：  
 $${\color{red}问题}$$  
 $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py中的代码还可以继续优化训练速度：提前将Motion和AoA_Dfs进行归一化处理}$$  
 
