@@ -259,6 +259,18 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 2.使用更新后的AoA_Dfs数据集重新进行消融实验，Motion_inbetween(不做CLIP，也就是做ablate，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000：  
 $${\color{red}问题}$$  
 $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py中的代码还可以继续优化训练速度：提前将Motion和AoA_Dfs进行归一化处理}$$  
+3.关于分段式对比学习的实验记录：  
+**将对比学习改为分段式训练，分段帧数为20帧，同时对Motion Encoder和AoA Encoder进行更改：Motion Encoder(Transformer Encoder)、AoA Encoder(Transformer Encoder)**  
+
+<img width="348" height="441" alt="屏幕截图 2025-10-29 160055" src="https://github.com/user-attachments/assets/01596a95-b36c-46e8-bbce-d2e15d9eb040" />
+
+相较于之前的逐帧对比学习，收敛速度有了很大提升，但是收敛速度还是不够快  
+
+**在上述的基础上，将AoA Encoder部分的AoA embedding改为cnn，发现当cnn比较复杂时，模型收敛速度慢，于是将cnn简化处理，增大感受野和池化跨度**  
+
+
+
+
 
 
 
