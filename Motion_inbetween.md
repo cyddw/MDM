@@ -288,9 +288,13 @@ $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py�
 
 **将CNN改回简单的线性层，同时将batch_size改为64，learning rate = 1e-5**  
 
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/ad0295dc-9d93-4599-9098-b9343c1b4b45" />  
 
+收敛速度比cnn还快  
 
+**将CNN改回简单的线性层，同时将batch_size改为64，learning rate = 1e-4**
 
+无法收敛
 
 
 
