@@ -260,13 +260,13 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 $${\color{red}问题}$$  
 $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py中的代码还可以继续优化训练速度：提前将Motion和AoA_Dfs进行归一化处理}$$  
 3.关于分段式对比学习的实验记录：  
-**将对比学习改为分段式训练，分段帧数为20帧，同时对Motion Encoder和AoA Encoder进行更改：Motion Encoder(Transformer Encoder)、AoA Encoder(Transformer Encoder)**  
+**将对比学习改为分段式训练，分段帧数为20帧，同时对Motion Encoder和AoA Encoder进行更改：Motion Encoder(Transformer Encoder)、AoA Encoder(Transformer Encoder)，其中batch_size = 128**  
 
 <img width="348" height="441" alt="屏幕截图 2025-10-29 160055" src="https://github.com/user-attachments/assets/01596a95-b36c-46e8-bbce-d2e15d9eb040" />
 
 相较于之前的逐帧对比学习，收敛速度有了很大提升，但是收敛速度还是不够快  
 
-**在上述的基础上，将AoA Encoder部分的AoA embedding改为cnn，发现当cnn比较复杂时，模型收敛速度慢，于是将cnn简化处理，增大感受野和池化跨度**  
+**在上述的基础上，将AoA Encoder部分的AoA embedding改为cnn，发现当cnn比较复杂时，模型收敛速度慢，于是将cnn简化处理，增大感受野和池化跨度，其中batch_size = 64**  
 
 <img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/faace4ca-c42f-40de-93a4-287a8f9cee0e" />  
 
@@ -281,6 +281,15 @@ $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py�
 跟上述lr = 5e-5一样，没法收敛  
 
 **增大learning rate至1e-5：**  
+
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/59d36b6c-88fd-4594-8514-06d5fcd0cf35" />  
+
+收敛速度变快  
+
+**将CNN改回简单的线性层，同时将batch_size改为64，learning rate = 1e-5**  
+
+
+
 
 
 
