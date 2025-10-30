@@ -270,7 +270,20 @@ $${\color{red}1.对于Motion_CLIP_modified3/reference(random)(rolling load).py�
 
 <img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/faace4ca-c42f-40de-93a4-287a8f9cee0e" />  
 
-**增大learning rate至5e-5：**
+**增大learning rate至5e-5：**  
+
+<img width="161" height="113" alt="image" src="https://github.com/user-attachments/assets/f4c22ca8-26ee-4add-9e5c-107c08edb0de" />  
+
+观察loss，貌似收敛不了  
+
+**增大learning rate至1e-4：**  
+
+跟上述lr = 5e-5一样，没法收敛  
+
+**增大learning rate至1e-5：**  
+
+
+
 
 
 
