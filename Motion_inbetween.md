@@ -308,7 +308,10 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 **10.30**  
 1.使用nsub = 30的数据集(eigen filter)进行分段对比学习，其loss下降情况记录如下：  
 
-2.使用nsub = 30的数据集(eigen filter)进行消融实验，并对AoA_Encoder进行修改，同时注意到输出的AoA和x量级一致，因此将参数5取消
+2.使用nsub = 30的数据集(eigen filter)进行消融实验，并对AoA_Encoder进行修改，同时注意到输出的AoA和x量级一致，因此将参数5取消  
+
+<img width="517" height="184" alt="image" src="https://github.com/user-attachments/assets/94a26aa8-f8f4-4241-b8fc-88132abc0835" />
+
 
 
 
