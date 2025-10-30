@@ -32,4 +32,4 @@
 
 **10.30**
 - [ ] 1.将AoA_DFS数据集更换为30个子载波的数据集
-- [ ] 2.修改diffusion为逐段注入condtion而不是逐帧注入condition
+- [ ] 2.修改diffusion为逐段注入condtion而不是逐帧注入condition，同时修改对应的Encoder
