@@ -256,6 +256,7 @@ Motion_CLIP(随机采样，batch_size = 128，epoch = 2400) + Motion_inbetween(M
 
 **10.29**  
 1.使用更新后的AoA_Dfs数据集重新进行对比学习预训练：  
+收敛速度和趋势与之前的数据集基本没有区别，还是很慢
 2.使用更新后的AoA_Dfs数据集重新进行消融实验，Motion_inbetween(不做CLIP，也就是做ablate，emb和x在dim=2采用concatenate)训练和采样部分AoA_Dfs乘以5，epoch = 1000：  
 
 <img width="367" height="116" alt="image" src="https://github.com/user-attachments/assets/4984db94-4b8b-4f44-9ced-4ea06d8b3939" />
@@ -306,7 +307,9 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 对于之前的数据集，更换数据集之后的收敛速度有提升  
 
 **10.30**  
-1.使用nsub = 30的数据集(eigen filter)进行分段对比学习，其loss下降情况记录如下：  
+1.使用nsub = 30的数据集(eigen filter)进行分段对比学习，其loss下降情况记录如下： 
+
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/64d392a9-831a-448f-ab26-1104599aac95" />
 
 2.使用nsub = 30的数据集(eigen filter)进行消融实验，并对AoA_Encoder进行修改，同时注意到输出的AoA和x量级一致，因此将参数5取消  
 
