@@ -326,9 +326,15 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 
 <img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/c594a6d7-a198-4841-b4e1-b9178d7b34f4" />  
 
+采样20个测试集样本，并进行可视化，结果显示模型识别率在60%左右，部分样本出现部分正确部分错误的情况
+
 <img width="377" height="155" alt="image" src="https://github.com/user-attachments/assets/6ea648de-dc74-4880-b42e-707a28298a16" />  
 
-由上图可知，消融实验证明了预训练确实是能够提升模型的性能
+由上图可知，消融实验证明了预训练确实是能够提升模型的性能  
+
+3.针对模型识别率不高的可能原因：模型的Encoder需要微调(可能性不大，因为之前的逐帧实验说明微调对结果影响并不大)；模型segment的间隔太大(可能性比较大，因为per frame的识别率是比较高的)，因此，将模型的segment缩短至10  
+
+
 
 
 
