@@ -336,6 +336,8 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 
 4.重新看了一下上述两个实验的20个采样结果，消融实验模型的识别率虽然很低，但是不会出现部分正确，部分错误的情况，因此我觉得还是得进行微调，将预训练部分的lr改为0.1lr：
 
+**对diffusion输出视频进行可视化过程：1.建议运行一遍sample/edit.py 2.在render_mesh.py文件中修改sample_i为对应的希望进行可视化的样本的idx 3.在launch.json文件中修改input_path为.mp4文件对应的路径**
+
 
 
 
