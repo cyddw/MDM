@@ -313,7 +313,23 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 
 2.使用nsub = 30的数据集(eigen filter)进行消融实验，并对AoA_Encoder进行修改，同时注意到输出的AoA和x量级一致，因此将参数5取消  
 
-<img width="517" height="184" alt="image" src="https://github.com/user-attachments/assets/94a26aa8-f8f4-4241-b8fc-88132abc0835" />
+<img width="517" height="184" alt="image" src="https://github.com/user-attachments/assets/94a26aa8-f8f4-4241-b8fc-88132abc0835" />  
+
+**10.31**  
+1.使用nsub = 30的数据集(eigen filter)进行分段扩散(预训练参数不可更新)，其loss下降情况记录如下：  
+
+<img width="846" height="545" alt="image" src="https://github.com/user-attachments/assets/3ae2ccfe-7af9-45cc-b4ad-e87e470b5f85" />  
+
+采样20个测试集样本，并进行可视化，结果显示模型的识别率很低，基本上无法识别
+
+2.使用nsub = 30的数据集(eigen filter)进行分段扩散(消融实验)，其loss下降情况记录如下：  
+
+<img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/c594a6d7-a198-4841-b4e1-b9178d7b34f4" />  
+
+<img width="377" height="155" alt="image" src="https://github.com/user-attachments/assets/6ea648de-dc74-4880-b42e-707a28298a16" />  
+
+由上图可知，消融实验证明了预训练确实是能够提升模型的性能
+
 
 
 
