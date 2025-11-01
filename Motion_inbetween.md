@@ -334,11 +334,11 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 
 3.针对模型识别率不高的可能原因：模型的Encoder需要微调(可能性不大，因为之前的逐帧实验说明微调对结果影响并不大)；模型segment的间隔太大(可能性比较大，因为per frame的识别率是比较高的)，因此，将模型的segment缩短至10，重新对对比学习部分进行预训练：
 
-4.重新看了一下上述两个实验的20个采样结果，消融实验模型的识别率虽然很低，但是不会出现部分正确，部分错误的情况，因此我觉得还是得进行微调，将预训练部分的lr改为0.1lr：
+~~4.重新看了一下上述两个实验的20个采样结果，消融实验模型的识别率虽然很低，但是不会出现部分正确，部分错误的情况，因此我觉得还是得进行微调，将预训练部分的lr改为0.1lr：~~
 
-<img width="846" height="545" alt="image" src="https://github.com/user-attachments/assets/3a5b133e-cc9b-4b1b-b0f9-7d82a89ab23a" />  
+~~<img width="846" height="545" alt="image" src="https://github.com/user-attachments/assets/3a5b133e-cc9b-4b1b-b0f9-7d82a89ab23a" />~~
 
-最后得到的结果和消融实验的结果基本一致，虽然没有出现部分错误的情况，但是整体识别率基本为0
+~~最后得到的结果和消融实验的结果基本一致，虽然没有出现部分错误的情况，但是整体识别率基本为0~~
 
 **对diffusion输出视频进行可视化过程：1.建议运行一遍sample/edit.py 2.在render_mesh.py文件中修改sample_i为对应的希望进行可视化的样本的idx 3.在launch.json文件中修改input_path为.mp4文件对应的路径(注意：每次只能得到一个动作的可视化结果，若要得到多个，需对代码进行修改)**
 
@@ -347,6 +347,7 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 1.对于segment = 10的情况进行消融、frozen和微调实验(其中，微调实验的lr改为0.01lr)：  
 
 2.对于nsub = 234的情况进行消融、frozen和微调实验，以验证nsub = 30的有效性：  
+
 
 
 
