@@ -340,11 +340,22 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 
 ~~最后得到的结果和消融实验的结果基本一致，虽然没有出现部分错误的情况，但是整体识别率基本为0~~
 
-**对diffusion输出视频进行可视化过程：1.建议运行一遍sample/edit.py 2.在render_mesh.py文件中修改sample_i为对应的希望进行可视化的样本的idx 3.在launch.json文件中修改input_path为.mp4文件对应的路径(注意：每次只能得到一个动作的可视化结果，若要得到多个，需对代码进行修改)**
+~~**对diffusion输出视频进行可视化过程：1.建议运行一遍sample/edit.py 2.在render_mesh.py文件中修改sample_i为对应的希望进行可视化的样本的idx 3.在launch.json文件中修改input_path为.mp4文件对应的路径(注意：每次只能得到一个动作的可视化结果，若要得到多个，需对代码进行修改)**~~
 
 **11.1**  
 
 1.对于segment = 10的情况进行消融、frozen和微调实验(其中，微调实验的lr改为0.01lr)：  
+
+frozen:  
+
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/4930a6c3-22a5-4c02-8b78-9c906db692eb" />  
+
+将segment更改为10之后，识别率显著提高至90%，同时不会出现部分错误部分正确的情况(对应的地址./save/rxmull21/model000030030.pt)
+
+消融：  
+
+<img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/afcde5f7-3c79-49cb-bc5d-7d6864998b57" />
+
 
 2.对于nsub = 234的情况进行消融、frozen和微调实验，以验证nsub = 30的有效性：  
 
