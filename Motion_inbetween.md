@@ -316,23 +316,29 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 <img width="517" height="184" alt="image" src="https://github.com/user-attachments/assets/94a26aa8-f8f4-4241-b8fc-88132abc0835" />  
 
 **10.31**  
-1.使用nsub = 30的数据集(eigen filter)进行分段扩散(预训练参数不可更新)，其loss下降情况记录如下：  
+1.使用nsub = 30的数据集(eigen filter)进行分段扩散(frozen)，其loss下降情况记录如下：  
 
 <img width="846" height="545" alt="image" src="https://github.com/user-attachments/assets/3ae2ccfe-7af9-45cc-b4ad-e87e470b5f85" />  
 
-采样20个测试集样本，并进行可视化，结果显示模型的识别率很低，基本上无法识别
+采样20个测试集样本，并进行可视化，结果显示模型识别率在60%左右，部分样本出现部分正确部分错误的情况
 
 2.使用nsub = 30的数据集(eigen filter)进行分段扩散(消融实验)，其loss下降情况记录如下：  
 
 <img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/c594a6d7-a198-4841-b4e1-b9178d7b34f4" />  
 
-采样20个测试集样本，并进行可视化，结果显示模型识别率在60%左右，部分样本出现部分正确部分错误的情况
+采样20个测试集样本，并进行可视化，结果显示模型的识别率很低，基本上无法识别
 
 <img width="377" height="155" alt="image" src="https://github.com/user-attachments/assets/6ea648de-dc74-4880-b42e-707a28298a16" />  
 
 由上图可知，消融实验证明了预训练确实是能够提升模型的性能  
 
-3.针对模型识别率不高的可能原因：模型的Encoder需要微调(可能性不大，因为之前的逐帧实验说明微调对结果影响并不大)；模型segment的间隔太大(可能性比较大，因为per frame的识别率是比较高的)，因此，将模型的segment缩短至10，重新对对比学习部分进行预训练：
+3.使用nsub = 30的数据集(eigen filter)进行分段扩散(微调实验，lr=0.01lr)，其loss下降情况记录如下(/home/newdisk/hch/diffusion motion inbetween(per segment finetune)/save/orojedp5)：  
+
+<img width="846" height="545" alt="image" src="https://github.com/user-attachments/assets/80d9a4af-22d8-4da7-a6a0-7a1b4e8a26ce" />
+
+采样20个测试样本，并进行可视化，结果显示模型识别率在65%左右，样本出现部分正确部分错误的情况
+
+4.针对模型识别率不高的可能原因：模型的Encoder需要微调(可能性不大，因为之前的逐帧实验说明微调对结果影响并不大)；模型segment的间隔太大(可能性比较大，因为per frame的识别率是比较高的)，因此，将模型的segment缩短至10，重新对对比学习部分进行预训练：
 
 ~~4.重新看了一下上述两个实验的20个采样结果，消融实验模型的识别率虽然很低，但是不会出现部分正确，部分错误的情况，因此我觉得还是得进行微调，将预训练部分的lr改为0.1lr：~~
 
@@ -350,20 +356,35 @@ frozen:
 
 <img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/4930a6c3-22a5-4c02-8b78-9c906db692eb" />  
 
-将segment更改为10之后，识别率显著提高至90%，同时不会出现部分错误部分正确的情况(对应的地址./save/rxmull21/model000030030.pt)
+将segment更改为10之后，识别率显著提高至90%，不会出现部分错误部分正确的情况(对应的地址diffusion motion inbetween(per segment frozen)/save/rxmull21/model000030030.pt)
 
 消融：  
 
-<img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/afcde5f7-3c79-49cb-bc5d-7d6864998b57" />
 
 
 2.对于nsub = 234的情况进行消融、frozen和微调实验，以验证nsub = 30的有效性：  
 
+**11.2**  
 
+**对上述实验做个总结：**  
 
+**实验一(数据集：逐帧对比学习，24个子载波，AoA_DFS处理方式：高通滤波)**  
 
+<img width="617" height="146" alt="image" src="https://github.com/user-attachments/assets/1e1e23f3-0c44-4f58-943d-8ed86afdcaaf" />
 
+finetune、frozen和ablation实验的结果均差不多，识别率均较高  
 
+**实验二(数据集：逐段对比学习(20)，30个子载波，AoA_DFS处理方式：高通滤波+特征空间滤波)**  
+
+<img width="607" height="142" alt="image" src="https://github.com/user-attachments/assets/112960c5-8dfa-4742-a313-955c42ebf2cb" />
+
+上述实验证明消融实验是有效的，但是finetune的frozen的实验结果相一致，没什么变化，识别率均不高，且出现部分正确部分错误的情况；而ablation基本都是错的，虽然不会出现部分错误的情况  
+
+**实验三(数据集：逐段对比学习(10)，30个子载波，AoA_DFS处理方式：高通滤波+特征空间滤波)**  
+
+<img width="614" height="143" alt="image" src="https://github.com/user-attachments/assets/c82f9e7a-1e63-4d8f-afc8-5ffc1c4cfae2" />
+
+识别率显著提升，但是frozen不会出现部分正确的情况
 
 
 
