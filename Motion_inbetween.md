@@ -316,13 +316,13 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 <img width="517" height="184" alt="image" src="https://github.com/user-attachments/assets/94a26aa8-f8f4-4241-b8fc-88132abc0835" />  
 
 **10.31**  
-1.使用nsub = 30的数据集(eigen filter)进行分段扩散(frozen)，其loss下降情况记录如下：  
+1.使用nsub = 30的数据集(eigen filter)进行分段扩散(frozen)，其loss下降情况记录如下(/home/newdisk/hch/diffusion motion inbetween(per segment frozen)/save/l4gughhb)：  
 
 <img width="846" height="545" alt="image" src="https://github.com/user-attachments/assets/3ae2ccfe-7af9-45cc-b4ad-e87e470b5f85" />  
 
 采样20个测试集样本，并进行可视化，结果显示模型识别率在60%左右，部分样本出现部分正确部分错误的情况
 
-2.使用nsub = 30的数据集(eigen filter)进行分段扩散(消融实验)，其loss下降情况记录如下：  
+2.使用nsub = 30的数据集(eigen filter)进行分段扩散(消融实验)，其loss下降情况记录如下(/home/newdisk/hch/diffusion motion inbetween(per segment ablation)/save/mw4g59nz)：  
 
 <img width="855" height="547" alt="image" src="https://github.com/user-attachments/assets/c594a6d7-a198-4841-b4e1-b9178d7b34f4" />  
 
