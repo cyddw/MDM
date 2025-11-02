@@ -384,7 +384,13 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 <img width="614" height="143" alt="image" src="https://github.com/user-attachments/assets/c82f9e7a-1e63-4d8f-afc8-5ffc1c4cfae2" />
 
-识别率显著提升，但是frozen不会出现部分正确的情况
+识别率显著提升，但是frozen不会出现部分正确的情况  
+
+1.关于输出结果出现nan问题：  
+1.1检查encode_image中self.AoA_seqTransEncoder的初始权重：模型权重已经默认初始化  
+1.2检查训练之后的encode_image中self.AoA_seqTransEncoder的权重(是否存在nan和inf)：没有nan和inf  
+1.3检查是否是数据预处理的问题，比如归一化之后出现数值过大的情况：在测试集中出现了归一化之后数值较大的值，0.3左右，这些值输入网络后输出为nan；在训练集中貌似没有看到数值较大的值  
+1.4将归一化改为标准化
 
 
 
