@@ -352,7 +352,7 @@ $${\color{red}1.对于MotionCLIPmodified3/reference(random)(rolling load).py中�
 
 1.对于segment = 10的情况进行消融、frozen和微调实验(其中，微调实验的lr改为0.01lr)：  
 
-frozen:  
+frozen(其中预训练的模型是segment = 20):  
 
 <img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/4930a6c3-22a5-4c02-8b78-9c906db692eb" />  
 
@@ -360,7 +360,11 @@ frozen:
 
 消融：  
 
+微调(其中预训练的模型是segment = 10, segment = 10, lr = 0.01lr, 对应的地址：diffusion motion inbetween(per segment finetune)/save/yevckbqf)：  
 
+<img width="846" height="547" alt="image" src="https://github.com/user-attachments/assets/7fd5ec09-bef4-48b6-83bb-2f4e8bab8d56" />
+
+识别率65%，且出现明显的抖动现象，也没有部分正确部分错误的情况
 
 2.对于nsub = 234的情况进行消融、frozen和微调实验，以验证nsub = 30的有效性：  
 
@@ -393,8 +397,8 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 1.4将归一化改为标准化：还是有nan  
 1.5检查归一化代码是否有误：已验证代码是正确的  
 1.6代码本身有梯度裁剪  
-1.7将segment由10改回20，看是否存在该问题  
-1.8有没有可能是segment造成的？尝试微调部分的segment为10
+1.7将segment由10改回20，看是否存在该问题：将segment改为20，没有出现nan的问题  
+1.8有没有可能是segment造成的？尝试微调部分的segment为10  
 
 
 
