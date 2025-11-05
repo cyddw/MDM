@@ -419,6 +419,13 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
   1.5尝试先列sum_normalize，再行sum_normalize  
 2.扩散模型测试集输出nan的问题：  
   对AoA_Dfs进行编码的Encoder那层输出的值太大，对输出加一层归一化层
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>   
+1.训练nsub = 234的对比学习  
+  
+2.训练nsub = 234的ablation
 </details>
 
 
