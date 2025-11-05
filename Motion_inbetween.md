@@ -1,5 +1,7 @@
 - [x] 1.完成Motion_inbetween整体实验，并得到实验结果(ddl🕥 25.10.19)
 - [ ] 2.完成实验部分的剩余内容和初稿撰写(Mobisys abstract ddl🕥 25.11.29)
+<details>
+<summary>📖 10.11 - 11.05</summary>  
 
 **10.11**  
 1.MDM_inbetween训练800个epoch，使用的Motion_CLIP为2700个数据集，间隔4个点采样(实际上只对前90个数据进行了训练，因为代码写错了)，其测试集的效果：  
@@ -403,7 +405,7 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 1.8有没有可能是segment造成的？尝试微调部分的segment为10：将segment改为10，也没有出现nan的问题  
 1.9将归一化改为sum normalization，输出没有nan
 
-
+</details>
 
 
 
