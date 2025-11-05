@@ -411,12 +411,13 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 <details>
 <summary>📖 问题记录</summary>  
 1.将对比学习的归一化方法改为sum normalize后无法收敛  
-  1.1尝试修改学习率lr = 1e-3 1e-4 1e-5 1e-6 5e-6 5e-5 
-  1.2尝试修改motion的归一化方法为sum normalize
-  1.3尝试增大normalize的值，即对normalize后的值均乘以10 100(收敛) 1000(收敛速度更快)  
-  1.4尝试先行sum_normalize，再列sum_normalize
-  1.5尝试先列sum_normalize，再行sum_normalize
-2.扩散模型测试集输出nan的问题：
+  
+  1.1尝试修改学习率lr = 1e-3 1e-4 1e-5 1e-6 5e-6 5e-5  
+  1.2尝试修改motion的归一化方法为sum normalize  
+  1.3尝试增大normalize的值，即对normalize后的值均乘以10 100(收敛) 1000(收敛速度更快)    
+  1.4尝试先行sum_normalize，再列sum_normalize  
+  1.5尝试先列sum_normalize，再行sum_normalize  
+2.扩散模型测试集输出nan的问题：  
   对AoA_Dfs进行编码的Encoder那层输出的值太大，对输出加一层归一化层
 </details>
 
