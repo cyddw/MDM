@@ -358,7 +358,9 @@ frozen(其中预训练的模型是segment = 20):
 
 将segment更改为10之后，识别率显著提高至90%，不会出现部分错误部分正确的情况(对应的地址diffusion motion inbetween(per segment frozen)/save/rxmull21/model000030030.pt)
 
-消融：  
+消融(segement = 10，同时将归一化方法改为sum_normalization，对应的地址：/home/newdisk/hch/diffusion motion inbetween(per segment ablation sum normalize)/save/ut6m2jsp)：  
+
+识别率35%左右
 
 微调(其中预训练的模型是segment = 10, segment = 10, lr = 0.01lr, 对应的地址：diffusion motion inbetween(per segment finetune)/save/yevckbqf)：  
 
@@ -398,7 +400,9 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 1.5检查归一化代码是否有误：已验证代码是正确的  
 1.6代码本身有梯度裁剪  
 1.7将segment由10改回20，看是否存在该问题：将segment改为20，没有出现nan的问题  
-1.8有没有可能是segment造成的？尝试微调部分的segment为10  
+1.8有没有可能是segment造成的？尝试微调部分的segment为10：将segment改为10，也没有出现nan的问题  
+1.9将归一化改为sum normalization，输出没有nan
+
 
 
 
