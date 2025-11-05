@@ -360,7 +360,7 @@ frozen(其中预训练的模型是segment = 20):
 
 将segment更改为10之后，识别率显著提高至90%，不会出现部分错误部分正确的情况(对应的地址diffusion motion inbetween(per segment frozen)/save/rxmull21/model000030030.pt)
 
-消融(segement = 10，同时将归一化方法改为sum_normalization，对应的地址：/home/newdisk/hch/diffusion motion inbetween(per segment ablation sum normalize)/save/ut6m2jsp)：  
+消融(segement = 10，同时将归一化方法改为sum_normalization，对应的地址：/home/newdisk/hch/diffusion motion inbetween(per segment ablation)/save/ut6m2jsp)：  
 
 识别率35%左右
 
