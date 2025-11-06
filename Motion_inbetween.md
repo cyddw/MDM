@@ -439,6 +439,9 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 1.训练nsub = 234的frozen(预训练 epoch = 200)  
   
 2.训练nsub = 234的finetune(预训练 epoch = 200)  
+3.Person in wifi 3d 数据集的处理流程：  
+  3.1将原有的数据划分为多人和单人场景(./csi_process/Person-in-wifi-3d/data split.py)  
+  3.2将单人场景下的数据
 </details>
 
 
