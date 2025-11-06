@@ -423,9 +423,9 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 <details>
 <summary>📖 实验记录</summary>   
-1.训练nsub = 234的对比学习(已完成)  
+1.训练nsub = 234，segment = 10的对比学习(已完成)  
   
-2.训练nsub = 234的ablation(已完成)(./diffusion motion inbetween(per segment ablation)/save/ksphz7zi/model000030030.pt)
+2.训练nsub = 234，segment = 10的ablation(已完成)(./diffusion motion inbetween(per segment ablation)/save/ksphz7zi/model000030030.pt)
 </details>
 
 **11.6**  
@@ -436,9 +436,9 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 <details>
 <summary>📖 实验记录</summary>   
-1.训练nsub = 234的frozen(预训练 epoch = 200)  
+1.训练nsub = 234，segment = 10的frozen(预训练 epoch = 200)  
   
-2.训练nsub = 234的finetune(预训练 epoch = 200)  
+2.训练nsub = 234，segment = 10的finetune(预训练 epoch = 200)  
 3.Person in wifi 3d 数据集的处理流程：  
   3.1将原有的数据划分为多人和单人场景(./csi_process/Person-in-wifi-3d/data split.py)  
   3.2将单人场景下的数据  
