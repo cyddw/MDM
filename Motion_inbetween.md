@@ -442,7 +442,7 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 3.Person in wifi 3d 数据集的处理流程：  
   3.1将原有的数据划分为多人和单人场景(./csi_process/Person-in-wifi-3d/data split.py)  
   3.2将单人场景下的数据  
-4.训练nsub = 30，segment = 10的对比学习
+4.训练nsub = 30，segment = 10的对比学习(已完成)
 </details>
 
 **11.7**  
@@ -453,7 +453,13 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 <details>
 <summary>📖 实验记录</summary>   
+1.训练nsub = 30，segment = 20的对比学习  
 
+2.训练nsub = 30，segment = 10的frozen(预训练 epoch = 200, segment = 10)  
+
+3.训练nsub = 30，segment = 10的finetune(预训练 epoch = 200, segment = 10， lr = 0.01LR)  
+
+4.训练nsub =30，segment = 10的ablation
 </details>
 
 
