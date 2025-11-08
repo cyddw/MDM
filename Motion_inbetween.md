@@ -442,6 +442,7 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 3.Person in wifi 3d 数据集的处理流程：  
   3.1将原有的数据划分为多人和单人场景(./csi_process/Person-in-wifi-3d/data split.py)  
   3.2将单人场景下的数据进行40帧合并(./csi_process/Person-in-wifi-3d/data prc.py)  
+  3.3添加根节点坐标(./csi_process/Person-in-wifi-3d/keypoint_prc.py)
 4.训练nsub = 30，segment = 10的对比学习(已完成)
 </details>
 
@@ -476,6 +477,11 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 <img width="118" height="329" alt="image" src="https://github.com/user-attachments/assets/9d1d84e9-c6f9-495f-93bd-c636feb44a22" />
 
+3.MMFi关节对应示意图(17)：
+
+<img width="110" height="319" alt="image" src="https://github.com/user-attachments/assets/cb174d25-107a-47e3-8f05-7e4424504641" />
+
+4.对Person in wifi 3d数据集的14个关节点添加根节点，根节点 = 左右髋部的中点  
 
 </details>  
 
