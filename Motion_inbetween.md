@@ -467,8 +467,14 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 **11.8**  
 <details>
 <summary>📖 问题记录</summary>  
-1.Person in wifi 3d关节对应示意图：
-  
+1.Person in wifi 3d关节对应示意图(14)：  
+
+<img width="118" height="358" alt="image" src="https://github.com/user-attachments/assets/62c5629e-2715-486e-91b6-f3bf40358ac6" />
+
+2.Human motion in inbetween关节对应示意图(22)：  
+
+<img width="118" height="329" alt="image" src="https://github.com/user-attachments/assets/9d1d84e9-c6f9-495f-93bd-c636feb44a22" />
+
 </details>  
 
 <details>
