@@ -467,7 +467,8 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 **11.8**  
 <details>
 <summary>📖 问题记录</summary>  
-
+1.Person in wifi 3d关节对应示意图：
+  
 </details>  
 
 <details>
