@@ -504,6 +504,8 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 <summary>📖 实验记录</summary>   
 1.训练nsub = 234，segment = 10的finetune(预训练 epoch = 200, segment = 20, lr = 0.01LR)(已完成)(./diffusion motion inbetween(per segment finetune)/save/q4mcb67m/model000030030.pt)    
 
+2.训练nsub = 30，segment = 20的frozen(预训练 epoch = 200，segment = 20)  
+3.训练nsub = 30，segment = 20的finetune(预训练 epoch = 200，segment = 20, lr = 0.01LR)
 </details>  
 
 
