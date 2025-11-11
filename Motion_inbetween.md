@@ -524,6 +524,17 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 </details>  
 
 
+**11.11**  
+<details>
+<summary>📖 问题记录</summary>  
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>   
+1.训练Person in wifi数据集的ablation(测试，尝试跑通)     
+
+</details>  
 
 
 
