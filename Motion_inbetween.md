@@ -442,7 +442,7 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 3.Person in wifi 3d 数据集的处理流程：  
   3.1将原有的数据划分为多人和单人场景(./csi_process/Person-in-wifi-3d/data split.py)  
   3.2将单人场景下的数据进行40帧合并(./csi_process/Person-in-wifi-3d/data prc.py)  
-  3.3添加根节点坐标(./csi_process/Person-in-wifi-3d/keypoint_prc.py)
+  3.3添加根节点坐标(./csi_process/Person-in-wifi-3d/keypoint_prc.py)  
 4.训练nsub = 30，segment = 10的对比学习(已完成)
 </details>
 
@@ -510,7 +510,9 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
   1.4获取根关节绕y轴的旋转速度和XZ平面的线速度(1 + 2)  
   1.5获取根关节的y轴坐标(1)    
   1.6获取除根关节的空间坐标((njoints - 1) * 3)  
-  1.7获取所有关节的速度(njoints * 3)
+  1.7获取所有关节的速度(njoints * 3)  
+  {Part 3 数据构成}  
+  根关节绕y轴旋转速度+根关节XZ平面线速度+根关节高度+关节空间坐标+关节旋转表示+关节线速度+足部接触状态
 </details>  
 
 <details>
