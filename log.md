@@ -59,3 +59,4 @@
 - [x] 1.保证Person in wifi数据集能够在diffusion部分实现正常的骨架可视化
 - [ ] 2.完善MDM的场景设置
 - [ ] 3.参照Person in wifi数据集对MMFi数据集进行处理和骨架可视化
+- [ ] 4.PPT部分增加Person in wifi的多个receiver的AoA_DFS
