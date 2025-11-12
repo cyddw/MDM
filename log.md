@@ -53,4 +53,8 @@
 - [x] 1.梳理从关节空间坐标转为关节旋转表示的具体流程
 
 **11.11**
-- [ ] 1.修改diffusion部分的代码使得能够适用Person in wifi 3d数据集
+- [x] 1.修改diffusion部分的代码使得能够适用Person in wifi 3d数据集
+
+**11.12**
+- [ ] 1.保证Person in wifi数据集能够在diffusion部分实现正常的骨架可视化
+- [ ] 2.完善MDM的场景设置
