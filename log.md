@@ -46,7 +46,7 @@
 - [x] 2.重新跑一遍子载波 = 234的实验结果，包括对比学习、ablation、frozen、finetune
 - [x] 3.对进度进行整理
 - [x] 4.搜索相关的毫米波生成human mesh的开源baseline，或者其他无线信号
-- [ ] 5.对MMFi和Person in wifi 3d的数据集进行处理，尝试能否跑通
+- [x] 5.对MMFi和Person in wifi 3d的数据集进行处理，尝试能否跑通
 - [x] 6.修改所有模型中的归一化方式以及增加一层归一化层
 
 **11.9**  
@@ -58,3 +58,4 @@
 **11.12**
 - [x] 1.保证Person in wifi数据集能够在diffusion部分实现正常的骨架可视化
 - [ ] 2.完善MDM的场景设置
+- [ ] 3.参照Person in wifi数据集对MMFi数据集进行处理和骨架可视化
