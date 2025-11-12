@@ -532,7 +532,40 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 <details>
 <summary>📖 实验记录</summary>   
-1.训练Person in wifi数据集的ablation(测试，尝试跑通)     
+1.训练Person in wifi数据集的ablation(测试，尝试跑通)(已完成)     
+
+</details>  
+
+**11.12**  
+<details>
+<summary>📖 问题记录</summary>  
+1.Person in wifi数据集可以跑通，但是可视化结果很差： 
+
+  https://github.com/user-attachments/assets/67dd51ae-0646-45be-8566-32151b01eb51
+
+  1.1先不考虑Output Motion，只考虑Ground Truth  
+  1.2修改"edit.py/第150行代码"  
+  1.3对原有的joints的空间坐标进行可视化发现其对应的关节和Person in wifi 3d代码中定义的不一致(可视化对应代码：./diffusion motion inbetween(person in wifi dataset per segment ablation)/visual test.py)：  
+
+  <img width="118" height="327" alt="image" src="https://github.com/user-attachments/assets/7f2bf2f5-d9a7-4519-8fe9-3b5b77be9c0a" />  
+
+  1.4可视化结果正常，但是空间坐标轴还需要进行调整
+  
+  https://github.com/user-attachments/assets/31224f1b-2209-4904-bc75-3036c4f2fb1a
+
+  1.5交换关节在xyz空间坐标中的yz两个维度(./csi_process/Person-in-wifi-3d/dim swap.py)，同时对y坐标添加负号，最终得到正确的骨架可视化结果：
+
+  https://github.com/user-attachments/assets/48399d89-fbc1-4cc0-9fef-7d6403e50549
+
+  1.6对MMFi数据集的关节进行空间坐标可视化，发现其与之前的17个关节的定义不一致，需要修正：
+
+  <img width="118" height="335" alt="image" src="https://github.com/user-attachments/assets/09ed6d2d-a476-4476-aa52-d5f8522c64c5" />
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>        
 
 </details>  
 
