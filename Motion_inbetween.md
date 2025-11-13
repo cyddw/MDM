@@ -569,6 +569,28 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 </details>  
 
+**11.13**  
+<details>
+<summary>📖 问题记录</summary>  
+  
+1.对于MMFi数据集中的CSI相位不理想的问题，可能原因：噪声太大或者硬件导致的频偏不是稳定的  
+  
+  <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/89356425-6f12-45be-afc5-0a54bbdb248f" />
+
+虽然CSI相位去噪结果不理想，但是最后得到的AoA_DFS结果还是理想的：(去噪前)——>(去噪后)  
+
+<img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/34bc0734-01fe-48a2-8eb6-acffb4f8da89" />  
+
+<img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/9498383a-8996-485b-95fa-01fc514e0f07" />
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>   
+
+</details>  
+
 
 
 
