@@ -591,6 +591,23 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 </details>  
 
+**11.15**  
+<details>
+<summary>📖 问题记录</summary>  
+  
+  1.MMFi数据集预处理：  
+    1.1帧数划分、异常值检测("./csi_process/MMFi/data prc.py")  
+    1.2删除鼻子的关节坐标("./csi_process/MMFi/keypoint_prc.py")  
+    1.3对训练、测试和验证数据集进行划分("./csi_process/MMFi/train val test.py")
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>   
+  
+  1.训练MMFi数据集在MetaFi模型  
+  2.训练Person in wifi数据集在MetaFi模型
+</details>  
+
 
 
 
