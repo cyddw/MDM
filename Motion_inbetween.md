@@ -618,6 +618,8 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 <summary>📖 实验记录</summary>   
   
   1.训练Person in wifi数据集在Person in wifi模型(**注意：需要对Person in wifi数据集中的val.txt和test.txt进行交换**)  
+  2.训练Person in wifi数据集的对比学习  
+  
   
 </details>  
 
