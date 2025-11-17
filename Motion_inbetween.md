@@ -608,6 +608,19 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
   2.训练Person in wifi数据集在MetaFi模型(已完成)
 </details>  
 
+**11.17**  
+<details>
+<summary>📖 问题记录</summary>  
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>   
+  
+  1.训练Person in wifi数据集在Person in wifi模型(**注意：需要对Person in wifi数据集中的val.txt和test.txt进行交换**)  
+  
+</details>  
+
 
 
 
