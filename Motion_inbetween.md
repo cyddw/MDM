@@ -604,8 +604,8 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 <details>
 <summary>📖 实验记录</summary>   
   
-  1.训练MMFi数据集在MetaFi模型  
-  2.训练Person in wifi数据集在MetaFi模型
+  1.训练MMFi数据集在MetaFi模型(已完成)  
+  2.训练Person in wifi数据集在MetaFi模型(已完成)
 </details>  
 
 
