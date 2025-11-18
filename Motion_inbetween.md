@@ -645,8 +645,10 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 
 <details>
 <summary>📖 实验记录</summary>   
-    1.训练Person in wifi数据集的对比学习(增加时延补偿)(已完成)  
-    2.训练Person in wifi数据集在Ours模型
+  
+    1.训练Person in wifi数据集的对比学习(增加时延补偿)(已完成)   
+    2.训练Person in wifi数据集在Ours模型  
+    3.
   
 </details>  
 
