@@ -619,9 +619,32 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
   
   1.训练Person in wifi数据集在Person in wifi模型(**注意：需要对Person in wifi数据集中的val.txt和test.txt进行交换**)  
   2.训练Person in wifi数据集的对比学习(已完成)  
-  3.训练Person in wifi数据集在Ours模型  
+  3.训练Person in wifi数据集在Ours模型(已完成)，得到的骨架相比于真实值存在旋转问题，导致MPJPE过大：  
+
+https://github.com/user-attachments/assets/c550a7ff-2189-4cb4-830b-c12d8c7adcca
+
+
+</details>  
+
+**11.18**  
+<details>
+<summary>📖 问题记录</summary>  
   
+  1.Person in wifi数据集在Ours模型中产生的旋转问题：  
+  1.1是否是因为root绕y轴的旋转速度与实际偏差过大导致的，尝试将真实的root绕y轴的旋转速度代替预测的，看是否还存在旋转问题(修改之后确实没有旋转问题)  
   
+https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
+
+  重新对其MPJPE进行评估，相较于之间的有显著下降，但是还是不如Person in wifi的结果：  
+  
+  <img width="464" height="16" alt="image" src="https://github.com/user-attachments/assets/eb3aa5fa-52b3-43cc-be2f-9015f33108f3" />
+
+  可能原因，生成的motion和真实的motion之间存在明显的时延，因此对生成的AoA_DFS进行时延补偿，并重新进行实验
+  
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>   
   
 </details>  
 
