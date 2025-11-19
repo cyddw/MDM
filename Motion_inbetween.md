@@ -647,11 +647,30 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <summary>📖 实验记录</summary>   
   
     1.训练Person in wifi数据集的对比学习(增加时延补偿)(已完成)   
-    2.训练Person in wifi数据集在Ours模型  
-    3.
+    2.训练Person in wifi数据集在Ours模型(已完成)  
+    3.训练MMFi数据集在Person in wifi模型(已完成)  
   
 </details>  
 
+**11.19**  
+<details>
+<summary>📖 问题记录</summary>  
+  
+    1.Person in wifi数据集在Ours模型中会产生旋转问题，导致误差上升，而且即使使用GT的root，性能也不如Person in wifi模型   
+    (可能原因：关节代码部分处理有问题、使用multi-head造成、数据集问题)
+    2.Person in wifi数据集在MetaFi模型中的误差过大  
+    3.MMFi数据集在Person in wifi数据集中的训练时间过长  
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.重新对MetaFi模型进行修正，取消Resize操作，并增加一项池化操作，重新训练Person in wifi数据集(已完成，修改后的效果反而更差，主要是loss基本不怎么收敛)  
+    2.尝试不使用multi-head，对Person in wifi数据集在Ours模型重新进行训练
+    3.尝试使用CSI相位代替CSI幅值，对MetaFi模型进行修正，重新训练Person in wifis数据集  
+    
+  
+</details>  
 
 
 
