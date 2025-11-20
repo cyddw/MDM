@@ -666,7 +666,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <summary>📖 实验记录</summary>
   
     1.重新对MetaFi模型进行修正，取消Resize操作，并增加一项池化操作，重新训练Person in wifi数据集(已完成，修改后的效果反而更差，主要是loss基本不怎么收敛)  
-    2.尝试不使用multi-head，对Person in wifi数据集在Ours模型重新进行训练
+    2.尝试不使用multi-head，对Person in wifi数据集在Ours模型重新进行训练(已完成，旋转问题仍然存在，且相较于multi-head，性能反而下降)  
     3.尝试使用CSI相位代替CSI幅值，对MetaFi模型进行修正，重新训练Person in wifis数据集(已完成，效果与CSI幅值基本没有区别，loss还是不收敛)  
     4.尝试使用Person in wifi数据集的第二和第三个接收机的数据在MetaFi模型上重新进行训练(已完成，loss还是不收敛)  
     
