@@ -682,6 +682,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <summary>📖 实验记录</summary>
   
     1.只对MMFi数据集中的关键帧进行截取，重新训练Person in wifi模型  
+    2.将对比学习和扩散模型的Segment均修改为10，重新训练Person in wifi数据集在Ours模型  
     
     
 </details>  
