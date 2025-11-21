@@ -683,7 +683,21 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
   
     1.只对MMFi数据集中的关键帧进行截取，重新训练Person in wifi模型  
     2.将对比学习和扩散模型的Segment均修改为10，重新训练Person in wifi数据集在Ours模型(已完成，还是存在旋转问题)  
-    3.尝试减小每个segment中的帧数，改为(5和3)，重新训练Person in wifi数据集在Ours模型
+    3.尝试减小每个segment中的帧数，改为(5和3)，重新训练Person in wifi数据集在Ours模型(已完成，还是存在旋转问题，且使用真实根关节的绕y轴旋转速度，得到的MPJPE = 147(single rx)，若完全使用真实的根关节，即前4个均使用真实值，则精度可以提升至119)
+    
+</details>  
+
+**11.21**  
+<details>
+<summary>📖 问题记录</summary>  
+  
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.将上述的Person in wifi数据集在Ours模型的single rx改回multi-rx，同时root使用真实值，测量其MPJPE是否能够超过Person in wifi模型  
+    
     
 </details>  
 
