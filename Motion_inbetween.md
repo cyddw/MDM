@@ -561,6 +561,10 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
   <img width="118" height="335" alt="image" src="https://github.com/user-attachments/assets/09ed6d2d-a476-4476-aa52-d5f8522c64c5" />
 
+  1.7去除nose的MMFi数据集：
+  
+  <img width="118" height="335" alt="image" src="https://github.com/user-attachments/assets/63a56501-349d-4d19-b745-d90109aed054" />
+
 
 </details>  
 
