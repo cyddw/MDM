@@ -704,7 +704,8 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 **11.24**  
 <details>
 <summary>📖 问题记录</summary>  
-  
+
+    1.Person in wifi数据集在处理成旋转表示，代码有问题(关节分布没有修改)，需要重新修改，并重新进行训练
 </details>  
 
 <details>
