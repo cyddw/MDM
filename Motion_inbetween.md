@@ -710,8 +710,8 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <details>
 <summary>📖 实验记录</summary>
   
-    1.将Person in wifi数据集在Ours模型改为finetune，而不是frozen形式 
-    
+    1.将Person in wifi数据集在Ours模型改为finetune，而不是frozen形式  
+    2.将Person in wifi数据集在MMFi模型的输入改为使用Person in wifi预处理之后的CSI幅值
     
 </details>  
 
