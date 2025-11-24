@@ -696,7 +696,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <details>
 <summary>📖 实验记录</summary>
   
-    1.将上述的Person in wifi数据集在Ours模型的single rx改回multi-rx，同时root使用真实值，测量其MPJPE是否能够超过Person in wifi模型  
+    1.将上述的Person in wifi数据集在Ours模型的single rx改回multi-rx，同时root使用真实值，测量其MPJPE是否能够超过Person in wifi模型(已完成，得到的MPJPE为81.974，优于Person in wifi模型)  
     
     
 </details>  
