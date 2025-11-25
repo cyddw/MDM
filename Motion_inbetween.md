@@ -717,7 +717,8 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
   
     1.将Person in wifi数据集在Ours模型改为finetune，而不是frozen形式(已完成，还是会旋转)  
     2.将Person in wifi数据集在MMFi模型的输入改为使用Person in wifi预处理之后的CSI幅值(已完成，无法收敛)  
-    3.训练MMFi数据集的对比学习(已完成)  
+    3.将Person in wifi数据集在MMFi模型的输入改为使用Person in wifi预处理之后的CSI相位(已完成，无法收敛)
+    4.训练MMFi数据集的对比学习(已完成)  
     
     
 </details>  
