@@ -734,7 +734,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <summary>📖 实验记录</summary>
   
     1.训练MMFi数据集在Ours模型，其中segment = 10，对预训练Encoder frozen  
-    
+    2.对关节部分进行修订，重新获取旋转表示，并重新训练Person in wifi数据集在Ours模型  
 </details>  
 
 
