@@ -717,8 +717,22 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
   
     1.将Person in wifi数据集在Ours模型改为finetune，而不是frozen形式(已完成，还是会旋转)  
     2.将Person in wifi数据集在MMFi模型的输入改为使用Person in wifi预处理之后的CSI幅值(已完成，无法收敛)  
-    3.训练MMFi数据集的对比学习  
+    3.训练MMFi数据集的对比学习(已完成)  
     
+    
+</details>  
+
+**11.25**  
+<details>
+<summary>📖 问题记录</summary>  
+
+    1.MMFi数据集有问题，其连续多帧的大部分关节坐标完全一致，导致转为旋转表示的时候会出现nan的情况(将qbetween函数进行修改，使其能够处理旋转180度的情况)
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.训练MMFi数据集在Ours模型，其中segment = 10，对预训练Encoder frozen  
     
 </details>  
 
