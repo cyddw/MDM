@@ -565,6 +565,10 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
   
   <img width="118" height="335" alt="image" src="https://github.com/user-attachments/assets/63a56501-349d-4d19-b745-d90109aed054" />
 
+  1.8再次对MMFi数据集进行修正：
+  
+  <img width="118" height="335" alt="image" src="https://github.com/user-attachments/assets/6502c63f-eb5b-4afb-9698-f19215ab03ff" />
+
 
 </details>  
 
