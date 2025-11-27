@@ -737,8 +737,21 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <details>
 <summary>📖 实验记录</summary>
   
-    1.训练MMFi数据集在Ours模型，其中segment = 10，对预训练Encoder frozen  
+    1.训练MMFi数据集在Ours模型，其中segment = 10，对预训练Encoder frozen(已完成，关节设置有问题)  
     2.对关节部分进行修订，重新获取旋转表示，并重新训练Person in wifi数据集在Ours模型(已完成，没有发生旋转问题)  
+</details>  
+
+**11.26**  
+<details>
+<summary>📖 问题记录</summary>  
+
+    1.对于MMFi数据集在Ours模型中训练导致的nan问题: 先重新生成数据集再重新进行训练->若还有nan的问题，则将其转回之前的骨架坐标->逐一排查生成的旋转表示
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.对MMFi数据集中的关节部分进行修订，并重新放到Ours模型重新进行训练(已完成，loss出现nan)
 </details>  
 
 
