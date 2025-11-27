@@ -754,6 +754,20 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
     1.对MMFi数据集中的关节部分进行修订，并重新放到Ours模型重新进行训练(已完成，loss出现nan)
 </details>  
 
+**11.27**  
+<details>
+<summary>📖 问题记录</summary>  
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.将Person in wifi数据集在Ours模型中的finetune改为frozen，并重新进行训练
+</details>  
+
+
+
 
 
 
