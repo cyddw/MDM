@@ -766,6 +766,18 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
     1.将Person in wifi数据集在Ours模型中的finetune改为frozen，并重新进行训练
 </details>  
 
+**11.28**  
+<details>
+<summary>📖 问题记录</summary>  
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.Person in wifi数据集再MetaFi模型中的单个receiver改为3个receiver，即在子载波维度将三者进行拼接(已完成，不收敛)
+</details>  
+
 
 
 
