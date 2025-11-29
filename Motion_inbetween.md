@@ -788,6 +788,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <summary>📖 实验记录</summary>
   
     1.将MMFi数据集在Ours模型中的关节链中的shoulder和wrist交换，其他不变，重新训练，观察是否会出现nan
+    2.将Person in wifi数据集在MetaFi模型中的预测三维坐标改为预测xy坐标(已完成，不收敛)
 </details>  
 
 
