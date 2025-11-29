@@ -792,7 +792,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
     3.将MMFi数据集在Ours模型中的face_joint_indx中的shoulder进行更换，其他不变，重新训练，观察是否会出现nan(已完成，出现nan)
     4.将Person in wifi数据集在MetaFi模型中的预测三维坐标改为预测xy坐标，同时将幅值改为相位(已完成，不收敛，卡在0.4左右)
     5.已找到MMFi数据集在Ours模型中出现nan的原因:部分姿态导致出现除0，已对代码进行修改，并重新进行训练
-    6.CSIimputation
+    6.CSI imputation流程:1.调用find4missing代码对CSI丢包严重、toa数据缺失的文件进行剔除 2.对于toa数据缺失的文件进行补全，确保toa和csi能够一一对应 3.调用csi_imputation代码对CSI数据进行补全
 </details>  
 
 
