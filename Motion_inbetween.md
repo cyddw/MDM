@@ -797,6 +797,18 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
     8.将Person in wifi数据集在MetaFi模型中的预测三维坐标改为预测xy坐标，预测幅值，同时将lr改为1e-4(已完成，不收敛，对于这个MetaFi模型，已经尝试过所有可能情况，但是均不收敛，唯一可能原因就是模型本身有问题，后续不再进行修改，建议更换其他baseline，或者直接就用MPJPE=800的结果)
 </details>  
 
+**12.1**  
+<details>
+<summary>📖 问题记录</summary>  
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.将MMFi数据集在Ours模型中的segment(20-10)改为segment(20-20)(已完成，模型的性能有提升(MPJPE = 400->264))
+    2.将MMFi数据集在Ours模型中的segment(20-10)改为segment(10-5)
+</details>  
 
 
 
