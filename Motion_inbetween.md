@@ -807,7 +807,19 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <summary>📖 实验记录</summary>
   
     1.将MMFi数据集在Ours模型中的segment(20-10)改为segment(20-20)(已完成，模型的性能有提升(MPJPE = 400->264))
-    2.将MMFi数据集在Ours模型中的segment(20-10)改为segment(10-5)
+    2.将MMFi数据集在Ours模型中的segment(20-10)改为segment(10-5)(已完成，模型的性能有提升(MPJPE = 235))
+</details>  
+
+**12.2**  
+<details>
+<summary>📖 问题记录</summary>  
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+    1.将MMFi数据集在Ours模型中的segment(10-5)改为segment(10-10)
 </details>  
 
 
