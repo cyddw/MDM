@@ -836,7 +836,8 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 
 <details>
 <summary>📖 实验记录</summary>
-  
+
+    1.重新对MMFi数据集在Ours模型上进行训练(10-5)，frozen
 </details>  
 
 
