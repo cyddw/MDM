@@ -826,7 +826,12 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 **12.3**  
 <details>
 <summary>📖 问题记录</summary>  
+  
     1.观察MMFi数据集，可以发现真实的mesh数据中存在部分是倒着的情况，倒着的数据是否就是模型性能不足的原因？
+    1.1将原本的skeleton中增加的(0,0,1)的代码改为(1,0,0)，还是有倒着的情况
+    1.2原本的joint表示并没有出现倒着的情况，但是joint经过rotation再经过反向rotation就出现倒着的情况
+    1.3大概率是朝向设置问题，将原本的左右肩膀改为左右肘关节，原本出现倒着的情况，变为正的，但是还是有倒着的情况
+    1.4将左右肘关节改为spine和pelvis，没有出现倒着的情况
 </details>  
 
 <details>
