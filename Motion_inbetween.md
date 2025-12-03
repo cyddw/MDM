@@ -823,6 +823,17 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
     2.将MMFi数据集在Ours模型中的segment(10-5)改为segment(10-5)，同时使用finetune(lr = 0.1lr)(已完成)(模型的性能下降(MPJPE = 409))
 </details>  
 
+**12.3**  
+<details>
+<summary>📖 问题记录</summary>  
+    1.观察MMFi数据集，可以发现真实的mesh数据中存在部分是倒着的情况，倒着的数据是否就是模型性能不足的原因？
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+</details>  
+
 
 
 
