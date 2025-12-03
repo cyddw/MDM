@@ -831,7 +831,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
     1.1将原本的skeleton中增加的(0,0,1)的代码改为(1,0,0)，还是有倒着的情况
     1.2原本的joint表示并没有出现倒着的情况，但是joint经过rotation再经过反向rotation就出现倒着的情况
     1.3大概率是朝向设置问题，将原本的左右肩膀改为左右肘关节，原本出现倒着的情况，变为正的，但是还是有倒着的情况
-    1.4将左右肘关节改为spine和pelvis，没有出现倒着的情况
+    1.4将左右肘关节改为spine和pelvis，基本没有出现倒着的情况，顶多每几帧出现倒着的
 </details>  
 
 <details>
