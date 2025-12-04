@@ -844,14 +844,14 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <details>
 <summary>📖 问题记录</summary>  
   
-
+    1.MDM数据集在Person in wifi上报错，可能原因:numpy不兼容，建议将numpy改回之前的版本
 </details>  
 
 <details>
 <summary>📖 实验记录</summary>
 
-    1.对MMFi数据集在Ours模型上进行训练(10-5)，finetune(lr = 0.1lr)
-    2.
+    1.将MMFi数据集在Ours模型上进行训练(10-5)，finetune(lr = 0.1lr)
+    2.将MDM数据集在MetaFi模型上进行训练
 </details>  
 
 
