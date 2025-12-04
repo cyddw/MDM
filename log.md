@@ -67,3 +67,4 @@
 **12.4**
 - [x] 1.完成MDM数据集在MetaFi和Person in wifi模型上的修改
 - [ ] 2.获取MDM数据集的AoADFS
+- [ ] 3.完成数字信号处理的PPT主要内容构思
