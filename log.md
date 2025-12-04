@@ -63,3 +63,7 @@
 
 **11.15**
 - [x] 1.完成MMFi数据集和Person in wifi数据集在两个baseline上的结果
+
+**12.4**
+- [ ] 1.完成MDM数据集在MetaFi和Person in wifi模型上的修改
+- [ ] 2.获取MDM数据集的AoADFS
