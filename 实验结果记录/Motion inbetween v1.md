@@ -853,9 +853,9 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
 <details>
 <summary>📖 实验记录</summary>
 
-    1.将MMFi数据集在Ours模型上进行训练(10-5)，finetune(lr = 0.1lr)
-    2.将MDM数据集在MetaFi模型上进行训练
-    3.将MDM数据集在Person in wifi数据集上进行训练
+    1.将MMFi数据集在Ours模型上进行训练(10-5)，finetune(lr = 0.1lr)(已完成，模型性能有提升)
+    2.将MDM数据集在MetaFi模型上进行训练(已完成)
+    3.将MDM数据集在Person in wifi数据集上进行训练(已完成)
 </details>  
 </details>
 
