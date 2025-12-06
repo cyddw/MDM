@@ -407,6 +407,8 @@ finetune、frozen和ablation实验的结果均差不多，识别率均较高
 
 </details>
 
+<details>
+<summary>📖 11.5 - 12.5</summary> 
 **11.5**  
 <details>
 <summary>📖 问题记录</summary>  
@@ -854,7 +856,7 @@ https://github.com/user-attachments/assets/7be4ad9b-2863-4475-aa31-6661818ab155
     2.将MDM数据集在MetaFi模型上进行训练
     3.将MDM数据集在Person in wifi数据集上进行训练
 </details>  
-
+</details>
 
 
 
