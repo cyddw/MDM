@@ -1,2 +1,2 @@
 **12.6**
-- [ ] 1.完成表示学习DANN的学习
+- [ ] 1.完成模型的基本框架确定以及Introduction and Motivation
