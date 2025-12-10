@@ -11,4 +11,4 @@
 - [x] 1.确定模型需要进一步修改的部分
 
 **12.10**
-- [ ] 1.完成physic guidance部分的代码
+- [x] 1.完成physic guidance部分的代码
