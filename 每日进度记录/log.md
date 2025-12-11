@@ -12,3 +12,6 @@
 
 **12.10**
 - [x] 1.完成physic guidance部分的代码
+
+**12.11**
+- [ ] 1.实现feature proxy部分的代码
