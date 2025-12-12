@@ -30,6 +30,7 @@
 
     1.使用上述的映射网络进行eval，MPJPE = 185，性能发生显著下降
     2.可能原因：通过recover_from_ric得到的Mesh和原来的Mesh是否一致；梯度是否应该增加超参数；梯度是否应该作用于score上面；物理模型是否有用
+    3.将梯度作用在score上面
 </details>  
 
 <details>
