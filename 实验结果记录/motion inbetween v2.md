@@ -37,3 +37,15 @@
 <summary>📖 实验记录</summary>
   
 </details> 
+
+**12.13**  
+<details>
+<summary>📖 问题记录</summary>  
+
+    1.将梯度作用于score上面，当scale = 1000时，输出nan；当scale = 100时，输出MPJPE = 106，性能反而下降
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+</details> 
