@@ -63,7 +63,7 @@
 
     1.根据上述实验可知，是否有physic guidance对整个模型性能基本没有影响
     2.在没有reconstruction guidance的情况下，修改scale = 0.05，MPJPE = 106.920；若physic_grad前面没有参数，scale = 0.05，MPJPE = 103.502
-    3.在没有reconstruction guidance的情况下，修改scale = 0.05，physic_grad前面没有参数，并将原本作用在ε上的改为作用在x_t上
+    3.在没有reconstruction guidance的情况下，修改scale = 0.05，physic_grad前面没有参数，并将原本作用在ε上的改为作用在x_t上，MPJPE = 101.629; physic_grad前面增加一项alpha_t(随着去噪步的增加，逐渐增大)
 </details>  
 
 <details>
