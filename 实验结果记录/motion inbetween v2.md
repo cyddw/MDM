@@ -62,6 +62,7 @@
 <summary>📖 问题记录</summary>  
 
     1.根据上述实验可知，是否有physic guidance对整个模型性能基本没有影响
+    2.在没有reconstruction guidance的情况下，修改scale = 0.05
 </details>  
 
 <details>
