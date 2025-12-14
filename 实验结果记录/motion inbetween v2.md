@@ -65,7 +65,7 @@
     2.在没有reconstruction guidance的情况下，修改scale = 0.05，MPJPE = 106.920；若physic_grad前面没有参数，scale = 0.05，MPJPE = 103.502
     3.在没有reconstruction guidance的情况下，修改scale = 0.05，physic_grad前面没有参数，并将原本作用在ε上的改为作用在x_t上，MPJPE = 101.629; physic_grad前面增加一项alpha_t(随着去噪步的增加，逐渐增大)，MPJPE = 101.629；修改scale = 0.01，MPJPE = 101.628；physic_grad只在最后50步起作用，MPJPE = 101.639；physic_grad只在最后20步起作用，MPJPE = 101.624
     4.将A(x0)中的输入由x0改为xt，MPJPE = 101.623；physic_grad在所有去噪步都起作用，MPJPE = 101.629；physic_grad前面没有参数，MPJPE = 101.630
-    5.在代码最后增加一行x = z_guided，MPJPE = 109.931(这里的x会影响最后输出的mean)；physic_grad前面增加alpha_t参数，MPJPE = 103.910
+    5.在代码最后增加一行x = z_guided，MPJPE = 109.931(这里的x会影响最后输出的mean)；physic_grad前面增加alpha_t参数，MPJPE = 103.910；将A(x0)中的输入由xt改为x0，MPJPE = 101.387；
 </details>  
 
 <details>
