@@ -77,7 +77,7 @@
 <details>
 <summary>📖 问题记录</summary>  
 
-    1.scale = 0.005，MPJPE = 100.339；scale = 0.005，在最后50步起作用，MPJPE = 101.503；scale = 0.001，在最后10步起作用
+    1.scale = 0.005，MPJPE = 100.339；scale = 0.005，在最后50步起作用，MPJPE = 101.503；scale = 0.001，在最后10步起作用，MPJPE = 101.956；
 </details>  
 
 <details>
