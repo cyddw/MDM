@@ -24,6 +24,6 @@
 - [x] 2.完成related work第三部分的内容撰写(仅为内容和逻辑)
 
 **12.16**
-- [ ] 1.做一个简单的验证实验：在MMFi数据集上，将对比学习的Human mesh换成使用motion representation转换后的mesh，看性能是否提升
+- [x] 1.做一个简单的验证实验：在MMFi数据集上，将对比学习的Human mesh换成使用motion representation转换后的mesh，看性能是否提升
 
 
