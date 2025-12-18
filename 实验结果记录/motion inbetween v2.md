@@ -84,3 +84,17 @@
 <summary>📖 实验记录</summary>
   
 </details>
+
+
+**12.15**  
+<details>
+<summary>📖 问题记录</summary>  
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.重新跑一遍MMFi数据集在Our模型上
+</details>
