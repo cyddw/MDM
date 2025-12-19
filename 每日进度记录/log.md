@@ -28,4 +28,7 @@
 
 **12.17**
 - [ ] 1.做一个简单的验证实验：在Person in WiFi数据集上，将对比学习的Human mesh换成使用motion representation转换后的mesh，看性能是否提升
-- [ ] 2.搜索相关的contrastive learning的工作，如何对齐两个带噪模态的特征
+- [x] 2.搜索相关的contrastive learning的工作，如何对齐两个带噪模态的特征
+
+**12.18**
+- [ ] 1.确定整个模型需要修改的部分
