@@ -44,7 +44,7 @@
 
 **12.23**
 - [x] 1.弄懂DMVAE的代码部分
-- [ ] 2.尝试跑通MLD的VAE部分
+- [x] 2.尝试跑通MLD的VAE部分
 
 **12.24**
 - [ ] 1.完成进度整理部分的problem formulation
