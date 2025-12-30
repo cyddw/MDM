@@ -102,8 +102,14 @@
 **12.30**  
 <details>
 <summary>📖 问题记录</summary>  
-
-        1.DMVAE初步重构的结果：
+        1.可能需要修改的点：
+        1.1使用的AoADFS数据是降采样的
+        1.2没有对AoADFS数据进行归一化
+        1.3没有对motion数据进行归一化
+        1.4motion没有使用旋转表示
+        1.5没有对输入数据的时序进行切分
+        1.6loss的系数以及loss本身设置
+        2.DMVAE初步重构的结果：
 
 ![sample_29](https://github.com/user-attachments/assets/820c5d9c-bead-4cf5-b388-96d6515a429e)
 
@@ -115,5 +121,6 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.切断从Loss_rec到private的梯度流
+        1.切断从Loss_rec到private的梯度流(和之前的结果一样)
+        2.不对两个模态的share进行KL约束，只对两个模态共有的结果进行KL约束
 </details>
