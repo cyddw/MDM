@@ -98,3 +98,22 @@
 
         1.重新跑一遍MMFi数据集在Our模型上
 </details>
+
+**12.30**  
+<details>
+<summary>📖 问题记录</summary>  
+
+        1.DMVAE初步重构的结果：
+
+![sample_29](https://github.com/user-attachments/assets/820c5d9c-bead-4cf5-b388-96d6515a429e)
+
+        两个问题：问题一：loss很快就不下降了；问题二：重构出的都是静止不动的
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.切断从Loss_rec到private的梯度流
+</details>
