@@ -47,7 +47,7 @@
 - [x] 2.尝试跑通MLD的VAE部分
 
 **12.24**
-- [ ] 1.完成进度整理部分的problem formulation
+- [x] 1.完成进度整理部分的problem formulation
 
 **12.25**
 - [x] 1.完成multi-VAE部分的代码
@@ -60,3 +60,6 @@
 
 **12.28**
 - [x] 1.完成进度整理5ppt
+
+**12.30**
+- [ ] 1.调试DMVAE代码，确保重构出来的human motion尽可能精确
