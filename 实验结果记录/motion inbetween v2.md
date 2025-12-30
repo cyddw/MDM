@@ -122,5 +122,6 @@
 <summary>📖 实验记录</summary>
 
         1.切断从Loss_rec到private的梯度流(和之前的结果一样)
-        2.不对两个模态的share进行KL约束，只对两个模态共有的结果进行KL约束
+        2.不对两个模态的share进行KL约束，只对两个模态共有的结果进行KL约束(和之前的结果一样)
+        3.不考虑分离private和shared，只对其进行重构(即alpha和lamb系数置零)
 </details>
