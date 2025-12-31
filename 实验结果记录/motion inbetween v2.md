@@ -141,5 +141,5 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.
+        1.不使用root绕y轴的积分，能否重构出较好的结果
 </details>
