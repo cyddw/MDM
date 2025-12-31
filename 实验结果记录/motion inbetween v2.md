@@ -141,5 +141,5 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.不使用root绕y轴的积分，能否重构出较好的结果
+        1.不使用root绕y轴的积分，能否重构出较好的结果(训练过程中，loss突然增大，且可视化出来的human motion都是旋转的，没有具体动作)
 </details>
