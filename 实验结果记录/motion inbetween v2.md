@@ -102,6 +102,7 @@
 **12.30**  
 <details>
 <summary>📖 问题记录</summary>  
+    
         1.可能需要修改的点：
         1.1使用的AoADFS数据是降采样的
         1.2没有对AoADFS数据进行归一化
@@ -124,4 +125,21 @@
         1.切断从Loss_rec到private的梯度流(和之前的结果一样)
         2.不对两个模态的share进行KL约束，只对两个模态共有的结果进行KL约束(和之前的结果一样)
         3.不考虑分离private和shared，只对其进行重构(即alpha和lamb系数置零)(还是静止不动，loss_rec还是降不下来)
+</details>
+
+**12.31**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+        1.对于rotation表示，有几个问题：
+        1.1rotation表示中使用的是root对y轴的积分，导致直接可视化出来的结果是旋转的
+        1.2root对y轴的积分有利于模型去学习，相对于微分而言
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.
 </details>
