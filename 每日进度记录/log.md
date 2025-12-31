@@ -63,5 +63,5 @@
 
 **12.30**
 - [ ] 1.调试DMVAE代码，确保重构出来的human motion尽可能精确
-- [ ] 2.将DMVAE改为使用rotation表示进行重构
+- [x] 2.将DMVAE改为使用rotation表示进行重构
 - [ ] 3.重新修改MMFi数据集的3D表示转rotation表示的代码(8、10、12有问题)
