@@ -67,3 +67,7 @@
 
 **12.31**
 - [ ] 1.重新修改MMFi数据集的3D旋转rotation表示的代码(8、10、12有问题)
+
+**1.4**
+- [ ] 1.(stage1：只使用Motion Encoder和Motion Decoder重构human motion) 
+
