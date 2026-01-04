@@ -69,5 +69,7 @@
 - [ ] 1.重新修改MMFi数据集的3D旋转rotation表示的代码(8、10、12有问题)
 
 **1.4**
-- [ ] 1.(stage1：只使用Motion Encoder和Motion Decoder重构human motion) 
+- [ ] 1.(stage1)：只使用Motion Encoder和Motion Decoder重构human motion
+- [ ] 2.(stage2): 在stage1的基础上对输入的motion进行加噪，能够重构出clean的human motion
+- [ ] 3.(stage3): 在stage2的基础上引入CSI数据，能够提高重构的性能
 
