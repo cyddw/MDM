@@ -143,3 +143,18 @@
 
         1.不使用root绕y轴的积分，能否重构出较好的结果(训练过程中，loss突然增大，且可视化出来的human motion都是旋转的，没有具体动作)
 </details>
+
+**12.31**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.只使用Human motion Encoder和Decoder进行VAE(可调节参数：lr = 1e-4(MLD),lambda_kl = 1e-5)
+</details>
