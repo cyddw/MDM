@@ -156,5 +156,6 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.只使用Human motion Encoder和Decoder进行VAE(可调节参数：lr = 1e-4(MLD),lambda_kl = 1e-5)
+        1.只使用Human motion Encoder和Decoder进行VAE(可调节参数：lr = 1e-4(MLD),lambda_kl = 1e-5)(已完成，MPJPE收敛于300左右，同时可视化的motion是静止且旋转的)
+        2.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4)
 </details>
