@@ -156,6 +156,7 @@
 <details>
 <summary>📖 实验记录</summary>
 
+        实验一(探究模型参数和loss设置对重建效果的影响)
         1.只使用Human motion Encoder和Decoder进行VAE(可调节参数：lr = 1e-4(MLD),lambda_kl = 1e-5)(已完成，MPJPE收敛于300左右，同时可视化的motion是静止且旋转的)
         2.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4)(已完成，MPJPE收敛于200左右，可视化的motion部分旋转，但基本都是静止的)
         3.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4，lambda_kl改为1e-5)(已完成，MPJPE收敛于170左右，可视化的motion基本和GT一致，但是还是存在旋转和偏移的问题)
@@ -175,7 +176,9 @@
         1.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4，lambda_kl改为1e-5，增加一项joints约束)(已完成，MPJPE收敛于80左右，可视化的motion基本和GT一致，但是想较于GT，生成的不是特别的光滑)：
 ![sample_58](https://github.com/user-attachments/assets/9217fd37-235b-493f-a43f-70239555ac26)
 ![sample_0](https://github.com/user-attachments/assets/586881d9-4fcf-47ba-bc9c-ce43bfd3cbf9)
-        2.猜测可能跟数据集有关，因为MMFi数据集有点问题，得到的是旋转的
 
+        实验二(探究数据集设置对重建效果的影响)
+        可视化Person in WiFi数据集以及MMFi数据集，在motion_representation中，若存在new_data[:, 0] = rot_ang，new_data[:, [1, 2]] = r_pos[:, [0,2]]这两项，则可视化出来的human motion是旋转的
+        1.保留实验一的设置，仅对数据集进行更换，即使用旋转的MMFi数据集
 
 </details>
