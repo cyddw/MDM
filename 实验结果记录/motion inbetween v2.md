@@ -172,5 +172,10 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4，lambda_kl改为1e-5，增加一项joints约束)
+        1.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4，lambda_kl改为1e-5，增加一项joints约束)(已完成，MPJPE收敛于80左右，可视化的motion基本和GT一致，但是想较于GT，生成的不是特别的光滑)：
+![sample_58](https://github.com/user-attachments/assets/9217fd37-235b-493f-a43f-70239555ac26)
+![sample_0](https://github.com/user-attachments/assets/586881d9-4fcf-47ba-bc9c-ce43bfd3cbf9)
+        2.猜测可能跟数据集有关，因为MMFi数据集有点问题，得到的是旋转的
+
+
 </details>
