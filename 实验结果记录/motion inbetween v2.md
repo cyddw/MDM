@@ -158,5 +158,19 @@
 
         1.只使用Human motion Encoder和Decoder进行VAE(可调节参数：lr = 1e-4(MLD),lambda_kl = 1e-5)(已完成，MPJPE收敛于300左右，同时可视化的motion是静止且旋转的)
         2.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4)(已完成，MPJPE收敛于200左右，可视化的motion部分旋转，但基本都是静止的)
-        3.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4，lambda_kl改为1e-5)
+        3.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4，lambda_kl改为1e-5)(已完成，MPJPE收敛于170左右，可视化的motion基本和GT一致，但是还是存在旋转和偏移的问题)
+</details>
+
+**1.6**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.只使用Human motion Encoder和Decoder进行VAE(将lr改为1e-4，lambda_kl改为1e-5，增加一项joints约束)
 </details>
