@@ -198,5 +198,5 @@
 <summary>📖 实验记录</summary>
 
         关于rotation表示重新转为abs表示出现旋转问题的总计：(1)在motion_representation中，new_data[:, 0] = rot_ang，new_data[:, [1, 2]] = r_pos[:, [0,2]]这两行代码已经保证了旋转表示是绝对旋转 (2)在recover from ric中，若args.abs_3d=False，则认为旋转表示是相对旋转，则会使用累加形式；若args.abs_3d=False，则认为旋转表示是绝对旋转，则不对其进行累加
-
+        1.在上个实验的基础上，仅将recover from ric中的abs_3d改为True
 </details>
