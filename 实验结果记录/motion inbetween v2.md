@@ -179,6 +179,24 @@
 
         实验二(探究数据集设置对重建效果的影响)
         可视化Person in WiFi数据集以及MMFi数据集，在motion_representation中，若存在new_data[:, 0] = rot_ang，new_data[:, [1, 2]] = r_pos[:, [0,2]]这两项，则可视化出来的human motion是旋转的
-        1.保留实验一的设置，仅对数据集进行更换，即使用旋转的MMFi数据集
+        1.保留实验一的设置，仅对数据集进行更换，即使用旋转的MMFi数据集(已完成，MPjPE收敛于200左右，可视化的motion和GT有较大差距)：
+![sample_0](https://github.com/user-attachments/assets/34091b13-794d-4293-b897-fe3da7b63540)
+
+
+</details>
+
+
+**1.7**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        关于rotation表示重新转为abs表示出现旋转问题的总计：(1)在motion_representation中，new_data[:, 0] = rot_ang，new_data[:, [1, 2]] = r_pos[:, [0,2]]这两行代码已经保证了旋转表示是绝对旋转 (2)在recover from ric中，若args.abs_3d=False，则认为旋转表示是相对旋转，则会使用累加形式；若args.abs_3d=False，则认为旋转表示是绝对旋转，则不对其进行累加
 
 </details>
