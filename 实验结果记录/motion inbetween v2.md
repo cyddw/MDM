@@ -198,5 +198,22 @@
 <summary>📖 实验记录</summary>
 
         关于rotation表示重新转为abs表示出现旋转问题的总计：(1)在motion_representation中，new_data[:, 0] = rot_ang，new_data[:, [1, 2]] = r_pos[:, [0,2]]这两行代码已经保证了旋转表示是绝对旋转 (2)在recover from ric中，若args.abs_3d=False，则认为旋转表示是相对旋转，则会使用累加形式；若args.abs_3d=False，则认为旋转表示是绝对旋转，则不对其进行累加
-        1.在上个实验的基础上，仅将recover from ric中的abs_3d改为True
+        1.在上个实验的基础上，仅将recover from ric中的abs_3d改为True(已完成，MPJPE收敛于40左右，且收敛速度很快，起始loss就很小，可视化结果和GT基本一致)：
+![sample_58](https://github.com/user-attachments/assets/90b6e496-ad04-4bcc-b9a0-264a1c23dac6)
+![sample_0](https://github.com/user-attachments/assets/17d0bdcb-d2de-41ca-9f0e-740900fb1dbc)
+</details>
+
+**1.8**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        实验三(重新探究loss设置对实验效果的影响)
+        1.在上述实验的基础上，取消loss中的joint约束
 </details>
