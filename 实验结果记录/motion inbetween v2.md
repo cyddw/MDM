@@ -219,6 +219,10 @@
 ![sample_58](https://github.com/user-attachments/assets/969202d6-a2ff-4551-88ff-c0c04abfe3be)
 ![sample_44](https://github.com/user-attachments/assets/80d50e97-158f-476e-b93b-1c505d1f7c88)
 
-        2.将数据集中的rotation表示换成3D表示，同时loss只有3D joints约束
+        2.将数据集中的rotation表示换成3D表示，同时loss只有3D joints约束(已完成，MPJPE收敛于30左右，去掉旋转表示反而效果更好，但是还是有抖动(可以考虑添加两帧之间的速度和加速度loss))：
+![sample_0](https://github.com/user-attachments/assets/22502763-db60-4c89-9165-9a6e4dc12f3c)
+![sample_58](https://github.com/user-attachments/assets/b8ce2d02-ef08-4e6c-a38a-aa37d1363e0c)
+
+        3.保存上个实验的训练模型，在测试集上进行测试
 
 </details>
