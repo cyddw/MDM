@@ -215,5 +215,10 @@
 <summary>📖 实验记录</summary>
 
         实验三(重新探究loss设置对实验效果的影响)
-        1.在上述实验的基础上，取消loss中的joint约束
+        1.在上述实验的基础上，取消loss中的joint约束(已完成，MPJPE收敛于70左右，相较于有joint约束抖动和平移明显)：
+![sample_58](https://github.com/user-attachments/assets/969202d6-a2ff-4551-88ff-c0c04abfe3be)
+![sample_44](https://github.com/user-attachments/assets/80d50e97-158f-476e-b93b-1c505d1f7c88)
+
+        2.将数据集中的rotation表示换成3D表示，同时loss只有3D joints约束
+
 </details>
