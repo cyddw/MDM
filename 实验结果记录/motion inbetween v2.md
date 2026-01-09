@@ -223,6 +223,23 @@
 ![sample_0](https://github.com/user-attachments/assets/22502763-db60-4c89-9165-9a6e4dc12f3c)
 ![sample_58](https://github.com/user-attachments/assets/b8ce2d02-ef08-4e6c-a38a-aa37d1363e0c)
 
-        3.保存上个实验的训练模型，在测试集上进行测试
+        3.保存上个实验的训练模型，在测试集上进行测试(已完成，MPJPE收敛于50左右)：
+![sample_0](https://github.com/user-attachments/assets/3c773510-43d0-4bfb-8858-782003aa0298)
+![sample_58](https://github.com/user-attachments/assets/53c4cc16-19dc-4bee-a937-acc286c29e91)
 
+
+</details>
+
+**1.9**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.在训练的时候保存训练的模型并在测试集上测试，以找到最优的训练轮次，避免过拟合
 </details>
