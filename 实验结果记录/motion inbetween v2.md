@@ -243,5 +243,8 @@
 <summary>📖 实验记录</summary>
 
         1.在训练的时候保存训练的模型并在测试集上测试，以找到最优的训练轮次，避免过拟合(已完成，在epoch = 1700左右，MPJPE最小，收敛于45)
+
+        实验五(探究对human motion进行加噪对性能的提升)
+        1.对human motion添加白噪声(整体加噪+sigma = 0.01)
         
 </details>
