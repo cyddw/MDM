@@ -62,14 +62,14 @@
 - [x] 1.完成进度整理5ppt
 
 **12.30**
-- [ ] 1.调试DMVAE代码，确保重构出来的human motion尽可能精确
+- [x] 1.调试DMVAE代码，确保重构出来的human motion尽可能精确
 - [x] 2.将DMVAE改为使用rotation表示进行重构
 
 **12.31**
 - [ ] 1.重新修改MMFi数据集的3D旋转rotation表示的代码(8、10、12有问题)
 
 **1.4**
-- [ ] 1.(stage1)：只使用Motion Encoder和Motion Decoder重构human motion
+- [x] 1.(stage1)：只使用Motion Encoder和Motion Decoder重构human motion
 - [ ] 2.(stage2): 在stage1的基础上对输入的motion进行加噪，能够重构出clean的human motion
 - [ ] 3.(stage3): 在stage2的基础上引入CSI数据，能够提高重构的性能
 
