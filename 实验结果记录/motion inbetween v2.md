@@ -246,6 +246,27 @@
 
         实验五(探究对human motion进行加噪对性能的提升)
         加噪的种类：白噪声、时间平滑噪声、关节权重噪声、Depth-aware噪声；加噪的方式：整体全部加噪、关节部分加噪、时间帧部分加噪，部分sample加噪
-        1.对human motion添加白噪声(整体加噪+sigma = 0.01)
+        1.对human motion添加白噪声(整体加噪+sigma = 0.01)(已完成，训练集和测试集上基本没什么特别大的变化，测试集MPJPE最小收敛于43左右，训练集MPJPE收敛于30)，带噪的human motion：
+![sample_5](https://github.com/user-attachments/assets/d8f5366f-794b-4a06-98cb-c1fc8ecafde0)
+
+        测试集上重构的结果：
+![sample_5](https://github.com/user-attachments/assets/87a921db-7445-409c-8cee-8391887860bb)
+![sample_44](https://github.com/user-attachments/assets/eaf3a022-c67a-4e22-a876-ef7bb3ea54b8)
+        
+</details>
+
+**1.10**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.对human motion添加白噪声(整体加噪+sigma = 0.02)
+
         
 </details>
