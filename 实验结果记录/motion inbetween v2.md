@@ -266,7 +266,27 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.对human motion添加白噪声(整体加噪+sigma = 0.02)
+        1.对human motion添加白噪声(整体加噪+sigma = 0.02)(已完成，训练集和测试集上基本没什么特别大的变化，测试集MPJPE最小收敛于45左右，训练集MPJPE收敛于30)，带噪的human motion：
+![sample_44](https://github.com/user-attachments/assets/0e19f178-5a3f-4de6-9a58-e582ccc1f588)
+
+        测试集上重构的结果：
+![sample_5](https://github.com/user-attachments/assets/91128e3a-793f-4bca-976f-ddccfa754b8a)
+![sample_44](https://github.com/user-attachments/assets/4d47afbc-1094-48ea-92c2-5f7a0ae088df)
+
 
         
+</details>
+
+**1.10**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.对human motion添加白噪声(整体加噪+sigma = 0.005)
 </details>
