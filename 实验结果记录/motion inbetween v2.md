@@ -288,5 +288,20 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.对human motion添加白噪声(整体加噪+sigma = 0.005)
+        1.对human motion添加白噪声(整体加噪+sigma = 0.005)(已完成，和sigma = 0.01基本没有区别)
+</details>
+
+**1.13**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        实验六(尝试通过对输入进行加噪的方式解决输出抖动的问题)：
+        1.对human motion添加低频白噪声(白噪声通过低通)(sigma = 0.01)
 </details>
