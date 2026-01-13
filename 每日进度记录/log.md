@@ -73,3 +73,6 @@
 - [ ] 2.(stage2): 在stage1的基础上对输入的motion进行加噪，能够重构出clean的human motion
 - [ ] 3.(stage3): 在stage2的基础上引入CSI数据，能够提高重构的性能
 
+**1.13**
+- [ ] 1.完成latent diffusion model部分的代码修改
+
