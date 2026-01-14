@@ -311,3 +311,18 @@
 ![sample_52](https://github.com/user-attachments/assets/3592c9d4-a11f-4bf0-bcaf-e9c561bf7a49)
         
 </details>
+
+**1.13**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.不对human motion添加噪声，增加一项加速度loss项
+        
+</details>
