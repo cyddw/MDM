@@ -303,5 +303,11 @@
 <summary>📖 实验记录</summary>
 
         实验六(尝试通过对输入进行加噪的方式解决输出抖动的问题)：
-        1.对human motion添加低频白噪声(白噪声通过低通)(sigma = 0.01)
+        1.对human motion添加低频白噪声(白噪声通过低通)(sigma = 0.01)(已完成，还是会出现抖动的现象，且测试集上和训练集上的MPJPE和sigma = 0.01的白噪声一致)带噪的human motion:
+![sample_58](https://github.com/user-attachments/assets/c802fed4-bd5f-4983-b56f-fa82deacac3a)
+
+测试集上的重构结果：
+![sample_44](https://github.com/user-attachments/assets/4c4b8ee6-a921-411a-a551-cd51dcb03f15)
+![sample_52](https://github.com/user-attachments/assets/3592c9d4-a11f-4bf0-bcaf-e9c561bf7a49)
+        
 </details>
