@@ -306,13 +306,13 @@
         1.对human motion添加低频白噪声(白噪声通过低通)(sigma = 0.01)(已完成，还是会出现抖动的现象，且测试集上和训练集上的MPJPE和sigma = 0.01的白噪声一致)带噪的human motion:
 ![sample_58](https://github.com/user-attachments/assets/c802fed4-bd5f-4983-b56f-fa82deacac3a)
 
-测试集上的重构结果：
+        测试集上的重构结果：
 ![sample_44](https://github.com/user-attachments/assets/4c4b8ee6-a921-411a-a551-cd51dcb03f15)
 ![sample_52](https://github.com/user-attachments/assets/3592c9d4-a11f-4bf0-bcaf-e9c561bf7a49)
         
 </details>
 
-**1.13**  
+**1.14**  
 <details>
 <summary>📖 问题记录</summary>  
     
@@ -323,6 +323,26 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.不对human motion添加噪声，增加一项加速度loss项
+        1.不对human motion添加噪声，增加一项加速度loss项(已完成，测试集MPJPE最小收敛于42左右，测试集MPJPE收敛于30左右，抖动相较于之前有改善)：
+
+![sample_5](https://github.com/user-attachments/assets/2e3d0bb3-1ace-4fd9-bb8c-788197fc4f3c)
+![sample_58](https://github.com/user-attachments/assets/9a0e64a8-e4a1-4b36-818b-e5b88ee60f54)
+
+        
+</details>
+
+**1.15**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.在添加加速度loss项的基础上，对输入的human motion添加噪声(低频白噪声，sigma = 0.01)
+
         
 </details>
