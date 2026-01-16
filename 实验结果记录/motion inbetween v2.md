@@ -323,7 +323,7 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.不对human motion添加噪声，增加一项加速度loss项(已完成，测试集MPJPE最小收敛于42左右，测试集MPJPE收敛于30左右，抖动相较于之前有改善)：
+        1.不对human motion添加噪声，增加一项加速度loss项(已完成，测试集MPJPE最小收敛于42左右，训练集MPJPE收敛于30左右，抖动相较于之前有改善)：
 
 ![sample_5](https://github.com/user-attachments/assets/2e3d0bb3-1ace-4fd9-bb8c-788197fc4f3c)
 ![sample_58](https://github.com/user-attachments/assets/9a0e64a8-e4a1-4b36-818b-e5b88ee60f54)
@@ -342,7 +342,11 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.在添加加速度loss项的基础上，对输入的human motion添加噪声(低频白噪声，sigma = 0.01)
+        1.在添加加速度loss项的基础上，对输入的human motion添加噪声(低频白噪声，sigma = 0.01)(已完成，测试集MPJPE最小收敛于42左右，训练集MPJPE收敛于30左右，可视化结果和上个实验基本没有区别)：
+        测试集重构结果：
+![sample_0](https://github.com/user-attachments/assets/6153b16d-c726-46f4-b02c-deeb54d23302)
+![sample_58](https://github.com/user-attachments/assets/0e071912-518d-4ef0-a38c-cd4cec984a64)
+
 
         
 </details>
