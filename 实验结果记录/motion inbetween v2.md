@@ -335,8 +335,6 @@
 <details>
 <summary>📖 问题记录</summary>  
     
-
-
 </details>  
 
 <details>
@@ -347,6 +345,17 @@
 ![sample_0](https://github.com/user-attachments/assets/6153b16d-c726-46f4-b02c-deeb54d23302)
 ![sample_58](https://github.com/user-attachments/assets/0e071912-518d-4ef0-a38c-cd4cec984a64)
 
+</details>
 
-        
+**1.16**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.对输入的human motion进行Z-normalize
+
 </details>
