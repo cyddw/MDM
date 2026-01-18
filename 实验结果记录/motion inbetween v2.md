@@ -356,6 +356,7 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.对输入的human motion进行Z-normalize
+        实验七(扩散模型+VAE联合测试，其中spectral encoder不参与预训练，预期结果：MPJPE=150左右)
+        1.在上个实验的基础上，对输入的human motion进行归一化操作，这里先不对数据进行加噪操作
 
 </details>
