@@ -70,9 +70,11 @@
 
 **1.4**
 - [x] 1.(stage1)：只使用Motion Encoder和Motion Decoder重构human motion
-- [ ] 2.(stage2): 在stage1的基础上对输入的motion进行加噪，能够重构出clean的human motion
+- [x] 2.(stage2): 在stage1的基础上对输入的motion进行加噪，能够重构出clean的human motion
 - [ ] 3.(stage3): 在stage2的基础上引入CSI数据，能够提高重构的性能
 
 **1.13**
-- [ ] 1.完成latent diffusion model部分的代码修改
+- [x] 1.完成latent diffusion model部分的代码修改
 
+**1.18**
+- [x] 1.修改MLD中读取的human motion为前110帧
