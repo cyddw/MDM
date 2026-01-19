@@ -391,6 +391,8 @@
 ![sample_52](https://github.com/user-attachments/assets/539c16c9-9000-4e74-a387-f71ece072820)
 ![sample_58](https://github.com/user-attachments/assets/8b9648e6-1e55-4317-afe4-6d51cbc919e7)
 
+        4.对于VAE模型，将Spectral Encoder加入模型进行训练
+
 
 
 
