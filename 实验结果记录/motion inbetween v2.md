@@ -373,5 +373,18 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.在添加加速度loss项的基础上，对输入的human motion添加噪声(低频白噪声，sigma = 0.01)，同时将输入的human motion进行Z-normalization，其中mean和std通过训练集进行计算
+        1.在添加加速度loss项的基础上，对输入的human motion添加噪声(低频白噪声，sigma = 0.01)，同时将输入的human motion进行Z-normalization，其中mean和std通过训练集进行计算(已完成，和没有归一化的结果没什么区别，训练集MPJPE收敛于30，测试集MPJPE最小收敛于45)，这里有一个点需要注意一下，加噪的噪声实在标准化之后添加的：
+        加噪的结果可视化：
+![sample_58](https://github.com/user-attachments/assets/13fce46e-6476-4b60-96b0-263f757bbd94)
+![sample_52](https://github.com/user-attachments/assets/8093fd90-9357-42ce-99cb-79311facad2f)
+
+        测试集重构结果可视化：
+![sample_52](https://github.com/user-attachments/assets/a2cfe664-cb9e-4bce-bf8a-c1e64cb12839)
+![sample_58](https://github.com/user-attachments/assets/cfc446e4-fe01-46c1-9dfc-e30fd4d39870)
+
+        2.在上个实验的基础上，不对输入的human motion进行加噪
+
+
+
+        
 </details>
