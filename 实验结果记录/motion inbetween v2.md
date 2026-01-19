@@ -387,7 +387,10 @@
 ![sample_15](https://github.com/user-attachments/assets/1eee0888-e750-4b01-a999-465b9c8895bd)
 
 
-        3.对于VAE模型，在添加加速度loss项的基础上，不对输入的human motion进行加噪，同时将输入的human motion进行Z-normalization，其中mean和std通过训练集进行计算
+        3.对于VAE模型，在添加加速度loss项的基础上，不对输入的human motion进行加噪，同时将输入的human motion进行Z-normalization，其中mean和std通过训练集进行计算(已完成，训练集MPJPE收敛于35左右，测试集MPJPE最小收敛于43)，测试集重构结果可视化：
+![sample_52](https://github.com/user-attachments/assets/539c16c9-9000-4e74-a387-f71ece072820)
+![sample_58](https://github.com/user-attachments/assets/8b9648e6-1e55-4317-afe4-6d51cbc919e7)
+
 
 
 
