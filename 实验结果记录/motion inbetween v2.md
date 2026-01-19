@@ -357,6 +357,21 @@
 <summary>📖 实验记录</summary>
 
         实验七(扩散模型+VAE联合测试，其中spectral encoder不参与预训练，预期结果：MPJPE=150左右)
-        1.在上个实验的基础上，对输入的human motion进行归一化操作，这里先不对数据进行加噪操作
+        1.在上个实验的基础上，在扩散模型中进行重构，测试集的重构结果：MPJPE =  282.8717(2000epoch)，主要是动作识别率低
+![sample_8](https://github.com/user-attachments/assets/d20ee95d-6a05-4299-a4c1-7bd29809235c)
+![sample_29](https://github.com/user-attachments/assets/871ef419-bc0e-4f45-9c9a-3e268e656fe1)
 
+
+</details>
+
+**1.19**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.在添加加速度loss项的基础上，对输入的human motion添加噪声(低频白噪声，sigma = 0.01)，同时将输入的human motion进行Z-normalization，其中mean和std通过训练集进行计算
 </details>
