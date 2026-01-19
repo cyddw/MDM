@@ -382,7 +382,13 @@
 ![sample_52](https://github.com/user-attachments/assets/a2cfe664-cb9e-4bce-bf8a-c1e64cb12839)
 ![sample_58](https://github.com/user-attachments/assets/cfc446e4-fe01-46c1-9dfc-e30fd4d39870)
 
-        2.在上个实验的基础上，不对输入的human motion进行加噪
+        2.在上个实验的基础上，在扩散模型中进行重构，测试集的重构结果：MPJPE = 304.8604(2000epoch)，重构结果可视化：
+![sample_8](https://github.com/user-attachments/assets/a638b146-2ca2-40e2-b02b-4045c4d043af)
+![sample_15](https://github.com/user-attachments/assets/1eee0888-e750-4b01-a999-465b9c8895bd)
+
+
+        3.在上个实验的基础上，不对输入的human motion进行加噪
+
 
 
 
