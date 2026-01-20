@@ -391,7 +391,9 @@
 ![sample_52](https://github.com/user-attachments/assets/539c16c9-9000-4e74-a387-f71ece072820)
 ![sample_58](https://github.com/user-attachments/assets/8b9648e6-1e55-4317-afe4-6d51cbc919e7)
 
-        4.对于VAE模型，将Spectral Encoder加入模型进行训练
+        4.对于VAE模型，将Spectral Encoder加入模型进行训练(已完成，训练集MPJPE收敛于28左右(3000个epoch)，测试集MPJPE最小收敛于43)，测试集结果可视化：
+![sample_52](https://github.com/user-attachments/assets/33857cd3-446e-4b1e-89fb-9cbf870d0fc0)
+![sample_5](https://github.com/user-attachments/assets/371d8bab-dad4-4be2-a3d3-d64f4e8af845)
 
 
 
