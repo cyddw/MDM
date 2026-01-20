@@ -410,5 +410,7 @@
 
         2.在扩散模型中进行重构，spectral_encoder_cond进行预训练并冻结
 
+        3.查看扩散模型中spectral encoder cond的输出的维度大小
+
 
 </details>
