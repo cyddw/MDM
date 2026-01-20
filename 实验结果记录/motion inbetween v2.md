@@ -408,5 +408,7 @@
 
         1.在上个实验的基础上，在扩散模型中进行重构，spectral_encoder_cond不进行预训练
 
+        2.在扩散模型中进行重构，spectral_encoder_cond进行预训练并冻结
+
 
 </details>
