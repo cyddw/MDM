@@ -414,7 +414,17 @@
 ![sample_8](https://github.com/user-attachments/assets/860afbff-9d6c-47ce-80e6-9208e5ad932e)
 ![sample_29](https://github.com/user-attachments/assets/eee84ac6-19c9-4dc3-be8e-bc3599bdc84e)
 
-        3.查看扩散模型中spectral encoder cond的输出的维度大小
+        实验八(整体模型的优化)：
+        1.对于已经训练好的Multimodal VAE，只使用Spectral部分进行human motion的重构(已完成，MPJPE = 298.658)，重构结果：
+![sample_52](https://github.com/user-attachments/assets/63f2df31-e67f-410b-acb2-6782fb3e20ff)
+![sample_58](https://github.com/user-attachments/assets/8073945c-7802-457d-80e3-ac70ab7ca84e)
+
+
+        2.对于已经训练好的Multimodal VAE，只使用Human motion部分进行human motion的重构(已完成，MPJPE = 49.237)，重构结果：
+![sample_52](https://github.com/user-attachments/assets/3451a1d2-24ab-4de1-8212-0a32cc8c0216)
+![sample_58](https://github.com/user-attachments/assets/1e490742-7ed1-4458-b32b-8444984055cd)
+
+
 
 
 </details>
