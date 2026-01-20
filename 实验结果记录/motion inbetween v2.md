@@ -406,9 +406,13 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.在上个实验的基础上，在扩散模型中进行重构，spectral_encoder_cond不进行预训练
+        1.在上个实验的基础上，在扩散模型中进行重构，spectral_encoder_cond不进行预训练(已完成，测试集的MPJPE = 289.2039(2000epoch))，测试集结果：
+![sample_8](https://github.com/user-attachments/assets/204b4d1b-569c-4646-bb66-1d2a53fbb8fc)
+![sample_29](https://github.com/user-attachments/assets/a66dd39a-aff5-4b24-92cf-107a5d42228f)
 
-        2.在扩散模型中进行重构，spectral_encoder_cond进行预训练并冻结
+        2.在扩散模型中进行重构，spectral_encoder_cond进行预训练并冻结(已完成，测试集的MPJPE = 318.8988(2000epoch))，测试集结果：
+![sample_8](https://github.com/user-attachments/assets/860afbff-9d6c-47ce-80e6-9208e5ad932e)
+![sample_29](https://github.com/user-attachments/assets/eee84ac6-19c9-4dc3-be8e-bc3599bdc84e)
 
         3.查看扩散模型中spectral encoder cond的输出的维度大小
 
