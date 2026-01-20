@@ -424,6 +424,9 @@
 ![sample_52](https://github.com/user-attachments/assets/3451a1d2-24ab-4de1-8212-0a32cc8c0216)
 ![sample_58](https://github.com/user-attachments/assets/1e490742-7ed1-4458-b32b-8444984055cd)
 
+        3.对于Multimodal VAE，loss部分增加一项对齐损失函数(beta = 0.1)
+
+        4.对于Multimodal VAE，增加only human motion reconstruction loss以及only spectral reconstruction loss
 
 
 
