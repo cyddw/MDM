@@ -426,7 +426,9 @@
 
         3.对于Multimodal VAE，loss部分增加一项对齐损失函数(beta = 0.1)
 
-        4.对于Multimodal VAE，增加only human motion reconstruction loss以及only spectral reconstruction loss
+        4.对于Multimodal VAE，增加only human motion reconstruction loss以及only spectral reconstruction loss，取消了加速度loss项
+
+        5.在上个实验的基础上，增加对齐项损失函数(beta = 0.1)
 
 
 
