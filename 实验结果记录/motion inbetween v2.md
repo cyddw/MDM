@@ -395,11 +395,18 @@
 ![sample_52](https://github.com/user-attachments/assets/33857cd3-446e-4b1e-89fb-9cbf870d0fc0)
 ![sample_5](https://github.com/user-attachments/assets/371d8bab-dad4-4be2-a3d3-d64f4e8af845)
 
+</details>
+
+**1.20**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.在上个实验的基础上，在扩散模型中进行重构，spectral_encoder_cond不进行预训练
 
 
-
-
-
-
-        
 </details>
