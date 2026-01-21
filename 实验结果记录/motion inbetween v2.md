@@ -475,6 +475,6 @@
         
         5.对于上述的(DMVAE2)，在扩散模型中进行测试
 
-        6.对于上述的(DMVAE3)，在扩散模型中进行测试
+        6.(MLD)对于上述的(DMVAE3)，在扩散模型中进行测试，Spectral_Encoder_cond冻结
 
 </details>
