@@ -471,8 +471,8 @@
         2.(DMVAE4)对于Multimodal VAE，重构PoE、Spectral和Motion，取消加速度loss项，增加对齐loss(beta = 0.001)
 
         3.(DMVAE3)对于Multimodal VAE，只重构Motion，保留加速度loss项，增加对齐loss(beta = 0.1)(已完成，跑了差不多1000个epoch，没有收敛的趋势，训练集的MPJPE一直在250左右震荡)
-        4.(DMVAE3)对于Multimodal VAE，分成两步训练，即先训练Motion VAE，然后冻结，再训练Spectral Encoder，使得Spectral的latent输出和Motion部分进行对齐
-
+        4.(DMVAE3)对于Multimodal VAE，分成两步训练，即先训练Motion VAE，然后冻结，再训练Spectral Encoder，阶段二的损失函数为Loss_align和Loss_KL
+        
         5.对于上述的(DMVAE2)，在扩散模型中进行测试
 
         6.对于上述的(DMVAE3)，在扩散模型中进行测试
