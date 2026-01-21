@@ -466,15 +466,38 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.(DMVAE2)对于Multimodal VAE，只重构PoE，loss部分增加一项对齐损失函数(beta = 0.001)
+        1.(DMVAE2)对于Multimodal VAE，只重构PoE，loss部分增加一项对齐损失函数(beta = 0.001)(已完成，训练集MPJPE收敛于42左右，测试集full MPJPE收敛于134，motion MPJPE收敛于100，spectral MPJPE收敛于295)：
+        测试集full重构结果：
+![sample_58](https://github.com/user-attachments/assets/0591547e-a8be-4674-b422-06a291558625)
+![sample_52](https://github.com/user-attachments/assets/8ec14904-8625-4ba8-a072-151d9deff25c)
 
-        2.(DMVAE4)对于Multimodal VAE，重构PoE、Spectral和Motion，取消加速度loss项，增加对齐loss(beta = 0.001)
+        测试集motion重构结果：
+![sample_58](https://github.com/user-attachments/assets/2fbe0d0c-5638-4e8e-a7d0-2c6f806a4951)
+![sample_52](https://github.com/user-attachments/assets/1e917d1f-c856-48a9-89ff-fffec6aae511)
+
+        测试集spectral重构结果：
+![sample_58](https://github.com/user-attachments/assets/6c070644-ef3a-41ea-a1b3-3593f3c7deee)
+![sample_52](https://github.com/user-attachments/assets/3544e65e-0c2e-45cc-96c1-f27a5d7bf4cc)
+
+        2.(DMVAE4)对于Multimodal VAE，重构PoE、Spectral和Motion，取消加速度loss项，增加对齐loss(beta = 0.001)(已完成，训练集MPJPE收敛于38，测试集的full MPJPE收敛于138，测试集的motion MPJPE收敛于80，测试集的spectral MPJPE收敛于227)，测试集full重构结果：
+![sample_58](https://github.com/user-attachments/assets/4cb0bcfb-38dc-4bd3-b1db-474cf2ea1f32)
+![sample_52](https://github.com/user-attachments/assets/0630855f-6d22-4deb-9c81-716f77134a88)
+
+        测试集motion重构结果：
+![sample_58](https://github.com/user-attachments/assets/a28824d8-1853-4de1-8d0f-518661e5f2e3)
+![sample_52](https://github.com/user-attachments/assets/06a85f9a-7dc7-4e77-afc0-df7ad477b816)
+
+        测试集spectral重构结果：
+![sample_58](https://github.com/user-attachments/assets/2cc320bd-162f-408d-92aa-8aa447f70136)
+![sample_52](https://github.com/user-attachments/assets/842917b9-7e03-4c08-b9bf-cc1ed9c63564)
 
         3.(DMVAE3)对于Multimodal VAE，只重构Motion，保留加速度loss项，增加对齐loss(beta = 0.1)(已完成，跑了差不多1000个epoch，没有收敛的趋势，训练集的MPJPE一直在250左右震荡)
-        4.(DMVAE3)对于Multimodal VAE，分成两步训练，即先训练Motion VAE，然后冻结，再训练Spectral Encoder，阶段二的损失函数为Loss_align和Loss_KL
-        
-        5.对于上述的(DMVAE2)，在扩散模型中进行测试
+        4.(DMVAE3)对于Multimodal VAE，分成两步训练，即先训练Motion VAE，然后冻结，再训练Spectral Encoder，阶段二的损失函数为Loss_align和Loss_KL(已完成，loss下降很快，说明两者已经对齐，但是测试集的MPJPE降不下去，一直在250左右波动)，具体loss如下所示：
+<img width="1119" height="713" alt="image" src="https://github.com/user-attachments/assets/dcc0fa1c-6d08-4e69-a5b3-a370b8357e9c" />
 
-        6.(MLD2)对于上述的(DMVAE3)，在扩散模型中进行测试，Spectral_Encoder_cond冻结
+        5.(MLD2)对于上述的(DMVAE3)，在扩散模型中进行测试，Spectral_Encoder_cond冻结(已完成，测试集还是收敛不了，测试集的MPJPE在350左右)，测试集的重构结果：
+![sample_29](https://github.com/user-attachments/assets/f71923cc-e329-4e0d-b37c-b0f9f6a01f2a)
+![sample_8](https://github.com/user-attachments/assets/599238ff-5ffc-4ede-964a-334cd4b29419)
 
+        6.(MLD2)在上个实验的基础上，直接将输入的condition换成Motion Encoder的输出z，以验证condition diffusion的有效性
 </details>
