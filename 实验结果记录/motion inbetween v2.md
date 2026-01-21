@@ -495,7 +495,7 @@
         4.(DMVAE3)对于Multimodal VAE，分成两步训练，即先训练Motion VAE，然后冻结，再训练Spectral Encoder，阶段二的损失函数为Loss_align和Loss_KL(已完成，loss下降很快，说明两者已经对齐，但是测试集的MPJPE降不下去，一直在250左右波动)，具体loss如下所示：
 <img width="1119" height="713" alt="image" src="https://github.com/user-attachments/assets/dcc0fa1c-6d08-4e69-a5b3-a370b8357e9c" />
 
-        5.(MLD2)对于上述的(DMVAE3)，在扩散模型中进行测试，Spectral_Encoder_cond冻结(已完成，测试集还是收敛不了，测试集的MPJPE在350左右)，测试集的重构结果：
+        5.(MLD2)对于上述的(DMVAE3)，在扩散模型中进行测试，Spectral_Encoder_cond冻结(已完成，训练集的loss一直在0.25以上，测试集还是收敛不了，测试集的MPJPE在350左右)，测试集的重构结果：
 ![sample_29](https://github.com/user-attachments/assets/f71923cc-e329-4e0d-b37c-b0f9f6a01f2a)
 ![sample_8](https://github.com/user-attachments/assets/599238ff-5ffc-4ede-964a-334cd4b29419)
 
