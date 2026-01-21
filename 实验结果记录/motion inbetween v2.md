@@ -472,4 +472,8 @@
 
         3.(DMVAE3)对于Multimodal VAE，只重构Motion，保留加速度loss项，增加对齐loss(beta = 0.1)
 
+        4.对于上述的(DMVAE2)，在扩散模型中进行测试
+
+        5.对于上述的(DMVAE3)，在扩散模型中进行测试
+
 </details>
