@@ -424,12 +424,50 @@
 ![sample_52](https://github.com/user-attachments/assets/3451a1d2-24ab-4de1-8212-0a32cc8c0216)
 ![sample_58](https://github.com/user-attachments/assets/1e490742-7ed1-4458-b32b-8444984055cd)
 
-        3.对于Multimodal VAE，loss部分增加一项对齐损失函数(beta = 0.1)
-
-        4.对于Multimodal VAE，增加only human motion reconstruction loss以及only spectral reconstruction loss，取消了加速度loss项
-
-        5.在上个实验的基础上，增加对齐项损失函数(beta = 0.1)
+        3.对于Multimodal VAE，loss部分增加一项对齐损失函数(beta = 0.1)(已完成，训练集MPJPE降不下去，收敛于263.016，测试集full MPJPE = 225.654)，重构结果：
+![sample_52](https://github.com/user-attachments/assets/ff88e013-3c5d-417d-b4f5-3d5940e1e1a4)
+![sample_58](https://github.com/user-attachments/assets/30ba8920-f2d6-4148-9b4e-0de39bc036ed)
 
 
+        4.对于Multimodal VAE，增加only human motion reconstruction loss以及only spectral reconstruction loss，取消了加速度loss项(已完成，训练集full MPJPE收敛于30，测试集full MPJPE收敛于72，测试集motion MPJPE收敛于45，测试集spectral MPJPE收敛于250)
+        测试集full重构结果：
+![sample_58](https://github.com/user-attachments/assets/8836bb5f-7462-4300-af06-e6f4774a8781)
+![sample_52](https://github.com/user-attachments/assets/f4fd1a0c-dd0d-428d-93d1-56669eec2fbb)
+
+        测试集motion重构结果：
+![sample_58](https://github.com/user-attachments/assets/ca5c07ef-fc66-42ff-a2d2-880665492fc7)
+![sample_52](https://github.com/user-attachments/assets/c856ef9f-fdba-4bcf-978f-245878af44ee)
+
+        测试集spectral重构结果：
+![sample_58](https://github.com/user-attachments/assets/89418305-4b67-4134-93b6-85090042ee02)
+![sample_52](https://github.com/user-attachments/assets/b094c8da-1894-43ca-949f-38f8accb3f3e)
+
+        5.在上个实验的基础上，增加对齐项损失函数(beta = 0.1)(已完成，训练集MPJPE收敛于100，测试集full MPJPE收敛于186.711，测试集motion MPJPE收敛于123.610，测试集spectral MPJPE收敛于254.605)
+        测试集full重构结果：
+![sample_58](https://github.com/user-attachments/assets/c5409c78-8b2a-4d20-9cdd-d17dc033af6c)
+![sample_52](https://github.com/user-attachments/assets/ee397cd5-4446-4d08-90a4-805562969af7)
+
+        测试集motion重构结果：
+![sample_52](https://github.com/user-attachments/assets/00193400-37b7-41dc-b191-78ccd68bedbd)
+![sample_58](https://github.com/user-attachments/assets/45395afc-e730-48e8-846c-821a6df8ef97)
+
+        测试集spectral重构结果：
+![sample_52](https://github.com/user-attachments/assets/84b762e4-5b29-440c-bcdf-6695cb63e000)
+![sample_58](https://github.com/user-attachments/assets/8fc01659-e85a-47ba-8ddc-734997020259)
+
+</details>
+
+**1.21**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.(DMVAE2)对于Multimodal VAE，只重构PoE，loss部分增加一项对齐损失函数(beta = 0.001)
+
+        2.(DMVAE4)对于Multimodal VAE，只
 
 </details>
