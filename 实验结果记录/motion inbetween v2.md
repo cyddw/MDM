@@ -468,6 +468,8 @@
 
         1.(DMVAE2)对于Multimodal VAE，只重构PoE，loss部分增加一项对齐损失函数(beta = 0.001)
 
-        2.(DMVAE4)对于Multimodal VAE，只
+        2.(DMVAE4)对于Multimodal VAE，重构PoE、Spectral和Motion，取消加速度loss项，增加对齐loss(beta = 0.001)
+
+        3.(DMVAE3)对于Multimodal VAE，只重构Motion，保留加速度loss项，增加对齐loss(beta = 0.1)
 
 </details>
