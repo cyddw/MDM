@@ -513,7 +513,8 @@
 ![sample_17](https://github.com/user-attachments/assets/d7d6f1d2-0534-429f-8698-823cac405969)
 ![sample_15](https://github.com/user-attachments/assets/1550efc5-1827-4bc2-9089-ce2bc273cd9f)
         2.(MLD2)将扩散模型的条件注入方式由concatenate换成FiLM
-        3.(MLD3)在2的基础上，将采样过程的DDIM的步数由50改为1000
+        3.(MLD3)在2的基础上，将采样过程的DDIM的步数由50改为500
+        4.(MLD4)在2的基础上，将denoiser的预测目标由噪声改为真实值
 
 </details>  
 
