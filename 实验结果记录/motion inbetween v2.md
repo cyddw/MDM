@@ -500,5 +500,8 @@
 ![sample_8](https://github.com/user-attachments/assets/599238ff-5ffc-4ede-964a-334cd4b29419)
 
         6.(MLD2)在上个实验的基础上，直接将输入的condition换成Motion Encoder的输出z，以验证condition diffusion的有效性(已完成，训练集的loss收敛于0.1左右，但是测试集的MPJPE一直在300左右)
-        7.(MLD2)将扩散模型的条件注入方式由concatenate换成FiLM()
+        7.(MLD2)将扩散模型的条件注入方式由concatenate换成FiLM(已完成，训练集的loss收敛于0.17左右，测试集的MPJPE一直在280左右震荡)，测试集重构结果：
+![sample_17](https://github.com/user-attachments/assets/1e978e5a-2a0f-4d12-b2d5-5b7f0e3cd5a4)
+![sample_15](https://github.com/user-attachments/assets/807a8e42-a1b5-47fe-bcad-8b81965e8af1)
+
 </details>
