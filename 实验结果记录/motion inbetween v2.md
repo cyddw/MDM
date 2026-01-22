@@ -505,3 +505,19 @@
 ![sample_15](https://github.com/user-attachments/assets/807a8e42-a1b5-47fe-bcad-8b81965e8af1)
 
 </details>
+
+**1.22**  
+<details>
+<summary>📖 问题记录</summary>  
+        1.(MLD2)重新检查了一下代码，发现测试集部分的代码没有换成Motion Encoder的输出z，对齐进行修改并重跑6(已完成，测试集的loss收敛于0.1左右，测试集的MPJPE收敛于180)，测试集的重构结果：
+![sample_17](https://github.com/user-attachments/assets/d7d6f1d2-0534-429f-8698-823cac405969)
+![sample_15](https://github.com/user-attachments/assets/1550efc5-1827-4bc2-9089-ce2bc273cd9f)
+        2.(MLD2)将扩散模型的条件注入方式由concatenate换成FiLM
+        3.(MLD3)在2的基础上，将采样过程的DDIM的步数由50改为1000
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+  
+</details>  
