@@ -530,5 +530,6 @@
 ![sample_17](https://github.com/user-attachments/assets/0bab2b92-6477-4fb0-8af0-dd35cb9f71f9)
 
         4.(MLD4)在2的基础上，将denoiser的预测目标由噪声改为真实值
-        5.(MLD3)在上个实验的基础上，将扩散模型的注入方式改回concatenate，denoiser的预测目标由噪声改为真实值
+        5.(MLD3)在上个实验的基础上，将扩散模型的注入方式改回concatenate，denoiser的预测目标由噪声改为真实值(已完成，可以无限逼近真实值)
+        6.(MLD3)在上个实验的基础上，将条件输入由Motion Encoder的输出z换成Spectral Encoder的输出
 </details>  
