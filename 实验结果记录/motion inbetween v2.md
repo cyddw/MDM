@@ -529,7 +529,18 @@
 ![sample_15](https://github.com/user-attachments/assets/e0a68f7f-0891-4c1d-bc9d-f507be5b8a21)
 ![sample_17](https://github.com/user-attachments/assets/0bab2b92-6477-4fb0-8af0-dd35cb9f71f9)
 
-        4.(MLD4)在2的基础上，将denoiser的预测目标由噪声改为真实值
-        5.(MLD3)在上个实验的基础上，将扩散模型的注入方式改回concatenate，denoiser的预测目标由噪声改为真实值(已完成，可以无限逼近真实值)
-        6.(MLD3)在上个实验的基础上，将条件输入由Motion Encoder的输出z换成Spectral Encoder的输出
+        4.(MLD4)在2的基础上，将denoiser的预测目标由噪声改为真实值(已完成，训练集的loss收敛于0.078左右，测试集的MPJPE收敛于73)测试集的重构结果：
+![sample_15](https://github.com/user-attachments/assets/7e5faa57-38fc-4ab6-ada6-4cc143a9a43a)
+![sample_17](https://github.com/user-attachments/assets/5e72813a-111a-42da-8c50-19d3efdc44c1)
+
+        5.(MLD3)在上个实验的基础上，将扩散模型的条件注入方式改回concatenate，denoiser的预测目标由噪声改为真实值(已完成，可以无限逼近真实值)
+        6.(MLD3)在上个实验的基础上，将条件输入由Motion Encoder的输出z换成Spectral Encoder的输出(已完成，训练集的loss收敛于0.42，测试集的MPJPE收敛于272)，测试集的重构结果：
+![sample_17](https://github.com/user-attachments/assets/b8b2c7f1-dfb3-479a-8458-f2ce7384cd87)
+![sample_15](https://github.com/user-attachments/assets/dea6b989-2a2d-40b7-9f0a-e2e8128ed0c4)
+
+        7.(MLD2)在上个实验的基础上，将扩散模型的条件注入方式改回concatenate(已完成，训练集的loss收敛于0.42，测试集的MPJPE收敛于271)，测试集的重构结果：
+![sample_17](https://github.com/user-attachments/assets/6b82be9c-d789-49d3-b37b-3ed3f63b11f5)
+![sample_15](https://github.com/user-attachments/assets/28ea5e14-18e0-4f16-9da7-fb65188fbb47)
+
+
 </details>  
