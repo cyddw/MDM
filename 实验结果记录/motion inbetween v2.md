@@ -544,3 +544,21 @@
 
 
 </details>  
+
+**1.22**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+    
+        实验九(模型性能的微调)
+        1.(DMVAE3)尝试提高获取的AoADFS的分辨率(32*31->64*62)
+        2.(MLD2)分辨率(64*62), 条件注入方式(concatenate)
+        
+
+
+</details>  
