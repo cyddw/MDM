@@ -545,7 +545,7 @@
 
 </details>  
 
-**1.22**  
+**1.23**  
 <details>
 <summary>📖 问题记录</summary>  
     
@@ -556,10 +556,29 @@
 <summary>📖 实验记录</summary>
     
         实验九(确定性能差的具体原因：模型问题还是数据问题)
-        1.(DMVAE3)尝试提高获取的AoADFS的分辨率(32*31->64*62)
-        2.(MLD2)分辨率(64*62), 条件注入方式(concatenate)
-        3.(DMVAE4)使用Person in wifi数据集，分辨率(32*31)，取消加速度loss项
-        
-
+        1.(DMVAE3)尝试提高获取的AoADFS的分辨率(32*31->64*62)(已完成，在训练1000个epoch后，训练集的loss收敛于0.5左右，测试集的MPJPE收敛于230左右)
+        2.(MLD2)分辨率(64*62), 条件注入方式(concatenate)(已完成，测试集的MPJPE降不下去，一直在250左右震荡，loss也在0.42左右波动)
+        3.(DMVAE4)使用Person in wifi数据集，分辨率(32*31)，取消加速度loss项(已完成，在阶段1中，训练集的MPJPE收敛于50左右，在阶段2，测试集motion的MPJPE收敛于60，测试集spectral的MPJPE收敛于400左右)
+        4.(MLD2)在上个实验的基础上，测试在扩散模型中的性能(已完成，loss根本降不下来，测试集的MPJPE在400左右震荡)
 
 </details>  
+
+**1.24**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+    
+        综合上述实验，可以确定主要原因是使用VAE的话，压缩到latent space会导致误差被放大，同时VAE的latent空间是紧凑表示，不同动作之间的距离小
+        实验十(对模型进行修正，使用AE+对比学习)
+        1.(DMVAE4)使用改进的AE+对比学习的模型进行训练(loss_contra的系数为0.1)
+        2.(DMVAE5)使用改进的AE+对比学习的模型进行训练(loss_constra的系数为0.01)
+
+</details>  
+
+
+
