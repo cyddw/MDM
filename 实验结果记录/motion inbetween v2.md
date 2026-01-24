@@ -555,7 +555,7 @@
 <details>
 <summary>📖 实验记录</summary>
     
-        实验九(模型性能的微调)
+        实验九(确定性能差的具体原因：模型问题还是数据问题)
         1.(DMVAE3)尝试提高获取的AoADFS的分辨率(32*31->64*62)
         2.(MLD2)分辨率(64*62), 条件注入方式(concatenate)
         3.(DMVAE4)使用Person in wifi数据集，分辨率(32*31)，取消加速度loss项
