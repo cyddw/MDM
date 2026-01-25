@@ -197,7 +197,7 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        关于rotation表示重新转为abs表示出现旋转问题的总计：(1)在motion_representation中，new_data[:, 0] = rot_ang，new_data[:, [1, 2]] = r_pos[:, [0,2]]这两行代码已经保证了旋转表示是绝对旋转 (2)在recover from ric中，若args.abs_3d=False，则认为旋转表示是相对旋转，则会使用累加形式；若args.abs_3d=False，则认为旋转表示是绝对旋转，则不对其进行累加
+        关于rotation表示重新转为abs表示出现旋转问题的总计：(1)在motion_representation中，new_data[:, 0] = rot_ang，new_data[:, [1, 2]] = r_pos[:, [0,2]]这两行代码已经保证了旋转表示是绝对旋转 (2)在recover from ric中，若args.abs_3d=False，则认为旋转表示是相对旋转，则会使用累加形式；若args.abs_3d=True，则认为旋转表示是绝对旋转，则不对其进行累加
         1.在上个实验的基础上，仅将recover from ric中的abs_3d改为True(已完成，MPJPE收敛于40左右，且收敛速度很快，起始loss就很小，可视化结果和GT基本一致)：
 ![sample_58](https://github.com/user-attachments/assets/90b6e496-ad04-4bcc-b9a0-264a1c23dac6)
 ![sample_0](https://github.com/user-attachments/assets/17d0bdcb-d2de-41ca-9f0e-740900fb1dbc)
@@ -592,8 +592,31 @@
 
         4.(MLD2)对上述的(DMVAE4)进行扩散模型的验证实验(已完成，测试集的MPJPE收敛到387左右，loss下降很快，从0.91降到0.021)
 
+</details>  
+
+
+**1.25**  
+<details>
+<summary>📖 问题记录</summary>  
+    
 
 </details>  
+
+<details>
+<summary>📖 实验记录</summary>
+    
+        1.(DMVAE4)(MLD2)在上个实验的基础上，将z_spectral对齐的对象由z_motion改为h_motion(已完成，扩散模型测试集的MPJPE在500左右，可视化结果表明，生成的动作有明显的偏离)：
+![sample_29](https://github.com/user-attachments/assets/7a9a3a40-288e-4db1-be51-73b9bbeb161b)
+![sample_8](https://github.com/user-attachments/assets/c2494cdd-8a19-4997-861a-831d682fbeee)
+
+        2.(DMVAE5)(MLD2)在上个实验的基础上，将z_spectral对齐的对象改回z_motion，增加一项motion_rec_spectral和motion的loss(已完成，扩散模型测试集的MPJPE在387左右，生成的动作还是会产生偏离)：
+![sample_17](https://github.com/user-attachments/assets/f776c906-f87a-42d2-a7c8-b4b5e358ee1e)
+![sample_15](https://github.com/user-attachments/assets/a12243b0-7114-4b0e-9ff6-755949459a4e)
+
+
+        3.(DMVAE4)
+</details>  
+
 
 
 
