@@ -575,8 +575,23 @@
     
         综合上述实验，可以确定主要原因是使用VAE的话，压缩到latent space会导致误差被放大，同时VAE的latent空间是紧凑表示，不同动作之间的距离小
         实验十(对模型进行修正，使用AE+对比学习)
-        1.(DMVAE4)使用改进的AE+对比学习的模型进行训练(loss_contra的系数为0.1)
-        2.(DMVAE5)使用改进的AE+对比学习的模型进行训练(loss_constra的系数为0.01)
+        1.(DMVAE4)使用改进的AE+对比学习的模型进行训练(loss_contra的系数为0.1)(已完成，训练集的MPJPE收敛到45左右，测试集motion的MPJPE收敛于55左右，测试集spectral的MPJPE收敛于360左右)，测试集motion重构效果：
+![sample_17](https://github.com/user-attachments/assets/fe92ee41-24b1-4484-805f-79aa7299b8d3)
+![sample_15](https://github.com/user-attachments/assets/29378ce0-fc30-4677-9417-0182b308eed8)
+
+        测试集spectral重构结果：
+![sample_17](https://github.com/user-attachments/assets/028da650-e06c-4acb-af24-6e41f726654c)
+![sample_15](https://github.com/user-attachments/assets/97f52ffa-cb14-48d4-be96-14dc19aa412e)
+
+        对z_motion进行t-sne可视化：
+<img width="500" height="500" alt="z_motion_tsne" src="https://github.com/user-attachments/assets/a64b40ec-2393-430c-b195-1cd3058ea795" />
+
+        2.(DMVAE5)使用改进的AE+对比学习的模型进行训练(loss_constra的系数为0.01)(和上个实验基本一样，loss收敛更快，训练集的MPJPE可以收敛到30左右，stage2的loss：从0.82收敛到0.0021左右)
+        3.(DMVAE3)对MMFi数据集的z_motion进行t-sne可视化，可视化的结果：
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/535a6c29-d340-4ac7-9a52-19d203500d59" />
+
+        4.(MLD2)对上述的(DMVAE4)进行扩散模型的验证实验(已完成，测试集的MPJPE收敛到387左右，loss下降很快，从0.91降到0.021)
+
 
 </details>  
 
