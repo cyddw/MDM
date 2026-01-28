@@ -613,9 +613,62 @@
 ![sample_17](https://github.com/user-attachments/assets/f776c906-f87a-42d2-a7c8-b4b5e358ee1e)
 ![sample_15](https://github.com/user-attachments/assets/a12243b0-7114-4b0e-9ff6-755949459a4e)
 
-
-        3.(DMVAE4)
+        3.(MLD2)在上个实验的基础上，将条件注入方式改为Concatenate(已完成，测试集的MPJPE收敛于400左右)
+        4.(MLD2)在上个实验的基础上，将预测目标由真实值改为噪声(已完成，收敛速度显著变慢，测试集的MPJPE收敛于400)
+        4.(DMVAE4)(MLD2)将输入由3D human motion换成3D rotation，同时loss处增加loss_rec和loss_rec_3d，z_spectral的对齐对象为h_motion(已完成，扩散模型测试集的MPJPE收敛至220左右，如果不对扩散模型的Spectral Encoder进行冻结的话，其MPJPE收敛至180左右)
 </details>  
+
+**1.26**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+    
+        1.(DMVAE4)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d和loss_contra(系数为0.1)，对不带噪的human motion进行重构，扩散模型不对Spectral Encoder进行冻结(DMVAE训练500个epoch，在扩散模型中最优MPJPE为167)
+        2.(DMVAE5)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d和loss_contra(系数为0.1)，对不带噪的human motion进行重构，同时Spectral Encoder的输出和h_motion做对比学习，扩散模型对Spectral Encoder进行冻结(DMVAE训练500个epoch，在扩散模型中最优MPJPE为182)
+        3.(DMVAE5)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d和loss_contra(系数为0.1)，对不带噪的human motion进行重构，同时Spectral Encoder的输出和z_motion做对比学习，扩散模型对Spectral Encoder进行冻结(DMVAE训练500个epoch，在扩散模型中最优MPJPE为200)
+        4.(DMVAE4)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d和loss_contra(系数为0.01)，对不带噪的human motion进行重构，扩散模型不对Spectral Encoder进行冻结(DMVAE阶段1在训练集的MPJPE28左右，测试集的MPJPE在65左右，DMVAE训练2000个epoch，在扩散模型中最优MPJPE为180)
+        5.(DMVAE5)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d，对不带噪的human motion进行重构，同时Spectral Encoder的输出和z_motion做对比学习，扩散模型对Spectral Encoder进行冻结((1000个epoch)DMVAE阶段1在训练集的MPJPE40左右，测试集的MPJPE62左右，DMVAE阶段2的loss收敛至2.5左右，扩散模型中最优MPJPE为171)
+        6.(DMVAE5)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d，对不带噪的human motion进行重构，同时Spectral Encoder的输出和z_motion做对比学习(不对两个batch_size进行concatenate)，扩散模型对Spectral Encoder进行冻结(在扩散模型中的最优MPJPE为192)
+        7.(DMVAE5)(MLD2)在5的基础上，将loss_rec的系数由1改为0.1((1000个epoch)DMVAE阶段1在训练集的MPJPE35左右，测试集的MPJPE56左右，DMVAE阶段2的loss收敛至2.76，扩散模型中最优MPJPE为174)
+        8.(DMVAE4)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d，仅对带噪的human motion进行重构，同时Spectral Encoder的输出和不带噪的z_motion做对比学习(扩散模型中最优MPJPE为178)
+        9.(DMVAE6)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d，仅对带噪的human motion进行重构，同时Spectral Encoder的输出和带噪的z_motion做对比学习(扩散模型中最优MPJPE为202)
+</details>  
+
+**1.26**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+    
+        实验十一(提升测试集的泛化能力)
+        1.(DMVAE4)(MLD2)Encoder和Decoder进行冻结，Spectral Encoder不进行冻结，对扩散模型的x进行加噪(和DMVAE加同分布的噪声，sigma = 3e-2)然后输入至Encoder(已完成，测试集MPJPE为206)
+        2.(DMVAE4)(MLD3)Encoder和Decoder进行冻结，Spectral Encoder不进行冻结，对扩散模型的x进行加噪(和DMVAE加同分布的噪声，sigma = 1e-2)然后输入至Encoder(已完成，测试集MPJPE为206)
+        3.(DMVAE4)(MLD2)Encoder和Decoder进行冻结，Spectral Encoder不进行冻结，对扩散模型的z进行加噪(白噪声，sigma = 1e-2)然后输入至Encoder(已完成，测试集MPJPE为206)
+        4.(DMVAE6)(MLD2)对DMVAE的Encoder进行冻结，对Encoder的输出进行加噪(sigma = 0.1)，训练Decoder
+        5.代码有误，上述四个实验需要重新进行
+        6.(DMVAE6)(MLD2)对DMVAE的Encoder进行冻结，对Encoder的输出进行加噪(sigma = 0.1)，训练Decoder(decA epoch = 99)(已完成，扩散模型测试集MPJPE为169)
+        7.(DMVAE4)(MLD3)Encoder和Decoder进行冻结，Spectral Encoder不进行冻结，对扩散模型的x进行加噪(和DMVAE加同分布的噪声，sigma = 1e-2)然后输入至Encoder(已完成，扩散模型测试集MPJPE为185)
+        8.(DMVAE6)(MLD2)对DMVAE的Encoder进行冻结，对Encoder的输出进行加噪(sigma = 0.1)，训练Decoder(decA epoch = 299)(已完成，和6基本一致)
+        9.(DMVAE4)(MLD3)Encoder和Decoder进行冻结，Spectral Encoder不进行冻结，对扩散模型的x进行加噪(和DMVAE加同分布的噪声，sigma = 3e-2)然后输入至Encoder(已完成，扩散模型测试集MPJPE为188)
+        10.(DMVAE6)(MLD2)对DMVAE的Encoder进行冻结，对Encoder的输出进行加噪(sigma = 0.1)，训练Decoder(decA epoch = 99)，同时对扩散模型的x进行加噪(和DMVAE加同分布的噪声，sigma = 1e-2)(已完成，测试集MPJPE为200)
+        11.(DMVAE4)(MLD3)Encoder和Decoder进行冻结，Spectral Encoder不进行冻结，对扩散模型的z进行加噪(白噪声，sigma = 1e-2)(已完成，扩散模型测试集MPJPE为180)
+        12.(DMVAE4)(MLD2)对AE中仅增加正则化loss约束，其他不变，扩散模型不进行任何加噪操作(系数=1e-3)(DMVAE测试集MPJPE收敛于65)(DMVAE的epoch = 199，扩散模型最优MPJPE = 156；DMVAE的epoch = 399，扩散模型最优MPJPE = 166)
+        13.(DMVAE4)(MLD2)对AE中仅增加正则化loss约束，其他不变，扩散模型不进行任何加噪操作(系数=1e-3)，扩散模型中也增加正则化loss约束(系数=1e-3)(DMVAE的epoch = 399，扩散模型最优MPJPE = 166)
+        14.(DMVAE4)(MLD2)对AE中仅增加正则化loss约束，其他不变，扩散模型不进行任何加噪操作(系数=1e-3)，扩散模型中的denoiser的层数由9减少至7
+</details>  
+
+
+
+
 
 
 
