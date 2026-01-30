@@ -727,8 +727,19 @@
 <img width="977" height="193" alt="image" src="https://github.com/user-attachments/assets/e94531b8-b979-4adb-a79e-0aece5fdfe60" />
 
         对于diffusion，其测试集MPJPE：
+<img width="268" height="292" alt="image" src="https://github.com/user-attachments/assets/23a1726f-aecf-4445-b489-e686ec1edf36" />
 
         8.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.01)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
+<img width="286" height="307" alt="image" src="https://github.com/user-attachments/assets/aaf55330-1905-4408-9b81-a11ea0b65324" />
+
+        9.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.02)，对于扩散模型，其DecA的训练轮次为(epoch = 199)：
+        对于AE，其加噪测试集MPJPE：
+<img width="992" height="302" alt="image" src="https://github.com/user-attachments/assets/cfaced24-9aae-4fbe-a893-34460da480dc" />
+
+        对于diffusion，其测试集MPJPE：
+
+        
+        
 </details>  
         
 
