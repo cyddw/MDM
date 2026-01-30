@@ -775,6 +775,9 @@
         17.扩散模型测试集下loss_test的误差分布：
 <img width="2700" height="1500" alt="image" src="https://github.com/user-attachments/assets/ff1b4e89-7b50-4150-80e6-a1466249b90c" />
 
+        18.DecA加噪分布：
+<img width="2700" height="1500" alt="image" src="https://github.com/user-attachments/assets/65a96d7a-46a8-48e5-a167-01f7dea001b7" />
+
         (后续思路：1.不改变加噪策略，优化其他方面的参数设置 2.不改变加噪测量，主动对diffusion的输出进行加噪)(使用训练epoch更高的epoch，扩散模型的loss_test还能进一步下降)
         
 </details>  
