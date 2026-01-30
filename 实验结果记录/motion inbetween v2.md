@@ -639,7 +639,7 @@
         9.(DMVAE6)(MLD2)输入为3D rotation，loss包含loss_rec、loss_rec_3d，仅对带噪的human motion进行重构，同时Spectral Encoder的输出和带噪的z_motion做对比学习(扩散模型中最优MPJPE为202)
 </details>  
 
-**1.26**  
+**1.27**  
 <details>
 <summary>📖 问题记录</summary>  
     
@@ -665,6 +665,24 @@
         13.(DMVAE4)(MLD2)对AE中仅增加正则化loss约束，其他不变，扩散模型不进行任何加噪操作(系数=1e-3)，扩散模型中也增加正则化loss约束(系数=1e-3)(DMVAE的epoch = 399，扩散模型最优MPJPE = 166)
         14.(DMVAE4)(MLD2)对AE中仅增加正则化loss约束，其他不变，扩散模型不进行任何加噪操作(系数=1e-3)，扩散模型中的denoiser的层数由9减少至7
 </details>  
+
+**1.28**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        实验十二(Person in wifi数据集)(平衡DMVAE和diffusion的泛化能力)
+        1.DMVAE部分仅对Encoder和Decoder进行训练，采用VAE方式，扩散模型进行验证(已完成，扩散模型在训练集上的loss很大，主要原因在于Encoder的输出不稳定，是随机值，这导致扩散模型的loss很难进行下降？但是Motion latent diffusion却能够得到较好的结果，可能是因为没有对Spectral Encoder进行预训练？)
+        2.在上个实验的基础上，对Spectral Encoder进行预训练，这里Spectral Encoder的输出和Motion Encoder的均值进行对比学习
+        3.对于DMVAE的Spectral Encoder，减少网络层数
+</details>  
+
+
 
 
 
