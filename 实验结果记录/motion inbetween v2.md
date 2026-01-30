@@ -682,6 +682,43 @@
         3.对于DMVAE的Spectral Encoder，减少网络层数
 </details>  
 
+**1.30**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.001)，对于扩散模型，其DecA的训练轮次为(epoch = 199)：
+        对于AE，其加噪测试集MPJPE：
+<img width="748" height="414" alt="image" src="https://github.com/user-attachments/assets/3e0cbb50-33f0-413c-a8e5-91b97fe9e9f7" />
+
+        对于diffusion，其测试集MPJPE：
+<img width="272" height="160" alt="image" src="https://github.com/user-attachments/assets/a25ba667-c596-4d99-bf40-bad302f076ab" />
+
+        2.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.001)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
+<img width="299" height="170" alt="image" src="https://github.com/user-attachments/assets/4d60bbfd-c1c8-4c60-8711-9636430a104e" />
+
+        3.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.002)，对于扩散模型，其DecA的训练轮次为(epoch = 199)：
+        对于AE，其加噪测试集MPJPE：
+<img width="1001" height="194" alt="image" src="https://github.com/user-attachments/assets/6d5c7af3-aee0-4218-85bd-d9199c0bb4a4" />
+
+        对于diffusion，其测试集MPJPE：
+<img width="260" height="159" alt="image" src="https://github.com/user-attachments/assets/13c28af7-6cd5-4ed1-9a20-ca36b6290d34" />
+
+        4.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.002)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
+
+        5.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.004)，对于扩散模型，其DecA的训练轮次为(epoch = 199)：
+        对于AE，其加噪测试集MPJPE：
+
+        对于diffusion，其测试集MPJPE：
+
+        6.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.004)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
+</details>  
+
 
 
 
