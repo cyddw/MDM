@@ -710,15 +710,27 @@
 <img width="260" height="159" alt="image" src="https://github.com/user-attachments/assets/13c28af7-6cd5-4ed1-9a20-ca36b6290d34" />
 
         4.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.002)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
+<img width="281" height="170" alt="image" src="https://github.com/user-attachments/assets/4a6767e7-5dc5-4e27-be82-837ba159476b" />
 
         5.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.004)，对于扩散模型，其DecA的训练轮次为(epoch = 199)：
         对于AE，其加噪测试集MPJPE：
+<img width="1013" height="185" alt="image" src="https://github.com/user-attachments/assets/40486083-4055-42a6-9143-fd5c78166b36" />
+
+        对于diffusion，其测试集MPJPE：
+<img width="272" height="155" alt="image" src="https://github.com/user-attachments/assets/a5b19f8a-b8e1-4a33-99bf-9ab0e169fdf1" />
+
+        6.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.004)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
+<img width="286" height="170" alt="image" src="https://github.com/user-attachments/assets/7cabc8d0-22bb-42c3-9bb2-036887fe0a12" />
+
+        7.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.01)，对于扩散模型，其DecA的训练轮次为(epoch = 199)：
+        对于AE，其加噪测试集MPJPE：
+<img width="977" height="193" alt="image" src="https://github.com/user-attachments/assets/e94531b8-b979-4adb-a79e-0aece5fdfe60" />
 
         对于diffusion，其测试集MPJPE：
 
-        6.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.004)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
+        8.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.01)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
 </details>  
-
+        
 
 
 
