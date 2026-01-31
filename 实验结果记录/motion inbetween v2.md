@@ -812,11 +812,23 @@
 <img width="883" height="150" alt="image" src="https://github.com/user-attachments/assets/207a4c6d-8d3e-440a-b50d-008a38ad4076" />
 
         4.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，stage1的epoch = 399，对于扩散模型，其DecA的训练轮次为(epoch = 499)：
+<img width="284" height="184" alt="image" src="https://github.com/user-attachments/assets/44449bad-6d1f-4450-a1ef-890efe8594f7" />
+
+        5.(DMVAE6)对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.04)，stage1的epoch = 399：
+<img width="443" height="80" alt="image" src="https://github.com/user-attachments/assets/491fe910-7e71-4c46-8ab5-23dbad3ffd09" />
+
+        6.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.04)，stage1的epoch = 399，对于扩散模型，其DecA的训练轮次为(epoch = 499)：  
         
-        5.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.02)，将扩散模型的denoiser的参数改为初始值，即ff_size = 1024，num_layer = 9，dropout = 0.1:
+        6.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.02)，将扩散模型的denoiser的参数改为初始值，即ff_size = 1024，num_layer = 9，dropout = 0.1:
 <img width="260" height="134" alt="image" src="https://github.com/user-attachments/assets/560446fd-2045-4f59-ab29-b3d3a03a21ed" />
 
-        6.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，将扩散模型的denoiser的参数进行修改，ff_size = 1024，num_layer = 9，dropout = 0.4
+        7.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，将扩散模型的denoiser的参数进行修改，ff_size = 1024，num_layer = 9，dropout = 0.4：
+<img width="257" height="158" alt="image" src="https://github.com/user-attachments/assets/85cdc487-4743-4f90-bd69-56d78c316c42" />
+
+        8.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，将扩散模型的denoiser的参数进行修改，ff_size = 1024，num_layer = 9，dropout = 0.3，将spectral Encoder的dropout由0.1改为0.3
+        
+
+        
 </details>  
 
 
