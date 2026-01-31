@@ -768,9 +768,11 @@
 <img width="886" height="187" alt="image" src="https://github.com/user-attachments/assets/0768c9e1-7b4f-4a3c-ba4d-7bd3b81fc709" />
 
         对于diffusion，其测试集MPJPE：
+<img width="260" height="283" alt="image" src="https://github.com/user-attachments/assets/f32354d0-e447-4c46-a27d-70b489ef37b5" />
 
         16.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，其测试集MPJPE:
-        
+<img width="344" height="377" alt="image" src="https://github.com/user-attachments/assets/1440872b-2704-471e-b896-ed99cd711cfb" />
+
         
         17.扩散模型测试集下loss_test的误差分布：
 <img width="2700" height="1500" alt="image" src="https://github.com/user-attachments/assets/ff1b4e89-7b50-4150-80e6-a1466249b90c" />
@@ -778,11 +780,28 @@
         18.DecA加噪分布：
 <img width="2700" height="1500" alt="image" src="https://github.com/user-attachments/assets/65a96d7a-46a8-48e5-a167-01f7dea001b7" />
 
-        (后续思路：1.不改变加噪策略，优化其他方面的参数设置 2.不改变加噪测量，主动对diffusion的输出进行加噪)(使用训练epoch更高的epoch，扩散模型的loss_test还能进一步下降)
+        (后续思路：1.不改变加噪策略，优化其他方面的参数设置 2.不改变加噪策略，主动对diffusion的输出进行加噪)(使用训练epoch更高的epoch，扩散模型的loss_test还能进一步下降)
         
 </details>  
         
+**1.31**  
+<details>
+<summary>📖 问题记录</summary>  
+    
 
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        实验十四(对diffusion的输出进行加噪)
+        1.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.01):
+
+        2.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.02):
+
+        实验十五(调参优化)
+        1.(DMVAE6)对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，stage1的epoch = 599
+</details>  
 
 
 
