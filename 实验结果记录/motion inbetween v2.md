@@ -817,8 +817,9 @@
         5.(DMVAE6)对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.04)，stage1的epoch = 399：
 <img width="443" height="80" alt="image" src="https://github.com/user-attachments/assets/491fe910-7e71-4c46-8ab5-23dbad3ffd09" />
 
-        6.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.04)，stage1的epoch = 399，对于扩散模型，其DecA的训练轮次为(epoch = 499)：  <img width="287" height="308" alt="image" src="https://github.com/user-attachments/assets/854a909c-f992-485c-bca6-f9d66d96b32e" />
-        
+        6.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.04)，stage1的epoch = 399，对于扩散模型，其DecA的训练轮次为(epoch = 499)：
+<img width="287" height="308" alt="image" src="https://github.com/user-attachments/assets/21c2c8d3-346f-4b7c-b5cb-ff57f2e9a6f3" />
+
         6.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.02)，将扩散模型的denoiser的参数改为初始值，即ff_size = 1024，num_layer = 9，dropout = 0.1:
 <img width="260" height="134" alt="image" src="https://github.com/user-attachments/assets/560446fd-2045-4f59-ab29-b3d3a03a21ed" />
 
@@ -828,6 +829,8 @@
         8.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，将扩散模型的denoiser的参数进行修改，ff_size = 1024，num_layer = 9，dropout = 0.3，将spectral Encoder的dropout由0.1改为0.3：
 <img width="269" height="290" alt="image" src="https://github.com/user-attachments/assets/ef550c9d-8a76-4727-8338-c8e99b9cb8c1" />
 
+        在这之前的所有实验使用的AoADFS都是40帧
+        9.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.04)，stage1的epoch = 399，对于扩散模型，其DecA的训练轮次为(epoch = 499)，对z_motion进行标准化之后再输入diffusion中，输入的AoADFS为40帧：
 
         
 </details>  
