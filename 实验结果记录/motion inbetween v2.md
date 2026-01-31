@@ -796,11 +796,27 @@
 
         实验十四(对diffusion的输出进行加噪)
         1.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.01):
+<img width="279" height="172" alt="image" src="https://github.com/user-attachments/assets/97bbbd56-3db5-4a50-b8d4-bf2e98bcba86" />
 
         2.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.02):
+<img width="263" height="160" alt="image" src="https://github.com/user-attachments/assets/a6eb92b8-e4a6-4780-8cab-abead9be55bd" />
 
         实验十五(调参优化)
-        1.(DMVAE6)对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，stage1的epoch = 599
+        1.(DMVAE6)对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，stage1的epoch = 599：
+<img width="881" height="210" alt="image" src="https://github.com/user-attachments/assets/29142b51-9f85-4281-83d6-0d59ede98f17" />
+
+        2.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，stage1的epoch = 599，对于扩散模型，其DecA的训练轮次为(epoch = 399)：
+<img width="290" height="172" alt="image" src="https://github.com/user-attachments/assets/eaed0090-b59b-42a6-80bb-b179f3fd51d6" />
+
+        3.(DMVAE6)对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，stage1的epoch = 399：
+<img width="883" height="150" alt="image" src="https://github.com/user-attachments/assets/207a4c6d-8d3e-440a-b50d-008a38ad4076" />
+
+        4.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，stage1的epoch = 399，对于扩散模型，其DecA的训练轮次为(epoch = 499)：
+        
+        5.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对扩散模型的输出进行加噪(sigma = 0.02)，将扩散模型的denoiser的参数改为初始值，即ff_size = 1024，num_layer = 9，dropout = 0.1:
+<img width="260" height="134" alt="image" src="https://github.com/user-attachments/assets/560446fd-2045-4f59-ab29-b3d3a03a21ed" />
+
+        6.(DMVAE6)(MLD(Person in wifi))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，将扩散模型的denoiser的参数进行修改，ff_size = 1024，num_layer = 9，dropout = 0.4
 </details>  
 
 
