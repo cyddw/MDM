@@ -831,11 +831,36 @@
 
         在这之前的所有实验使用的AoADFS都是40帧
         9.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.04)，stage1的epoch = 399，对于扩散模型，其DecA的训练轮次为(epoch = 499)，对z_motion进行标准化之后再输入diffusion中，输入的AoADFS为40帧：
+        训练集的训练情况：
+<img width="281" height="133" alt="image" src="https://github.com/user-attachments/assets/ff1607ec-de2a-4877-8aa2-efb9b0c23852" />
 
+        测试集的训练情况：
+<img width="275" height="148" alt="image" src="https://github.com/user-attachments/assets/3af9e51d-1fb3-4203-80c9-1039b3bf4a72" />
+
+        对测试集的z和z_ref进行denormalized，同时计算对应的mse，发现远小于0.0017，但是MPJPE并没有出现明显下降，说明DecA对于z的方向更加敏感，而不是z的数值大小
         
 </details>  
 
+**2.1**  
+<details>
+<summary>📖 问题记录</summary>  
+    
 
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.(DMVAE6)(MLD(Person in wifi2))对于AE，stage2不训练，stage1的epoch = 399，对于扩散模型，对z_motion进行标准化之后再输入diffusion中，输入的AoADFS为40帧：
+<img width="278" height="140" alt="image" src="https://github.com/user-attachments/assets/66a9c485-0886-404a-883b-6d28bec4bd6b" />
+
+        2.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对z_motion进行标准化，其测试集MPJPE:
+<img width="275" height="140" alt="image" src="https://github.com/user-attachments/assets/bdadd1c7-e7ef-402b-bf51-5d9875b89f25" />
+
+
+        实验十六(调整L2 loss系数，使得得到的latent的能量能够分散在各个维度，同时数值保持在一定范围内)
+        1.(DMVAE6)将L2 loss系数改为0.01
+</details>  
 
 
 
