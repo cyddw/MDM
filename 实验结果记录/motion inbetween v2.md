@@ -857,11 +857,33 @@
         2.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 399)，对z_motion进行标准化，其测试集MPJPE:
 <img width="275" height="140" alt="image" src="https://github.com/user-attachments/assets/bdadd1c7-e7ef-402b-bf51-5d9875b89f25" />
 
-
-        实验十六(调整L2 loss系数，使得得到的latent的能量能够分散在各个维度，同时数值保持在一定范围内)
-        1.(DMVAE6)将L2 loss系数改为0.01
 </details>  
 
+**2.2**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        实验十六(调整L2 loss系数，使得得到的latent的能量能够分散在各个维度，同时数值保持在一定范围内)
+        1.(DMVAE6)(MLD(Person in wifi2))将L2 loss系数改为0.01，stage2不训练，stage1的epoch = 199，对于扩散模型，对z_motion进行标准化之后再输入diffusion中，输入的AoADFS为40帧：
+<img width="281" height="171" alt="image" src="https://github.com/user-attachments/assets/39ebbc86-5a1a-4d70-98ff-071d6795a48e" />
+
+        实验十七(调参优化)
+        1.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，增加Reconstruction Guidance，
+<img width="206" height="121" alt="image" src="https://github.com/user-attachments/assets/fe3545ae-2073-4de1-bda0-ab1d522065b9" />
+
+        2.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，提高AoADFS的分辨率
+
+        3.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中
+
+        
+
+</details>  
 
 
 
