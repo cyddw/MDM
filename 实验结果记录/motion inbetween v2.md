@@ -877,12 +877,30 @@
         1.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，增加Reconstruction Guidance，
 <img width="206" height="121" alt="image" src="https://github.com/user-attachments/assets/fe3545ae-2073-4de1-bda0-ab1d522065b9" />
 
-        2.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，提高AoADFS的分辨率
+        2.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，提高AoADFS的分辨率(32*31->181*182)
+<img width="305" height="332" alt="image" src="https://github.com/user-attachments/assets/2913b9c7-1c35-4453-8741-7d561958649a" />
 
-        3.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中
+        3.(DMVAE6)(MLD(Person in wifi2))对于AE，不在stage2进行加噪，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中
+<img width="260" height="131" alt="image" src="https://github.com/user-attachments/assets/10391b67-80cb-4050-9c98-b62d0b0e62e0" />
+
+        4.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中
+<img width="257" height="144" alt="image" src="https://github.com/user-attachments/assets/f1ed212a-661e-4446-b300-21679a39c145" />
+        
+</details>  
+
+**2.4**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+         1.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中，同时对AoADFS进行标准化输入至Spectral Encoder中：
 
         
-
 </details>  
 
 
