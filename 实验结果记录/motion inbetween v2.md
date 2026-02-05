@@ -941,6 +941,21 @@
 
 
         4.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中，同时对AoADFS进行标准化输入至Spectral Encoder中(将原本的Per-location改为Channel-wise)，同时对z_motion进行标准化，采样过程中使用Reconstruction Guidance，提高AoADFS的时间分辨率(40->80):
+<img width="281" height="307" alt="image" src="https://github.com/user-attachments/assets/bf493e51-33bf-44f5-b2b3-aa24b777cb3e" />
+
+        5.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中，同时对AoADFS进行标准化输入至Spectral Encoder中(将原本的Per-location改为Channel-wise)，同时对z_motion进行标准化，采样过程中使用Reconstruction Guidance，提高AoADFS的时间分辨率(40->80)(截取80个中的后60个):
+<img width="280" height="167" alt="image" src="https://github.com/user-attachments/assets/c88c3ff3-86a1-48ca-8359-17064920cf59" />
+
+        6.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中，同时对AoADFS进行标准化输入至Spectral Encoder中(将原本的Per-location改为Channel-wise)，同时对z_motion进行标准化，采样过程中使用Reconstruction Guidance，提高AoADFS的时间分辨率(40->80)(截取80个中的后60个)，learning rate设置为2e-5:
+<img width="282" height="185" alt="image" src="https://github.com/user-attachments/assets/595ff7f5-b69e-45ba-ac30-44807c57f5e0" />
+
+        7.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中，同时对AoADFS进行标准化输入至Spectral Encoder中(将原本的Per-location改为Channel-wise)，同时对z_motion进行标准化，采样过程中使用Reconstruction Guidance，提高AoADFS的时间分辨率(40->80)(截取80个中的后60个)，learning rate设置为5e-5:
+<img width="274" height="139" alt="image" src="https://github.com/user-attachments/assets/5c4f7266-2ef0-4bde-8aeb-75482726f027" />
+
+
+        8.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中，同时对AoADFS进行标准化输入至Spectral Encoder中(将原本的Per-location改为Channel-wise)，同时对z_motion进行标准化，采样过程中使用Reconstruction Guidance，提高AoADFS的时间分辨率(40->80)(截取80个中的后60个)，learning rate设置为2e-4:
+
+
 
 
 
