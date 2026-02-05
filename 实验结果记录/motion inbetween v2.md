@@ -954,6 +954,7 @@
 
 
         8.(DMVAE6)(MLD(Person in wifi2))对于AE，在stage2对DecA进行训练，其中对EncA的输出z进行加噪(sigma = 0.07)，对于扩散模型，其DecA的训练轮次为(epoch = 199)，对human motion进行标准化后输入模型中，同时对AoADFS进行标准化输入至Spectral Encoder中(将原本的Per-location改为Channel-wise)，同时对z_motion进行标准化，采样过程中使用Reconstruction Guidance，提高AoADFS的时间分辨率(40->80)(截取80个中的后60个)，learning rate设置为2e-4:
+<img width="290" height="176" alt="image" src="https://github.com/user-attachments/assets/18a54b42-7f7e-4f75-9d63-3fda9cd0d0a9" />
 
 
 
