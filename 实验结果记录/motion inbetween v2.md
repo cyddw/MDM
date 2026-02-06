@@ -969,7 +969,9 @@
 <details>
 <summary>📖 实验记录</summary>
 
-        1.
+        1.(DMVAE6)(MLD(Person in wifi3)):
+<img width="600" height="179" alt="屏幕截图 2026-02-06 115434" src="https://github.com/user-attachments/assets/4d37fe56-63f1-48dd-8f3d-aeccaff9e065" />
+
 
 
 </details>  
