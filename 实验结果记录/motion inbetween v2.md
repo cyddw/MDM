@@ -976,6 +976,22 @@
 
 </details>  
 
+**3.3**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.对于MMFi数据集，测试集的sample取10，得到的结果：
+<img width="445" height="181" alt="image" src="https://github.com/user-attachments/assets/12c07b86-c282-44db-99ce-c29032801107" />
+
+
+</details>  
+
 
 
 
