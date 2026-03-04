@@ -1012,6 +1012,9 @@
 <img width="235" height="64" alt="image" src="https://github.com/user-attachments/assets/70a19870-70ed-4d32-be01-5d3d203aae32" />
 
         4.在上个实验的基础上，将reconstruction guidance的帧数改回2，将测试集的sample取50，得到的结果：
+<img width="448" height="386" alt="image" src="https://github.com/user-attachments/assets/205dda8f-5db4-4741-9b1c-d863317948a5" />
+
+        5.在上个实验的基础上，将reconstruction guidance的帧数改回2，将测试集的sample取30，得到的结果：
 
 
 
