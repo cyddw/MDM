@@ -1006,6 +1006,10 @@
 <img width="248" height="314" alt="image" src="https://github.com/user-attachments/assets/4bb2f796-5b81-4b4c-8e4b-2eda15d364ab" />
 
         2.对于MMFi数据集，测试集的sample取全部，decA的训练轮次为499，得到的结果：
+<img width="232" height="97" alt="image" src="https://github.com/user-attachments/assets/40f8b8d6-c3b0-47f5-b5f4-52c038454bc6" />
+
+        3.在上个实验的基础上，将reconstruction guidance的帧数改为10：
+
 
 
 </details>  
