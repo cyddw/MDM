@@ -1011,7 +1011,7 @@
         3.在上个实验的基础上，将reconstruction guidance的帧数改为10：
 <img width="235" height="64" alt="image" src="https://github.com/user-attachments/assets/70a19870-70ed-4d32-be01-5d3d203aae32" />
 
-        4.在上个实验的基础上，将reconstruction guidance的帧数改回2，将测试集的sample取100，得到的结果：
+        4.在上个实验的基础上，将reconstruction guidance的帧数改回2，将测试集的sample取50，得到的结果：
 
 
 
