@@ -992,6 +992,24 @@
 
 </details>  
 
+**3.4**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.对于MMFi数据集，测试集的sample取全部，decA的训练轮次为299，得到的结果：
+<img width="248" height="314" alt="image" src="https://github.com/user-attachments/assets/4bb2f796-5b81-4b4c-8e4b-2eda15d364ab" />
+
+        2.对于MMFi数据集，测试集的sample取全部，decA的训练轮次为499，得到的结果：
+
+
+</details>  
+
 
 
 
