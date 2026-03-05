@@ -78,3 +78,6 @@
 
 **1.18**
 - [x] 1.修改MLD中读取的human motion为前110帧
+
+**3.5**
+- [ ] 1.完成baseline：GraphPoseFi的代码编写 
