@@ -1031,6 +1031,9 @@
 <img width="233" height="40" alt="image" src="https://github.com/user-attachments/assets/52c3ba45-933f-47bc-9fc0-f2c7e6f1143b" />
 
         2.对于MDM数据集，无reconstruction guidance，测试集的sample取全部，不对decoder进行finetune，得到的结果：
+<img width="235" height="61" alt="image" src="https://github.com/user-attachments/assets/b30d6e8a-b3ad-440f-afc4-eb36ee71aade" />
+
+        3.对于MDM数据集，无reconstruction guidance，测试集的sample取全部，对decoder进行finetune，得到的结果：
 
 
 
