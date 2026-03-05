@@ -1014,9 +1014,23 @@
         4.在上个实验的基础上，将reconstruction guidance的帧数改回2，将测试集的sample取50，得到的结果：
 <img width="448" height="386" alt="image" src="https://github.com/user-attachments/assets/205dda8f-5db4-4741-9b1c-d863317948a5" />
 
-        5.在上个实验的基础上，将reconstruction guidance的帧数改回2，将测试集的sample取30，得到的结果：
 
+</details>  
 
+**3.4**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.对于MDM数据集，reconstruction guidance取前两帧、测试集的sample取10，不对decoder进行finetune，得到的结果：
+<img width="233" height="40" alt="image" src="https://github.com/user-attachments/assets/52c3ba45-933f-47bc-9fc0-f2c7e6f1143b" />
+
+        2.对于MDM数据集，无reconstruction guidance，测试集的sample取全部，不对decoder进行finetune，得到的结果：
 
 
 
