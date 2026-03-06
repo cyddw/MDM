@@ -1053,7 +1053,7 @@
 <img width="160" height="80" alt="image" src="https://github.com/user-attachments/assets/93b14952-1b8b-4b3e-b1b8-b2429d10a30d" />
 
         2.对于GraphPoseFi，epoch等于500，同时将receiver取其中的一个作为结果，调换位置：
-
+<img width="166" height="82" alt="image" src="https://github.com/user-attachments/assets/57d0babf-652a-4dd9-b87c-cf8ccd0a12ec" />
 
 
 </details>  
