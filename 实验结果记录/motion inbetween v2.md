@@ -1058,6 +1058,22 @@
 
 </details>  
 
+**3.7**  
+<details>
+<summary>📖 问题记录</summary>  
+    
+
+</details>  
+
+<details>
+<summary>📖 实验记录</summary>
+
+        1.对于GraphPose-Fi，在MDM数据集上，keypoint使用绝对位置，得到的结果：
+
+
+
+</details>  
+
 
 
 
