@@ -1069,6 +1069,9 @@
 <summary>📖 实验记录</summary>
 
         1.对于GraphPose-Fi，在MDM数据集上，keypoint使用绝对位置，得到的结果：
+<img width="500" height="112" alt="image" src="https://github.com/user-attachments/assets/8f0f1bb9-4d21-404d-8cbf-ae61ad188a68" />
+
+        2.对于GraphPose-Fi，在MDM数据集上，keypoint使用相对位置，得到的结果：
 
 
 
