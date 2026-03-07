@@ -80,4 +80,7 @@
 - [x] 1.修改MLD中读取的human motion为前110帧
 
 **3.5**
-- [x] 1.完成baseline：GraphPoseFi的代码编写 
+- [x] 1.完成baseline：GraphPoseFi的代码编写
+
+**3.7**
+- [ ] 1.完成PA-MPJPE和MPJPE对于所有joints的评估
