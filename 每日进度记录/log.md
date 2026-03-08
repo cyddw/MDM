@@ -83,4 +83,7 @@
 - [x] 1.完成baseline：GraphPoseFi的代码编写
 
 **3.7**
-- [ ] 1.完成PA-MPJPE和MPJPE对于所有joints的评估
+- [x] 1.完成PA-MPJPE和MPJPE对于所有joints的评估
+
+**3.8**
+- [ ] 1.对于Motion Encoder，输入的数据的加噪强度
