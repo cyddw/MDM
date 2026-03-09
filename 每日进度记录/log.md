@@ -86,4 +86,4 @@
 - [x] 1.完成PA-MPJPE和MPJPE对于所有joints的评估
 
 **3.8**
-- [ ] 1.不对latent z进行加噪，对输入数据进行加噪，加噪的强度为0,0.1,0.2,0.3,0.4,0.5，同时在latent motion diffusion上进行测试
+- [ ] 1.不对latent z进行加噪，对输入数据进行加噪，加噪的强度为0,0.1,0.2,0.3,0.4,0.5，同时在latent motion diffusion上进行测试(这里AE一阶段和二阶段的epoch均为100)
