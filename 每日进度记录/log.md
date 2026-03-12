@@ -93,3 +93,6 @@
 
 **3.10**
 - [x] 1.将模型输出的3D keypoint转为3D human mesh
+
+**3.12**
+- [ ] 1.补做两个实验：latent z加噪的实验，去掉Motion Encoder和Decoder的实验
