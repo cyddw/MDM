@@ -92,4 +92,4 @@
 - [ ] 1.对latent z进行加噪，加噪的强度为0,0.05,0.1,0.15,0.2,0.25，这里的stage1的epoch为100，加噪强度为0.1
 
 **3.10**
-- [ ] 1.将模型输出的3D keypoint转为3D human mesh
+- [x] 1.将模型输出的3D keypoint转为3D human mesh
