@@ -95,5 +95,9 @@
 - [x] 1.将模型输出的3D keypoint转为3D human mesh
 
 **3.12-3.15**
-- [ ] 1.补做三个实验：latent z加噪的实验，去掉Motion Encoder和Decoder的实验，增加一个HPE-Li作为baseline
-- [ ] 2.完成实验部分的内容
+- [x] 1.补做三个实验：latent z加噪的实验，去掉Motion Encoder和Decoder的实验，增加一个HPE-Li作为baseline
+- [x] 2.完成实验部分的内容
+
+**3.16-3.19**
+- [ ] 1.完成Problem Formulation和System Model部分的内容
+- [ ] 
